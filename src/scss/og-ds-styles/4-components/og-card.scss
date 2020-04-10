@@ -1,0 +1,15 @@
+.og-card {
+  background: red;
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  background: og-color(background, canvas);
+  border-radius: og-shape(primary, default);
+  @include og-border(thin, primary, solid);
+
+  p {margin: 0}
+}
+
+.og-card--sharp {
+  border-radius: og-shape(squared);
+}

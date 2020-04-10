@@ -1,0 +1,51 @@
+.home-mosque-grid {
+  display: grid;
+  margin: 0 auto;
+  max-width: 1800px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 0;
+  height: 100%;
+  grid-template-areas:
+    "a   a   e"
+    "a   a   h"
+    "b   c   g"
+    "f   d   d"
+    "i   i   j"
+    "i   i   j"
+    "k   l   l"
+    "k   l   l"
+    "m   l   l"
+    "m   n   q"
+    "p   p   q"
+    "u   u   t"
+    "s   s   r"
+    "s   s   o"
+    "v   .   .";
+
+  @media (max-width: 767px) {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "a"
+      "b"
+      "c"
+      "d"
+      "e"
+      "f"
+      "g"
+      "h"
+      "i"
+      "j"
+      "k"
+      "l"
+      "m"
+      "n"
+      "o"
+      "p"
+      "q"
+      "r"
+      "s"
+      "t"
+      "u"
+      "v";
+  }
+}

@@ -1,0 +1,142 @@
+@import "./og-ds-styles/_styles.scss";
+
+$breakpoints: (
+  phone: 767px,
+  tablet: 992px,
+  desktop: 1200px,
+);
+
+/// Mixin to manage responsive breakpoints
+/// @param {String} $breakpoint - Breakpoint name
+/// @require $breakpoints
+@mixin respond-to($breakpoint) {
+  // If the key exists in the map
+  @if map-has-key($breakpoints, $breakpoint) {
+    // Prints a media query based on the value
+    @media (max-width: map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  }
+
+  // If the key doesn't exist in the map
+  @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+        + "Available breakpoints are: #{map-keys($breakpoints)}.";
+  }
+}
+
+// Pages
+@import "./pages/home-page.scss";
+@import "./pages/about-page.scss";
+@import "./pages/project-page.scss";
+@import "./pages/projects/yolko-page.scss";
+@import "./pages/projects/ds-page.scss";
+@import "./pages/projects/client-page.scss";
+
+//Components
+@import "../components/home/hero/hero-section.scss";
+@import "../components/home/projects/projects-section.scss";
+@import "../components/home/studio/studio-section.scss";
+@import "../components/home/code/code-section.scss";
+@import "../components/home/thoughts/thoughts-section.scss";
+@import "../components/home/class/class-section.scss";
+@import "../components/home/creative-lab-mosque/creative-lab-mosque.scss";
+
+// App Components
+@import "./components/portfolio-footer.scss";
+@import "./components/design-process-card.scss";
+@import "./components/top-nav.scss";
+
+* {
+  -webkit-font-smoothing: subpixel-antialiased !important;
+  -webkit-font-smoothing: antialiased !important;
+  backface-visibility: hidden !important;
+  -moz-osx-font-smoothing: grayscale !important;
+}
+
+html {
+  --og-brand-color2: #00fff0;
+  --og-brand-color3: #ff00ff;
+
+  background: og-color(background, app);
+
+  @include respond-to(phone) {
+    padding: og-space(space-08);
+  }
+
+  .crafted-quote {
+    font-size: og-font-size(body1);
+    padding: og-space(space-24);
+    color: og-color(text, secondary);
+    font-style: italic;
+
+    @include respond-to(phone) {
+      font-size: og-font-size(subheading);
+      padding: og-space(space-08);
+    }
+  }
+
+  .strikethrough-text {
+    text-decoration: line-through;
+  }
+
+  .special-text-styling {
+    font-size: 14px;
+    color: #828890;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  .section-title {
+    text-align: center;
+    margin-top: 100px;
+    text-transform: uppercase;
+    font-weight: og-font-weight(normal);
+  }
+
+  li {
+    @include respond-to(phone) {
+      font-size: og-font-size(body2);
+    }
+  }
+
+  .hightlighted-offset {
+    position: relative;
+  }
+
+  .hightlighted-offset::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    background: var(--og-brand-color2);
+    left: 0;
+    bottom: -3px;
+    height: 0.6em;
+    z-index: -1;
+    mix-blend-mode: difference;
+    background-blend-mode: difference;
+  }
+}
+
+::-moz-selection {
+  background: var(--og-brand-color2);
+}
+
+::selection {
+  background: var(--og-brand-color2);
+}
+
+.cursor {
+  position: fixed;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  border: 4px solid var(--og-brand-color3);
+  pointer-events: none;
+  mix-blend-mode: difference;
+  background-blend-mode: difference;
+
+  @include respond-to(phone) {
+    display: none;
+  }
+}

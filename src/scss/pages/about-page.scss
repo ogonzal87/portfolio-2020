@@ -1,0 +1,57 @@
+.about-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+  @include respond-to(phone) {
+    height: 100%;
+  }
+
+  .img-container {
+    position: relative;
+  }
+
+  .taking-clients {
+    position: absolute;
+    left: og-space(space-64) * 1.5;
+    top: og-space(space-64);
+    color: og-color(text, link);
+    max-width: 20ch;
+    transform: rotate(-43deg);
+
+    @include respond-to(phone) {
+      display: none;
+    }
+  }
+
+  .profile-img {
+    max-width: 500px;
+    border-radius: 10px;
+    object-fit: cover;
+    clip-path: polygon(53% 0, 100% 0, 100% 49%, 58% 100%, 0 100%, 0 49%);
+
+    @include respond-to(phone) {
+      display: block;
+      padding: og-space(space-16);
+      margin-top: og-space(space-64) * 1.5;
+      width: 100%;
+    }
+  }
+
+  .text-container {
+    padding: og-space(space-48) og-space(space-48) * 1.5;
+    max-width: 60ch;
+    position: relative;
+
+    @include respond-to(phone) {
+      display: block;
+      padding: og-space(space-48) og-space(space-32) og-space(space-64) * 2
+        og-space(space-32);
+
+      p {
+        @include og-text-style-body1();
+      }
+    }
+  }
+}

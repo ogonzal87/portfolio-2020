@@ -1,0 +1,57 @@
+$background-nav: #f9fafc;
+
+.top-nav {
+  position: fixed;
+  top: 0;
+  height: 80px;
+  min-width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 999;
+  background: transparent;
+
+  .og-logo {
+    width: 150px;
+    padding: 0 og-space(space-48);
+
+    @include respond-to(phone) {
+      max-width: og-space(space-48);
+      padding: 0 og-space(space-16);
+    }
+  }
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    text-decoration: none;
+
+    li {
+      padding: 0 og-space(space-48);
+      text-transform: uppercase;
+      font-size: og-font-size(caption);
+
+      @include respond-to(phone) {
+        padding: 0 og-space(space-16);
+      }
+
+      a {
+        color: og-color(text, secondary);
+        transition: all og-easing(base) ds-speed(slowest);
+
+        &:hover {
+          color: og-color(text, primary);
+          cursor: pointer;
+        }
+      }
+
+      .top-nav-link-isActive {
+        color: og-color(text, link);
+        font-weight: og-font-weight(bold);
+      }
+    }
+  }
+}

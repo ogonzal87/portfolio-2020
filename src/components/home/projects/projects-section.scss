@@ -1,0 +1,95 @@
+.home-project-card-title-container {
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  color: og-color(text, primary-on-dark);
+  text-transform: uppercase;
+  display: block;
+  text-align: right;
+
+  .og-text-style-overline {
+    color: og-color(text, primary-on-dark);
+    text-align: right;
+    display: block;
+
+    @include respond-to(phone) {
+      display: none;
+    }
+  }
+
+  .project-title {
+    margin-top: og-space(space-16);
+    margin-bottom: og-space(space-16);
+    color: og-color(text, primary-on-dark);
+
+    @include respond-to(phone) {
+      font-size: og-font-size(heading4);
+      margin-top: og-space(space-04);
+      margin-bottom: og-space(space-04);
+    }
+  }
+
+  .project-card__footer-text {
+    color: og-color(text, primary-on-dark);
+
+    @include respond-to(phone) {
+      display: none;
+    }
+  }
+}
+
+.project-link,
+.class-link {
+  min-width: 100%;
+  margin: 0 auto;
+
+  @include respond-to(phone) {
+    margin: 0;
+  }
+}
+
+.home-project-card-container {
+  width: calc(100% + 40px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  box-sizing: border-box;
+  position: relative;
+  max-width: 1400px;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+.home-project-card {
+  max-width: 1000px;
+  margin: $og-space-128 auto;
+  width: 100%;
+  border-radius: 16px;
+  position: relative;
+  box-shadow: 0 1px 1px 1px rgba(10, 16, 34, 0.08);
+  transition: all 200ms ease-in-out;
+  min-height: 500px;
+  padding: 50px;
+  box-sizing: border-box;
+  cursor: pointer;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
+
+  @media (max-width: 767px) {
+    background-size: cover;
+    background-attachment: initial;
+  }
+
+  @media (max-width: 767px) {
+    padding: 8px;
+    min-height: 200px;
+    margin: 0 -20px;
+  }
+
+  &:hover {
+    box-shadow: 0 15px 45px -5px rgba(10, 16, 34, 0.3);
+  }
+}

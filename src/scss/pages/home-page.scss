@@ -1,0 +1,174 @@
+.home-wrapper {
+  display: grid;
+  grid-row-gap: 300px;
+  grid-template-columns: 100%;
+  position: relative;
+  padding-bottom: 200px;
+  overflow: hidden;
+
+  .home-contact-links {
+    margin-top: og-space(space-64) * 2;
+    position: absolute;
+    bottom: og-space(space-32);
+  }
+
+  @include respond-to(phone) {
+    p {
+      font-size: og-font-size(body2);
+    }
+
+    padding-bottom: 100px;
+    grid-row-gap: 100px;
+
+    .home-contact-links {
+      text-align: center;
+    }
+  }
+
+  .portfolio-logo-img {
+    width: 100%;
+    max-width: 723px;
+    filter: drop-shadow(0 50px 5px rgba(0, 0, 0, 0.07));
+
+    @include respond-to(phone) {
+      width: 350px;
+      margin: 0 auto;
+    }
+  }
+
+  .hero-overline-text-style {
+    color: og-color(text, secondary);
+    letter-spacing: 1px;
+    margin-bottom: 50px;
+
+    @include respond-to(phone) {
+      margin-bottom: 0px;
+    }
+  }
+
+  .hero-subheading-text {
+    max-width: 42ch;
+    color: lighten(og-color(text, secondary), 1%);
+    font-weight: og-font-weight(light);
+    text-align: center;
+    margin-top: og-rem(42px);
+    line-height: 2rem;
+
+    @include respond-to(phone) {
+      font-size: og-font-size(body1);
+      padding: og-space(space-16);
+    }
+  }
+
+  .home-quote-statement {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .number {
+    position: absolute;
+    margin-right: 32px;
+    max-width: 208px;
+    top: -124px;
+    left: -114px;
+    z-index: -1;
+
+    @include respond-to(phone) {
+      max-width: 88px;
+      top: og-space(space-48);
+      left: 0;
+    }
+  }
+
+  .section-title-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    position: relative;
+
+    @include respond-to(phone) {
+      margin: 0;
+    }
+
+    img {
+      display: block;
+      max-height: 200px;
+      max-width: 450px;
+      margin: 0 auto;
+    }
+  }
+
+  .home-brush-lettering {
+    position: absolute !important;
+    min-width: 800px;
+    height: 200px;
+    opacity: 0.8;
+    z-index: -1;
+
+    &.process {
+      top: 150px;
+      right: -100px;
+      transform: rotate(-10deg);
+
+      @include respond-to(phone) {
+        right: 0px;
+        min-width: 400px;
+        height: 100px;
+      }
+    }
+
+    &.class {
+      top: -150px;
+      left: -100px;
+      transform: rotate(-10deg);
+
+      @include respond-to(phone) {
+        top: -100px;
+        left: 0;
+        min-width: 400px;
+        height: 100px;
+      }
+    }
+
+    &.studio {
+      min-width: 600px;
+      top: -350px;
+      left: -100px;
+      transform: rotate(-10deg);
+
+      @include respond-to(phone) {
+        top: -100px;
+        right: -160px;
+        min-width: 400px;
+        height: 100px;
+      }
+    }
+
+    &.code {
+      min-width: 600px;
+      top: -200px;
+      left: -100px;
+      transform: rotate(-10deg);
+
+      @include respond-to(phone) {
+        top: -100px;
+        right: -160px;
+        min-width: 400px;
+        height: 100px;
+      }
+    }
+
+    &.thoughts {
+      min-width: 800px;
+      top: -120px;
+      left: -100px;
+      transform: rotate(-10deg);
+
+      @include respond-to(phone) {
+        top: -100px;
+        right: -160px;
+        min-width: 400px;
+        height: 100px;
+      }
+    }
+  }
+}

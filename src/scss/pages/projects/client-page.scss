@@ -1,0 +1,18 @@
+.clients-container {
+  margin-top: og-space(space-64);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.client-container {
+  display: flex;
+  align-items: center;
+  flex-basis: 999;
+}
+
+.client-avatar {
+  border-radius: 50%;
+  height: 60px;
+  margin-right: og-space(space-08);
+}

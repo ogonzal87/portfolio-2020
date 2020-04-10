@@ -1,0 +1,182 @@
+$app-background-color: og-color(background, canvas);
+$og-base-text-color: og-color(text, primary);
+$og-brand-text-color: og-color(text, link);
+$og-secondary-text-color: og-color(text, secondary);
+$og-base-link-text-color: $og-brand-text-color;
+$left-nav-width: 280px;
+$content-bg-color: og-color(background, app);
+
+:root {
+  font-family: $og-text-font-family;
+  font-size: $og-text-base-font-size;
+}
+
+html {
+  background-color: $app-background-color;
+  color: $og-base-text-color;
+}
+
+a {
+  color: $og-base-link-text-color;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: line-through;
+  }
+}
+
+.app-grid {
+  display: grid;
+  grid-template-columns: $left-nav-width 1fr;
+  grid-template-areas: "left-nav    main-content";
+  grid-gap: 0;
+
+  .og-col-container {
+    .og-col-1:first-child {
+      margin-left: 20px;
+    }
+    .og-col-2:first-child {
+      margin-left: 20px;
+    }
+    .og-col-3:first-child {
+      margin-left: 20px;
+    }
+    .og-col-4:first-child {
+      margin-left: 20px;
+    }
+    .og-col-5:first-child {
+      margin-left: 20px;
+    }
+    .og-col-6:first-child {
+      margin-left: 20px;
+    }
+    .og-col-7:first-child {
+      margin-left: 20px;
+    }
+    .og-col-8:first-child {
+      margin-left: 20px;
+    }
+    .og-col-9:first-child {
+      margin-left: 20px;
+    }
+    .og-col-10:first-child {
+      margin-left: 20px;
+    }
+    .og-col-11:first-child {
+      margin-left: 20px;
+    }
+    .og-col-12:first-child {
+      margin-left: 20px;
+    }
+  }
+}
+
+.main-content {
+  grid-area: main-content;
+  background: $content-bg-color;
+  width: 100%;
+  position: relative;
+  min-height: 100vh;
+  height: 100%;
+  padding-bottom: $og-space-96;
+}
+
+.container {
+  max-width: 960px;
+  padding: $og-space-48 0 300px 60px;
+}
+
+.subheading {
+  width: 680px;
+  margin-bottom: 100px;
+  margin-top: 0;
+  line-height: 43px;
+  font-weight: 300;
+  width: 680px;
+  @include og-text-style-heading4();
+  margin-top: -og-space(space-16);
+  font-weight: og-font-weight(light);
+  color: og-color(text, secondary);
+}
+
+pre {
+  margin-top: $og-space-32 !important;
+}
+
+////////////////////////////////////////////////////////////////////////////
+/// Connecting the Typographic styles defined above to Type-HTML elements
+///////////////////////////////////////////////////////////////////////////
+
+h1 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  @include og-text-style-heading1();
+}
+
+h2 {
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  @include og-text-style-heading2();
+}
+
+h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  @include og-text-style-heading3();
+}
+
+h4 {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  @include og-text-style-heading4();
+}
+
+h5 {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  @include og-text-style-heading5();
+}
+
+h6 {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  @include og-text-style-heading6();
+}
+
+p {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  @include og-text-style-body1();
+}
+
+ul,
+ol {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+  @include og-text-style-list();
+}
+
+a {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-decoration: none;
+  color: og-color(text, link);
+  @include og-text-style-link();
+}
+
+button {
+  @include og-text-style-body1();
+  cursor: pointer;
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+code {
+  font-size: $og-theme-base-font-size;
+}
+
+pre {
+  margin: 2.5rem 0;
+}

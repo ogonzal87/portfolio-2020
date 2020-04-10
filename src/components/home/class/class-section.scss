@@ -1,0 +1,43 @@
+.home-class-section {
+  position: relative;
+  margin-top: 200px;
+  width: calc(100% + 40px);
+  box-sizing: border-box;
+  position: relative;
+  max-width: 1400px;
+  margin: 0 auto;
+  z-index: 1;
+
+  @include respond-to(phone) {
+    margin-top: 200px;
+  }
+
+  .class-card {
+    max-width: 1000px;
+    margin: $og-space-128 auto;
+    width: 100%;
+    border-radius: 16px;
+    position: relative;
+    box-shadow: 0 1px 1px 1px rgba(10, 16, 34, 0.08);
+    transition: all 200ms ease-in-out;
+    min-height: 500px;
+    padding: 50px;
+    box-sizing: border-box;
+    cursor: pointer;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+
+    @media (max-width: 767px) {
+      background-size: cover;
+      background-attachment: initial;
+      padding: 8px;
+      min-height: 200px;
+    }
+
+    &:hover {
+      box-shadow: 0 15px 45px -5px rgba(10, 16, 34, 0.3);
+    }
+  }
+}
