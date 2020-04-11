@@ -3,6 +3,7 @@ import Link from "gatsby-link"
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 import BackgroundImage from "gatsby-background-image"
+import { motion, useViewportScroll } from "framer-motion"
 
 export default () => {
   const data = useStaticQuery(graphql`
@@ -65,9 +66,43 @@ export default () => {
     }
   `)
 
+  const easing = [0.6, -0.05, 0.01, 0.99]
+
+  const containerStagger = {
+    hidden: { opacity: 1, scale: 0 },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        delay: 0.3,
+        when: "beforeChildren",
+        staggerChildren: 0.1,
+      },
+    },
+  }
+
+  const fadeUpItem = {
+    initial: {
+      y: 20,
+      opacity: 0,
+    },
+    animate: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        duration: 0.6,
+        ease: easing,
+      },
+    },
+  }
+
   return (
     <section>
-      <div className="home-project-card-container" id="work">
+      <motion.div
+        className="home-project-card-container"
+        id="work"
+        variants={containerStagger}
+      >
         <Link to="/projects/design-system/" className="project-link">
           <BackgroundImage
             fluid={data.project1BgImg.childImageSharp.fluid}
@@ -79,18 +114,26 @@ export default () => {
               alt="number 1"
             />
             <div className="home-project-card-title-container">
-              <span className="og-text-style-overline">
+              <motion.span
+                className="og-text-style-overline"
+                variants={fadeUpItem}
+              >
                 Company work + Personal Project
-              </span>
-              <h3 className="project-title">OSKRHQ Design System</h3>
-              <span className="og-text-style-overline project-card__footer-text">
+              </motion.span>
+              <motion.h3 className="project-title" variants={fadeUpItem}>
+                OSKRHQ Design System
+              </motion.h3>
+              <motion.span
+                className="og-text-style-overline project-card__footer-text"
+                variants={fadeUpItem}
+              >
                 DESIGN SYSTEMS | DEVELOPMENT | CREATIVE DIRECTION AND
                 MULTIDISCIPLINARY DESIGN | RESEARCH | SALES
-              </span>
+              </motion.span>
             </div>
           </BackgroundImage>
         </Link>
-      </div>
+      </motion.div>
 
       <div className="home-project-card-container">
         <Link to="/projects/client/" className="project-link">

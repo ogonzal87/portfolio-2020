@@ -5,6 +5,8 @@ import Tilt from "react-tilt"
 import palmsIllustrationFront from "../../../assets/images/palms/front.svg"
 import palmsIllustrationMiddle from "../../../assets/images/palms/middle.svg"
 import palmsIllustrationBack from "../../../assets/images/palms/back.svg"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
+import { motion } from "framer-motion"
 
 class HeroSection extends React.Component {
   state = {
@@ -23,10 +25,50 @@ class HeroSection extends React.Component {
   }
 
   render() {
+    const easing = [0.6, -0.05, 0.01, 0.99]
+
+    const containerStagger = {
+      animate: {
+        transition: {
+          staggerChildren: 0.1,
+        },
+      },
+    }
+
+    const fadeUpItem = {
+      initial: {
+        y: 20,
+        opacity: 0,
+      },
+      animate: {
+        y: 0,
+        opacity: 1,
+        transition: {
+          duration: 0.6,
+          ease: easing,
+        },
+      },
+    }
+
+    const fadeItem = {
+      initial: {
+        opacity: 0,
+      },
+      animate: {
+        opacity: 1,
+        transition: {
+          duration: 2.25,
+          ease: easing,
+        },
+      },
+    }
+
     return (
-      <div
+      <motion.div
         className="home-page-hero-section"
-        // style={{ backgroundPositionY: `${this.state.offset}px` }}
+        exit={{ opacity: 0 }}
+        initial="initial"
+        animate="animate"
       >
         <img
           src={palmsIllustrationFront}
@@ -47,116 +89,125 @@ class HeroSection extends React.Component {
           style={{ top: `${this.state.offset * -0.5}px` }}
         />
 
-        <h1
-          className="og-text-style-overline hero-doverline-text-style"
-          style={{}}
+        <motion.div
+          variants={containerStagger}
+          className="home-page-hero-section"
         >
-          Hola!{" "}
-          <span role="img" aria-label="emoji">
-            👋🏼
-          </span>{" "}
-          mi nombre es
-        </h1>
+          <motion.h1
+            className="og-text-style-overline hero-doverline-text-style"
+            variants={fadeUpItem}
+          >
+            Hola!{" "}
+            <span role="img" aria-label="emoji">
+              👋🏼
+            </span>{" "}
+            mi nombre es
+          </motion.h1>
 
-        <div style={{ height: "200px" }}></div>
+          <motion.div
+            variants={fadeUpItem}
+            style={{ height: "200px" }}
+          ></motion.div>
 
-        <Tilt
-          className="portfolio-logo-container Tilt"
-          options={{
-            glareMaxOpacity: 0.2,
-            perspective: 1000,
-            glareEnable: true,
-            glareMaxOpacity: 0.2,
-            scale: 1,
-            max: 10,
-            gyroscope: true,
-          }}
-        >
-          <Link to="/about">
-            <img
-              className="portfolio-logo-img"
-              src={NameLogo}
-              alt="Oscar Gonzalez"
-            />
-          </Link>
-        </Tilt>
+          <Tilt
+            className="portfolio-logo-container Tilt"
+            options={{
+              glareMaxOpacity: 0.2,
+              perspective: 1000,
+              glareEnable: true,
+              glareMaxOpacity: 0.2,
+              scale: 1,
+              max: 10,
+              gyroscope: true,
+            }}
+          >
+            <AniLink paintDrip to="/about" duration={0.75} hex="#5900FF">
+              <motion.img
+                className="portfolio-logo-img"
+                src={NameLogo}
+                alt="Oscar Gonzalez"
+                variants={fadeItem}
+              />
+            </AniLink>
+          </Tilt>
 
-        <i>
-          <h5 className="hero-subheading-text">
-            I’m a{" "}
+          <motion.i variants={fadeUpItem}>
+            <h5 className="hero-subheading-text">
+              I’m a{" "}
+              <a
+                href="https://uxplanet.org/ux-engineers-what-we-are-2b0c4d10b3a6"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hightlighted-offset"
+              >
+                UX Engineer
+              </a>{" "}
+              and Product Designer. By day I design and {"<code />"} digital
+              products specializing in multi-platform{" "}
+              <a
+                href="https://codesandbox.io/embed/oskrhq-playground-app-x7mhz?fontsize=14&theme=dark&view=preview"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hightlighted-offset"
+              >
+                Design Systems
+              </a>{" "}
+              for large enterprises. By night I enjoy making art with code,
+              making moss art and doing illustrations.
+            </h5>
+          </motion.i>
+
+          <motion.p variants={fadeUpItem} className="home-contact-links">
+            <Link to="/about">About</Link> ·{" "}
             <a
-              href="https://uxplanet.org/ux-engineers-what-we-are-2b0c4d10b3a6"
+              href="mailto:someone@example.com?Subject=Hello%20again"
+              target="_top"
+            >
+              oscar@oskrhq.com
+            </a>{" "}
+            ·{" "}
+            <a
+              href="https://github.com/ogonzal87"
               target="_blank"
               rel="noopener noreferrer"
-              className="hightlighted-offset"
             >
-              UX Engineer
+              Github
             </a>{" "}
-            and Product Designer. By day I design and {"<code />"} digital
-            products specializing in multi-platform{" "}
+            ·{" "}
             <a
-              href="https://codesandbox.io/embed/oskrhq-playground-app-x7mhz?fontsize=14&theme=dark&view=preview"
+              href="https://codepen.io/ogonzal87/"
               target="_blank"
               rel="noopener noreferrer"
-              className="hightlighted-offset"
             >
-              Design Systems
+              Codepen
             </a>{" "}
-            for large enterprises. By night I enjoy making art with code, making
-            moss art and doing illustrations.
-          </h5>
-        </i>
-
-        <p className="home-contact-links">
-          <Link to="/about">About</Link> ·{" "}
-          <a
-            href="mailto:someone@example.com?Subject=Hello%20again"
-            target="_top"
-          >
-            oscar@oskrhq.com
-          </a>{" "}
-          ·{" "}
-          <a
-            href="https://github.com/ogonzal87"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Github
-          </a>{" "}
-          ·{" "}
-          <a
-            href="https://codepen.io/ogonzal87/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Codepen
-          </a>{" "}
-          ·{" "}
-          <a
-            href="https://medium.muz.li/the-anatomy-of-all-digital-interfaces-11d43f55eaf"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Medium
-          </a>{" "}
-          ·{" "}
-          <a
-            href="https://dribbble.com/ogonzal87"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Dribbble
-          </a>{" "}
-          ·{" "}
-          <a
-            href="https://www.instagram.com/oskrhq/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Instagram
-          </a>
-        </p>
-      </div>
+            ·{" "}
+            <a
+              href="https://medium.muz.li/the-anatomy-of-all-digital-interfaces-11d43f55eaf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Medium
+            </a>{" "}
+            ·{" "}
+            <a
+              href="https://dribbble.com/ogonzal87"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Dribbble
+            </a>{" "}
+            ·{" "}
+            <a
+              href="https://www.instagram.com/oskrhq/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Instagram
+            </a>
+          </motion.p>
+        </motion.div>
+      </motion.div>
     )
   }
 }
