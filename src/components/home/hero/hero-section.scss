@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+
 .home-page-hero-section {
   display: flex;
   align-items: center;
@@ -6,4 +8,94 @@
   height: 100vh;
   box-sizing: border-box;
   position: relative;
+
+  .hero-palms-illustration {
+    position: absolute;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    // -webkit-filter: drop-shadow(4px 3px 2px rgba(0, 0, 0, 0.7));
+    // filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
+  }
+
+  .portfolio-logo-container {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .portfolio-logo-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 723px;
+    filter: drop-shadow(0 50px 5px rgba(0, 0, 0, 0.07));
+
+    @include respond-to(phone) {
+      width: 350px;
+      margin: 0 auto;
+    }
+  }
+
+  .home-contact-links {
+    margin-top: og-space(space-64) * 2;
+    position: absolute;
+    bottom: og-space(space-32);
+  }
+
+  p {
+    a {
+      font-size: 18px;
+      letter-spacing: 4px;
+      font-family: "VT323", monospace !important;
+      text-transform: uppercase;
+      font-weight: semibold;
+    }
+  }
+
+  @include respond-to(phone) {
+    p {
+      font-size: og-font-size(body2);
+    }
+
+    padding-bottom: 100px;
+    grid-row-gap: 100px;
+
+    .home-contact-links {
+      text-align: center;
+    }
+  }
+
+  .hero-overline-text-style {
+    padding-top: og-rem(56px);
+    color: og-color(text, secondary);
+    letter-spacing: 1px;
+
+    @include respond-to(phone) {
+      margin-bottom: 0px;
+    }
+  }
+
+  .og-text-style-overline {
+    margin-top: og-rem(100px);
+  }
+
+  .hero-subheading-text {
+    max-width: 42ch;
+    color: lighten(og-color(text, secondary), 1%);
+    font-weight: og-font-weight(light);
+    text-align: center;
+    line-height: 2rem;
+
+    @include respond-to(phone) {
+      font-size: og-font-size(body1);
+      padding: og-space(space-16);
+    }
+  }
+
+  .home-quote-statement {
+    max-width: 600px;
+    margin: 0 auto;
+  }
 }

@@ -10,8 +10,8 @@ import "../scss/_styles.scss"
 
 class Layout extends React.Component {
   state = {
-    xMain: 0,
-    yMain: 0,
+    xMain: -500,
+    yMain: -500,
   }
 
   handleMouseMove = e => {
