@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
-
 .home-page-hero-section {
   display: flex;
   align-items: center;
@@ -43,13 +41,13 @@
     text-align: center;
     margin-top: og-space(space-64) * 2;
     position: absolute;
-    bottom: og-space(space-32);
+    bottom: og-space(space-16);
   }
 
   p {
     a {
-      font-size: 18px;
-      letter-spacing: 4px;
+      font-size: og-rem(14px);
+      letter-spacing: og-rem(4px);
       font-family: "VT323", monospace !important;
       text-transform: uppercase;
       font-weight: semibold;
@@ -63,10 +61,6 @@
 
     padding-bottom: 100px;
     grid-row-gap: 100px;
-
-    .home-contact-links {
-      text-align: center;
-    }
   }
 
   .hero-overline-text-style {

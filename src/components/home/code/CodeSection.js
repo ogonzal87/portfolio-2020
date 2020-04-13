@@ -17,13 +17,11 @@ const Images = {
 const CodeSection = () => {
   return (
     <section className="home-code-section">
-      <div className="section-title-container">
-        <img
-          src={codeLetteringImg}
-          alt=""
-          className="home-brush-lettering code"
-        />
-      </div>
+      <img
+        src={codeLetteringImg}
+        alt=""
+        className="home-brush-lettering code"
+      />
 
       <ul className="code-cards-list">
         <CodeProjectCard

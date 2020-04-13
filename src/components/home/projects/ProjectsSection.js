@@ -1,9 +1,9 @@
 import React from "react"
-import Link from "gatsby-link"
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 import BackgroundImage from "gatsby-background-image"
-import { motion, useViewportScroll } from "framer-motion"
+import { motion } from "framer-motion"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 export default () => {
   const data = useStaticQuery(graphql`
@@ -25,14 +25,6 @@ export default () => {
       number3: file(relativePath: { eq: "images/hand-brush/03.png" }) {
         childImageSharp {
           fluid {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-
-      project1BgImg: file(relativePath: { eq: "images/duotone2.jpg" }) {
-        childImageSharp {
-          fluid(maxWidth: 1400) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -69,12 +61,9 @@ export default () => {
   const easing = [0.6, -0.05, 0.01, 0.99]
 
   const containerStagger = {
-    hidden: { opacity: 1, scale: 0 },
-    visible: {
-      opacity: 1,
-      scale: 1,
+    animate: {
+      scale: 1.02,
       transition: {
-        delay: 0.3,
         when: "beforeChildren",
         staggerChildren: 0.1,
       },
@@ -96,24 +85,51 @@ export default () => {
     },
   }
 
+  const rotateHoverItem = {
+    initial: {
+      opacity: 0,
+    },
+    animate: {
+      opacity: 1,
+      scale: 1.2,
+      rotate: 90,
+      transition: {
+        duration: 0.4,
+      },
+    },
+  }
+
   return (
     <section>
       <motion.div
+        initial="initial"
         className="home-project-card-container"
-        id="work"
-        variants={containerStagger}
+        whileHover="animate"
       >
-        <Link to="/projects/design-system/" className="project-link">
+        <AniLink
+          to="/projects/design-system/"
+          paintDrip
+          duration={0.75}
+          hex="#5900FF"
+          className="project-link"
+        >
           <BackgroundImage
             fluid={data.project1BgImg.childImageSharp.fluid}
             className="home-project-card"
           >
+            <motion.div
+              variants={rotateHoverItem}
+              className="card-hover-decoration"
+            ></motion.div>
             <Img
               className="number"
               fluid={data.number1.childImageSharp.fluid}
               alt="number 1"
             />
-            <div className="home-project-card-title-container">
+            <motion.div
+              variants={containerStagger}
+              className="home-project-card-title-container"
+            >
               <motion.span
                 className="og-text-style-overline"
                 variants={fadeUpItem}
@@ -130,56 +146,110 @@ export default () => {
                 DESIGN SYSTEMS | DEVELOPMENT | CREATIVE DIRECTION AND
                 MULTIDISCIPLINARY DESIGN | RESEARCH | SALES
               </motion.span>
-            </div>
+            </motion.div>
           </BackgroundImage>
-        </Link>
+        </AniLink>
       </motion.div>
 
-      <div className="home-project-card-container">
-        <Link to="/projects/client/" className="project-link">
+      <motion.div
+        className="home-project-card-container"
+        whileHover="animate"
+        initial="initial"
+      >
+        <AniLink
+          to="/projects/client/"
+          className="project-link"
+          paintDrip
+          duration={0.75}
+          hex="#5900FF"
+        >
           <BackgroundImage
             fluid={data.viewnLogo.childImageSharp.fluid}
             className="home-project-card"
           >
+            <motion.div
+              variants={rotateHoverItem}
+              className="card-hover-decoration"
+            ></motion.div>
             <Img
               className="number"
               fluid={data.number2.childImageSharp.fluid}
               alt="number 2"
             />
-            <div className="home-project-card-title-container">
-              <span className="og-text-style-overline ">Client Work</span>
-              <h3 className="project-title">VIEWN</h3>
-              <span className="og-text-style-overline project-card__footer-text">
+            <motion.div
+              className="home-project-card-title-container"
+              variants={containerStagger}
+            >
+              <motion.span
+                className="og-text-style-overline"
+                variants={fadeUpItem}
+              >
+                Client Work
+              </motion.span>
+              <motion.h3 className="project-title" variants={fadeUpItem}>
+                VIEWN
+              </motion.h3>
+              <motion.span
+                className="og-text-style-overline project-card__footer-text"
+                variants={fadeUpItem}
+              >
                 BRAND IDENTITY | CREATIVE DIRECTION AND MULTIDISCIPLINARY DESIGN
                 | UX RESEARCH
-              </span>
-            </div>
+              </motion.span>
+            </motion.div>
           </BackgroundImage>
-        </Link>
-      </div>
+        </AniLink>
+      </motion.div>
 
-      <div className="home-project-card-container">
-        <Link to="/projects/yolko/" className="project-link">
+      <motion.div
+        className="home-project-card-container"
+        whileHover="animate"
+        initial="initial"
+      >
+        <AniLink
+          to="/projects/yolko/"
+          className="project-link"
+          paintDrip
+          duration={0.75}
+          hex="#5900FF"
+        >
           <BackgroundImage
             fluid={data.yolkoThumbnail.childImageSharp.fluid}
             className="home-project-card"
           >
+            <motion.div
+              variants={rotateHoverItem}
+              className="card-hover-decoration"
+            ></motion.div>
             <Img
               className="number"
               fluid={data.number3.childImageSharp.fluid}
               alt="number 3"
             />
-            <div className="home-project-card-title-container">
-              <span className="og-text-style-overline">Personal Project</span>
-              <h3 className="project-title">YOLKO</h3>
-              <span className="og-text-style-overline project-card__footer-text">
+            <motion.div
+              className="home-project-card-title-container"
+              variants={containerStagger}
+            >
+              <motion.span
+                className="og-text-style-overline"
+                variants={fadeUpItem}
+              >
+                Personal Project
+              </motion.span>
+              <motion.h3 className="project-title" variants={fadeUpItem}>
+                YOLKO
+              </motion.h3>
+              <motion.span
+                className="og-text-style-overline project-card__footer-text"
+                variants={fadeUpItem}
+              >
                 PRODUCT, INTERACTION AND EXPERIENCE DESIGN | DEVELOPMENT | UX
                 RESEARCH
-              </span>
-            </div>
+              </motion.span>
+            </motion.div>
           </BackgroundImage>
-        </Link>
-      </div>
+        </AniLink>
+      </motion.div>
     </section>
   )
 }

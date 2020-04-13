@@ -1,17 +1,22 @@
 import React from "react"
-import profilePic from "../../../assets/images/profile-pic1.jpg"
+import profilePic from "../../../assets/images/profile-pic2.jpg"
 import StudioImg from "../../../assets/images/hand-brush/studio.png"
+import { Parallax } from "react-scroll-parallax"
 
 const StudioSection = () => {
   return (
     <section className="home-studio-section">
-      <div className="section-title-container">
+      <Parallax
+        className="section-title-container"
+        y={[-20, 20]}
+        tagOuter="figure"
+      >
         <img
           src={StudioImg}
           alt="Studio"
           className="home-brush-lettering studio"
         />
-      </div>
+      </Parallax>
 
       <div className="text-container">
         <p className="home-studio-section-paragraph">
@@ -57,8 +62,17 @@ const StudioSection = () => {
           </div>
         </div>
       </div>
+      <div className="profile-img-wrapper">
+        <Parallax y={[-20, 20]} tagOuter="figure">
+          <img
+            className="studio-profile-picture"
+            src={profilePic}
+            alt="profile"
+          />
+        </Parallax>
 
-      <img className="studio-profile-picture" src={profilePic} alt="profile" />
+        <div className="studio-decorative-div"></div>
+      </div>
     </section>
   )
 }

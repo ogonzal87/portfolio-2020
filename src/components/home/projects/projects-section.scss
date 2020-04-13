@@ -1,3 +1,55 @@
+$project-card-width: 1000px;
+
+.home-project-card-container {
+  width: $project-card-width;
+  margin: $og-space-128 * 1.5 auto;
+}
+
+.home-project-card {
+  border-radius: 16px;
+  max-width: $project-card-width;
+  position: relative;
+  box-shadow: 0 1px 1px 1px rgba(10, 16, 34, 0.08);
+  transition: all 200ms ease-in-out;
+  min-height: 500px;
+  box-sizing: border-box;
+  cursor: pointer;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
+
+  &::before {
+    border-radius: 8px;
+  }
+
+  @media (max-width: 767px) {
+    background-size: cover;
+    background-attachment: initial;
+    padding: 8px;
+    min-height: 200px;
+    margin: 0 -20px;
+  }
+
+  &:hover {
+    box-shadow: 0 15px 45px -5px rgba(10, 16, 34, 0.3);
+  }
+}
+
+.number {
+  position: absolute;
+  margin-right: 32px;
+  width: 160px;
+  top: -60px;
+  left: -80px;
+
+  @include respond-to(phone) {
+    max-width: 88px;
+    top: og-space(space-48);
+    left: 0;
+  }
+}
+
 .home-project-card-title-container {
   position: absolute;
   bottom: 40px;
@@ -11,6 +63,7 @@
     color: og-color(text, primary-on-dark);
     text-align: right;
     display: block;
+    text-shadow: 1px 1px og-color(text, secondary);
 
     @include respond-to(phone) {
       display: none;
@@ -21,6 +74,11 @@
     margin-top: og-space(space-16);
     margin-bottom: og-space(space-16);
     color: og-color(text, primary-on-dark);
+    font-weight: og-font-weight(bold);
+    font-size: 80px;
+    font-family: "VT323", monospace !important;
+    text-shadow: 2px 2px var(--og-brand-color2), 4px 4px var(--og-brand-color3);
+    letter-spacing: 8px;
 
     @include respond-to(phone) {
       font-size: og-font-size(heading4);
@@ -31,6 +89,7 @@
 
   .project-card__footer-text {
     color: og-color(text, primary-on-dark);
+    text-shadow: 1px 1px og-color(text, secondary);
 
     @include respond-to(phone) {
       display: none;
@@ -38,58 +97,14 @@
   }
 }
 
-.project-link,
-.class-link {
-  min-width: 100%;
-  margin: 0 auto;
-
-  @include respond-to(phone) {
-    margin: 0;
-  }
-}
-
-.home-project-card-container {
-  width: calc(100% + 40px);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  box-sizing: border-box;
-  position: relative;
-  max-width: 1400px;
-  margin: 0 auto;
-  z-index: 1;
-}
-
-.home-project-card {
-  max-width: 1000px;
-  margin: $og-space-128 auto;
-  width: 100%;
-  border-radius: 16px;
-  position: relative;
-  box-shadow: 0 1px 1px 1px rgba(10, 16, 34, 0.08);
-  transition: all 200ms ease-in-out;
-  min-height: 500px;
-  padding: 50px;
-  box-sizing: border-box;
-  cursor: pointer;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-attachment: fixed;
-
-  @media (max-width: 767px) {
-    background-size: cover;
-    background-attachment: initial;
-  }
-
-  @media (max-width: 767px) {
-    padding: 8px;
-    min-height: 200px;
-    margin: 0 -20px;
-  }
-
-  &:hover {
-    box-shadow: 0 15px 45px -5px rgba(10, 16, 34, 0.3);
-  }
+.card-hover-decoration {
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  top: -90px;
+  left: -100px;
+  background-color: var(--og-brand-color2);
+  border-radius: 160px 0 160px 160px;
+  z-index: -1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
 }

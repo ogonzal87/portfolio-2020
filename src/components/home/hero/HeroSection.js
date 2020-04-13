@@ -7,6 +7,7 @@ import palmsIllustrationMiddle from "../../../assets/images/palms/middle.svg"
 import palmsIllustrationBack from "../../../assets/images/palms/back.svg"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 import { motion } from "framer-motion"
+import ogAnimation from "../../../assets/animations/animations-helper"
 
 class HeroSection extends React.Component {
   state = {
@@ -25,44 +26,6 @@ class HeroSection extends React.Component {
   }
 
   render() {
-    const easing = [0.6, -0.05, 0.01, 0.99]
-
-    const containerStagger = {
-      animate: {
-        transition: {
-          staggerChildren: 0.1,
-        },
-      },
-    }
-
-    const fadeUpItem = {
-      initial: {
-        y: 20,
-        opacity: 0,
-      },
-      animate: {
-        y: 0,
-        opacity: 1,
-        transition: {
-          duration: 0.6,
-          ease: easing,
-        },
-      },
-    }
-
-    const fadeItem = {
-      initial: {
-        opacity: 0,
-      },
-      animate: {
-        opacity: 1,
-        transition: {
-          duration: 2.25,
-          ease: easing,
-        },
-      },
-    }
-
     return (
       <motion.div
         className="home-page-hero-section"
@@ -90,12 +53,12 @@ class HeroSection extends React.Component {
         />
 
         <motion.div
-          variants={containerStagger}
+          variants={ogAnimation.containerStagger}
           className="home-page-hero-section"
         >
           <motion.h1
             className="og-text-style-overline hero-doverline-text-style"
-            variants={fadeUpItem}
+            variants={ogAnimation.fadeUpItem}
           >
             Hola!{" "}
             <span role="img" aria-label="emoji">
@@ -105,14 +68,13 @@ class HeroSection extends React.Component {
           </motion.h1>
 
           <motion.div
-            variants={fadeUpItem}
+            variants={ogAnimation.fadeUpItem}
             style={{ height: "200px" }}
           ></motion.div>
 
           <Tilt
             className="portfolio-logo-container Tilt"
             options={{
-              glareMaxOpacity: 0.2,
               perspective: 1000,
               glareEnable: true,
               glareMaxOpacity: 0.2,
@@ -126,12 +88,12 @@ class HeroSection extends React.Component {
                 className="portfolio-logo-img"
                 src={NameLogo}
                 alt="Oscar Gonzalez"
-                variants={fadeItem}
+                variants={ogAnimation.fadeItem}
               />
             </AniLink>
           </Tilt>
 
-          <motion.i variants={fadeUpItem}>
+          <motion.i variants={ogAnimation.fadeUpItem}>
             <h5 className="hero-subheading-text">
               I’m a{" "}
               <a
@@ -157,7 +119,10 @@ class HeroSection extends React.Component {
             </h5>
           </motion.i>
 
-          <motion.p variants={fadeUpItem} className="home-contact-links">
+          <motion.p
+            variants={ogAnimation.fadeUpItem}
+            className="home-contact-links"
+          >
             <Link to="/about">About</Link> ·{" "}
             <a
               href="mailto:someone@example.com?Subject=Hello%20again"

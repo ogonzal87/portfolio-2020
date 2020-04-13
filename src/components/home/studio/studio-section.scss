@@ -5,6 +5,7 @@
   justify-content: center;
   max-width: 1200px;
   margin: 0 auto;
+  position: relative;
 
   .text-container {
     display: flex;
@@ -28,9 +29,24 @@
     }
   }
 
-  img {
+  .profile-img-wrapper {
+    position: relative;
+  }
+
+  .studio-profile-picture {
     max-width: 490px;
-    border-radius: 0 16px 16px 0;
+    border-radius: 50% 0 50% 50%;
+    z-index: 9;
+  }
+
+  .studio-decorative-div {
+    height: 392px;
+    width: 438px;
+    background-color: var(--og-brand-color3);
+    position: absolute;
+    right: -50px;
+    top: -50px;
+    z-index: -1;
   }
 
   @include respond-to(phone) {

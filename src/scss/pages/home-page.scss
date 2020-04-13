@@ -6,52 +6,19 @@
   padding-bottom: 200px;
   overflow: hidden;
 
-  .number {
-    position: absolute;
-    margin-right: 32px;
-    max-width: 208px;
-    top: -124px;
-    left: -114px;
-    z-index: -1;
-
-    @include respond-to(phone) {
-      max-width: 88px;
-      top: og-space(space-48);
-      left: 0;
-    }
-  }
-
-  .section-title-container {
-    max-width: 1400px;
-    margin: 0 auto;
-    position: relative;
-
-    @include respond-to(phone) {
-      margin: 0;
-    }
-
-    img {
-      display: block;
-      max-height: 200px;
-      max-width: 450px;
-      margin: 0 auto;
-    }
-  }
-
   .home-brush-lettering {
-    position: absolute !important;
-    min-width: 800px;
-    height: 200px;
-    opacity: 0.8;
+    position: absolute;
     z-index: -1;
 
-    &.process {
-      top: 150px;
-      right: -100px;
-      transform: rotate(-10deg);
+    &.studio {
+      width: 850px;
+      top: -560px;
+      left: -221px;
+      transform: rotate(-8deg);
 
       @include respond-to(phone) {
-        right: 0px;
+        top: -100px;
+        right: -160px;
         min-width: 400px;
         height: 100px;
       }
@@ -65,20 +32,6 @@
       @include respond-to(phone) {
         top: -100px;
         left: 0;
-        min-width: 400px;
-        height: 100px;
-      }
-    }
-
-    &.studio {
-      min-width: 600px;
-      top: -350px;
-      left: -100px;
-      transform: rotate(-10deg);
-
-      @include respond-to(phone) {
-        top: -100px;
-        right: -160px;
         min-width: 400px;
         height: 100px;
       }

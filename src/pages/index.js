@@ -8,6 +8,7 @@ import ThoughtsSection from "../components/home/thoughts/ThoughtsSection"
 import ClassSection from "../components/home/class/ClassSection"
 import CreativeLabMosque from "../components/home/creative-lab-mosque/CreativeLabMosque"
 import PortfolioFooter from "../components/footer"
+import { ParallaxProvider } from "react-scroll-parallax"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -16,27 +17,29 @@ class HomePage extends React.Component {
   render() {
     return (
       <Layout>
-        <div className="home-wrapper">
-          <SEO title="Home" />
+        <ParallaxProvider>
+          <div className="home-wrapper">
+            <SEO title="Home" />
 
-          <TopNav />
+            <TopNav />
 
-          <HeroSection />
+            <HeroSection />
 
-          <ProjectsSection />
+            <ProjectsSection />
 
-          <StudioSection />
+            <StudioSection />
 
-          <CodeSection />
+            <CodeSection />
 
-          <ThoughtsSection />
+            <ThoughtsSection />
 
-          <ClassSection />
+            <ClassSection />
 
-          <CreativeLabMosque />
+            <CreativeLabMosque />
 
-          <PortfolioFooter />
-        </div>
+            <PortfolioFooter />
+          </div>
+        </ParallaxProvider>
       </Layout>
     )
   }
