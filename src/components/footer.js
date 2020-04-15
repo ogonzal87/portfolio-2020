@@ -1,8 +1,12 @@
 import React from "react"
+import FlamingoImg1 from "../assets/images/footer/flamingo-1.svg"
+import FlamingoImg2 from "../assets/images/footer/flamingo-2.svg"
+import WaterImg from "../assets/images/footer/water.svg"
+import SunImg from "../assets/images/footer/sun.svg"
 
 const PortfolioFooter = () => (
   <div className="portfolio-footer-container">
-    <p className=" ">
+    <p className="text">
       <a href="mailto:someone@example.com?Subject=Hello%20again" target="_top">
         oscar@oskrhq.com
       </a>{" "}
@@ -47,6 +51,14 @@ const PortfolioFooter = () => (
         Instagram
       </a>
     </p>
+
+    <div className="illustration-wrapper">
+      <img src={FlamingoImg1} atl=" " className="flamingo1" />
+      <img src={FlamingoImg2} atl=" " className="flamingo2" />
+
+      <img src={WaterImg} atl=" " className="water" />
+      <img src={SunImg} atl=" " className="sun" />
+    </div>
   </div>
 )
 

@@ -104,17 +104,14 @@ html {
 
   .hightlighted-offset {
     position: relative;
-  }
-
-  .hightlighted-offset::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    background: var(--og-brand-color2);
-    left: 0;
-    bottom: -3px;
-    height: 0.6em;
-    z-index: -1;
+    background-image: linear-gradient(
+      to right,
+      var(--og-brand-color2),
+      var(--og-brand-color2)
+    );
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: 100% 8px;
     mix-blend-mode: difference;
     background-blend-mode: difference;
   }
@@ -141,4 +138,14 @@ html {
   @include respond-to(phone) {
     display: none;
   }
+}
+
+body {
+  // background: repeating-linear-gradient(
+  //   0deg,
+  //   rgba(black, 0.08),
+  //   rgba(black, 0.08) 1px,
+  //   transparent 1px,
+  //   transparent 2px
+  // );
 }

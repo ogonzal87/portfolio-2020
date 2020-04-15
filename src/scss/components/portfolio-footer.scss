@@ -1,5 +1,5 @@
 .portfolio-footer-container {
-  padding: 3rem;
+  // padding: 3rem;
   width: 100%;
   margin: 0 auto;
   text-align: center;
@@ -7,12 +7,52 @@
   bottom: 0;
   box-sizing: border-box;
 
+  .text {
+    margin-bottom: 120px;
+  }
+
+  .illustration-wrapper {
+    position: relative;
+
+    .flamingo1 {
+      position: absolute;
+      left: $og-space-80;
+      bottom: 0;
+      z-index: 1;
+    }
+
+    .flamingo2 {
+      position: absolute;
+      right: 10%;
+      bottom: 0;
+      z-index: 1;
+    }
+
+    .sun {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      z-index: -1;
+    }
+
+    .water {
+      position: absolute;
+      width: 100vw;
+      bottom: 0;
+      left: 0;
+    }
+  }
+
   @include respond-to(phone) {
     position: relative;
 
     a {
       @include og-text-style-body1();
       color: og-color(text, link);
+    }
+
+    .illustration-wrapper {
+      display: none;
     }
   }
 }

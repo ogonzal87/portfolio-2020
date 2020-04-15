@@ -2,6 +2,7 @@ import React from "react"
 import Link from "gatsby-link"
 import logo from "../assets/logos/logo4.svg"
 import ResumePDF from "../assets/images/oscar-gonzalez-resume.pdf"
+import { motion } from "framer-motion"
 
 const TopNav = ({ work, about, resume, ...props }) => {
   const WorkLink = work ? (
@@ -43,9 +44,20 @@ const TopNav = ({ work, about, resume, ...props }) => {
 
   return (
     <nav className="top-nav">
-      <Link exact to="/">
-        <img src={logo} className="og-logo" alt="logo" />
-      </Link>
+      <motion.div
+        initial={{ scale: 0 }}
+        animate={{ rotate: 360, scale: 1 }}
+        transition={{
+          type: "spring",
+          stiffness: 260,
+          damping: 20,
+        }}
+      >
+        <Link exact to="/">
+          <img src={logo} className="og-logo" alt="logo" />
+        </Link>
+      </motion.div>
+
       <ul>
         <li>{WorkLink}</li>
         <li>{AboutLink}</li>

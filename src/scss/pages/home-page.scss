@@ -3,7 +3,7 @@
   grid-row-gap: 300px;
   grid-template-columns: 100%;
   position: relative;
-  padding-bottom: 200px;
+  padding-bottom: 400px;
   overflow: hidden;
 
   .home-brush-lettering {
@@ -12,7 +12,7 @@
 
     &.studio {
       width: 850px;
-      top: -560px;
+      top: -220px;
       left: -221px;
       transform: rotate(-8deg);
 

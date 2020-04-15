@@ -14,19 +14,19 @@
     max-width: 65ch;
     margin-right: 48px;
 
-    .columns {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
+    // .columns {
+    //   display: grid;
+    //   grid-template-columns: 1fr 1fr;
 
-      .column {
-        list-style: none;
-        padding-left: 0;
-      }
+    //   .column {
+    //     list-style: none;
+    //     padding-left: 0;
+    //   }
 
-      h4 {
-        margin: og-space(space-08) 0 0 0;
-      }
-    }
+    //   h4 {
+    //     margin: og-space(space-08) 0 0 0;
+    //   }
+    // }
   }
 
   .profile-img-wrapper {
@@ -37,6 +37,7 @@
     max-width: 490px;
     border-radius: 50% 0 50% 50%;
     z-index: 9;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
   }
 
   .studio-decorative-div {

@@ -97,7 +97,7 @@ const YolkoProjectPage = () => {
               rel="noopener noreferrer"
             >
               <button className="og-button--primary og-button--medium og-button">
-                Go meet yolko
+                Meet yolko
               </button>
             </a>
           </div>

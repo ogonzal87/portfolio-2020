@@ -64,7 +64,7 @@ export default () => {
     animate: {
       scale: 1.02,
       transition: {
-        when: "beforeChildren",
+        // when: "beforeChildren",
         staggerChildren: 0.1,
       },
     },
@@ -95,6 +95,9 @@ export default () => {
       rotate: 90,
       transition: {
         duration: 0.4,
+        type: "spring",
+        stiffness: 260,
+        damping: 20,
       },
     },
   }

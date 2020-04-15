@@ -12,8 +12,6 @@ const Images = {
   designDebatesImg: require("../../../assets/images/code/design-debates.jpg"),
 }
 
-// const faceFilterImg = "../../../assets/images/code/face-filter.gif"
-
 const CodeSection = () => {
   return (
     <section className="home-code-section">
