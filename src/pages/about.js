@@ -17,14 +17,6 @@ const SectionHero = styled.div`
   }
 `
 
-const styles = {
-  position: "fixed",
-  bottom: "0",
-  width: "400px",
-  right: "0",
-  zIndex: "-1",
-}
-
 const AboutPage = () => {
   return (
     <Layout>

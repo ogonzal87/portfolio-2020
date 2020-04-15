@@ -47,9 +47,8 @@ const StudioSection = () => {
         </Parallax>
 
         <div className="studio-decorative-div1"></div>
-        <Parallax y={[-30, 30]} tagOuter="figure">
-          <div className="studio-decorative-div2"></div>
-        </Parallax>
+
+        <div className="studio-decorative-div2"></div>
       </div>
     </section>
   )
