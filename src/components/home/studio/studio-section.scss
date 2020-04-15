@@ -40,7 +40,7 @@
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
   }
 
-  .studio-decorative-div {
+  .studio-decorative-div1 {
     height: 392px;
     width: 438px;
     background-color: var(--og-brand-color3);
@@ -48,6 +48,17 @@
     right: -50px;
     top: -50px;
     z-index: -1;
+  }
+
+  .studio-decorative-div2 {
+    height: 100px;
+    width: 100px;
+    background-color: var(--og-brand-color2);
+    position: absolute;
+    right: -60px;
+    top: -250px;
+    z-index: -1;
+    border-radius: 50%;
   }
 
   @include respond-to(phone) {
