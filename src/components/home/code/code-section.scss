@@ -9,30 +9,75 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 550px 550px;
     grid-column-gap: 54px;
-    grid-row-gap: $og-space-96;
     padding: 0;
 
     .code-card {
       position: relative;
       list-style: none;
 
-      &::after {
-        content: "";
-        height: 260px;
-        transform: translate3d(45deg);
-        width: 350px;
-        position: absolute;
-        left: -24px;
-        top: -24px;
-        border: 12px solid og-color(text, link);
-        opacity: 0.3;
-      }
+      .img-wrapper {
+        position: relative;
 
-      img {
-        width: 100%;
-        height: 310px;
-        object-fit: cover;
-        border: 1px solid og-color(border, primary);
+        a {
+          text-decoration: none;
+          color: og-color(text, primary);
+          overflow: hidden;
+
+          img {
+            width: 100%;
+            height: 310px;
+            object-fit: cover;
+            border: 12px solid var(--og-brand-color2);
+          }
+        }
+
+        .cta-overlay {
+          position: absolute;
+          display: flex;
+          align-items: flex-end;
+          justify-content: flex-end;
+          height: 100%;
+          width: 100%;
+          bottom: 8px;
+          left: 0;
+          z-index: 999;
+          cursor: pointer;
+          transition: all ease-in-out 100ms;
+          background-image: linear-gradient(
+            to bottom,
+            transparent 0%,
+            rgba(0, 0, 0, 0.45) 100%
+          );
+
+          p {
+            padding: $og-space-08 $og-space-24;
+            color: og-color(text, primary-on-dark);
+            font-weight: og-font-weight(bold) !important;
+            text-shadow: 2px 2px var(--og-brand-color3);
+          }
+        }
+
+        .selection-decorator-bar1 {
+          position: absolute;
+          height: 50px;
+          width: 150%;
+          top: 40%;
+          margin-top: -18px;
+          left: -25%;
+          z-index: -1;
+          background: var(--og-brand-color3);
+        }
+
+        .selection-decorator-bar2 {
+          position: absolute;
+          height: 50px;
+          width: 150%;
+          top: 60%;
+          margin-top: -18px;
+          left: -25%;
+          z-index: -1;
+          background: var(--og-brand-color3);
+        }
       }
 
       .card-bottom-container {
@@ -44,20 +89,6 @@
           p {
             margin: 0 0 og-space(space-08) 0;
           }
-        }
-
-        a {
-          margin: 0;
-          position: absolute;
-          bottom: 0;
-          left: 0;
-          min-width: 100%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          font-weight: bold;
-          text-decoration: none;
-          border: none;
         }
       }
     }

@@ -78,7 +78,7 @@ $project-card-width: 1000px;
     font-size: 80px;
     font-family: "VT323", monospace !important;
     text-shadow: 2px 2px var(--og-brand-color2), 4px 4px var(--og-brand-color3);
-    letter-spacing: 8px;
+    // letter-spacing: 8px;
 
     @include respond-to(phone) {
       font-size: og-font-size(heading4);

@@ -1,4 +1,55 @@
 import React from "react"
+import { motion } from "framer-motion"
+import ogAnimations from "../../../assets/animations/animations-helper"
+
+const easing = [0.6, -0.05, 0.01, 0.99]
+
+const fadeItem = {
+  initial: {
+    opacity: 0,
+  },
+  animate: {
+    opacity: 1,
+    transition: {
+      duration: 0.2,
+      ease: easing,
+    },
+  },
+}
+
+const rotateHoverItem1 = {
+  initial: {
+    opacity: 0,
+    rotate: 25,
+  },
+  animate: {
+    opacity: 1,
+    rotate: 45,
+    transition: {
+      duration: 0.4,
+      type: "spring",
+      stiffness: 260,
+      damping: 20,
+    },
+  },
+}
+
+const rotateHoverItem2 = {
+  initial: {
+    opacity: 0,
+    rotate: -25,
+  },
+  animate: {
+    opacity: 1,
+    rotate: -45,
+    transition: {
+      duration: 0.4,
+      type: "spring",
+      stiffness: 260,
+      damping: 20,
+    },
+  },
+}
 
 const CodeProjectCard = ({
   src,
@@ -9,23 +60,35 @@ const CodeProjectCard = ({
   href,
   ...rest
 }) => (
-  <li className="code-card">
-    <img src={src} alt="card hero" />
+  <motion.li
+    className="code-card"
+    {...rest}
+    animate="animate"
+    initial="initial"
+  >
+    <motion.div className="img-wrapper" whileHover="animate">
+      <a href={href} target="_blank" rel="noopener noreferrer">
+        <img src={src} alt="card hero" />
+        <motion.div className="cta-overlay" variants={fadeItem}>
+          <p className="og-text-style-heading4">Play with it =></p>
+        </motion.div>
+      </a>
+      <motion.div
+        variants={rotateHoverItem1}
+        className="selection-decorator-bar1"
+      ></motion.div>
+      <motion.div
+        variants={rotateHoverItem2}
+        className="selection-decorator-bar2"
+      ></motion.div>
+    </motion.div>
     <div className="card-bottom-container">
       <div className="card-text-container">
         <h5>{title}</h5>
         <p>{description}</p>
       </div>
-      <a
-        className="og-button--secondary og-button--medium "
-        href={href}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        {buttonName || "Play with code"}
-      </a>
     </div>
-  </li>
+  </motion.li>
 )
 
 export default CodeProjectCard

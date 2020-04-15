@@ -53,11 +53,11 @@ const PortfolioFooter = () => (
     </p>
 
     <div className="illustration-wrapper">
-      <img src={FlamingoImg1} atl=" " className="flamingo1" />
-      <img src={FlamingoImg2} atl=" " className="flamingo2" />
+      <img src={FlamingoImg1} alt="" className="flamingo1" />
+      <img src={FlamingoImg2} alt="" className="flamingo2" />
 
-      <img src={WaterImg} atl=" " className="water" />
-      <img src={SunImg} atl=" " className="sun" />
+      <img src={WaterImg} alt="" className="water" />
+      <img src={SunImg} alt="" className="sun" />
     </div>
   </div>
 )

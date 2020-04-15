@@ -5,7 +5,6 @@ import TopNav from "../components/top-nav"
 import PortfolioFooter from "../components/footer"
 import styled from "styled-components"
 import ProfileImg from "../assets/images/profile-pic.jpg"
-import TakingClientsTag from "../assets/images/clients.png"
 
 const SectionHero = styled.div`
   display: flex;
@@ -73,8 +72,6 @@ const AboutPage = () => {
           </SectionHero>
         </div>
         <PortfolioFooter />
-
-        <img src={TakingClientsTag} style={styles} alt="taking clients tag" />
       </div>
     </Layout>
   )
