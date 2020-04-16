@@ -7,7 +7,7 @@
   .code-cards-list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 550px 550px;
+    grid-row-gap: 32px;
     grid-column-gap: 54px;
     padding: 0;
 
@@ -38,7 +38,7 @@
           justify-content: flex-end;
           height: 100%;
           width: 100%;
-          bottom: 8px;
+          bottom: 7px;
           left: 0;
           z-index: 999;
           cursor: pointer;
@@ -81,9 +81,10 @@
       }
 
       .card-bottom-container {
-        .card-text {
+        .card-text-container {
           h5 {
             margin-top: 8px;
+            font-weight: bold !important;
           }
 
           p {

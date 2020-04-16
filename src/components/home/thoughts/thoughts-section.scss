@@ -10,27 +10,20 @@
     grid-template-columns: 1fr 1fr 1fr;
     margin: 0 auto;
     justify-items: center;
+    list-style-type: none;
 
     @include respond-to(phone) {
       grid-template-columns: 1fr;
     }
 
-    a {
+    .home-post-card {
       border-radius: 8px;
       color: inherit;
       width: 400px;
       margin-top: 20px;
       transition: all og-easing(base) og-duration(slowest);
       text-decoration: none;
-
-      @include respond-to(phone) {
-        width: 100%;
-      }
-
-      &:hover {
-        box-shadow: 0 15px 45px -5px rgba(10, 16, 34, 0.3);
-        text-decoration: none;
-      }
+      position: relative;
 
       .img-thumbnail {
         object-fit: cover;
@@ -40,22 +33,49 @@
         border-radius: 10px 10px 0 0;
       }
 
-      .post-text-container {
-        padding: 1rem 1.5rem;
-        border-radius: 0 0 10px 10px;
+      .cta-overlay {
+        position: absolute;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        height: 100%;
+        width: 100%;
+        bottom: 0px;
+        left: 0;
+        z-index: 999;
+        cursor: pointer;
+        transition: all ease-in-out 100ms;
+        background-image: linear-gradient(
+          to bottom,
+          transparent 0%,
+          rgba(0, 0, 0, 0.45) 100%
+        );
+
+        p {
+          padding: $og-space-08 $og-space-24;
+          color: og-color(text, primary-on-dark);
+          font-weight: og-font-weight(bold) !important;
+          text-shadow: 2px 2px var(--og-brand-color3);
+        }
       }
 
-      h6 {
+      @include respond-to(phone) {
+        width: 100%;
+      }
+    }
+
+    .post-text-container {
+      padding-top: $og-space-24;
+      border-radius: 0 0 10px 10px;
+      width: 400px;
+
+      h5 {
         margin: 0 0 og-space(space-04) 0;
+        font-weight: bold !important;
       }
 
       span {
         color: og-color(text, secondary);
-      }
-
-      &:hover {
-        box-shadow: 0 15px 45px -5px rgba(10, 16, 34, 0.3);
-        transition: all og-easing(base) ds-duration(base);
       }
     }
   }

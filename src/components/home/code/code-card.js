@@ -1,6 +1,5 @@
 import React from "react"
 import { motion } from "framer-motion"
-import ogAnimations from "../../../assets/animations/animations-helper"
 
 const easing = [0.6, -0.05, 0.01, 0.99]
 
@@ -84,8 +83,8 @@ const CodeProjectCard = ({
     </motion.div>
     <div className="card-bottom-container">
       <div className="card-text-container">
-        <h5>{title}</h5>
-        <p>{description}</p>
+        <h5 className="og-text-style-heading6">{title}</h5>
+        <p className="og-text-style-captiond">{description}</p>
       </div>
     </div>
   </motion.li>
