@@ -72,40 +72,6 @@ export default () => {
     },
   }
 
-  const rotateHoverItem1 = {
-    initial: {
-      opacity: 0,
-      rotate: 25,
-    },
-    animate: {
-      opacity: 1,
-      rotate: 45,
-      transition: {
-        duration: 0.4,
-        type: "spring",
-        stiffness: 260,
-        damping: 20,
-      },
-    },
-  }
-
-  const rotateHoverItem2 = {
-    initial: {
-      opacity: 0,
-      rotate: -25,
-    },
-    animate: {
-      opacity: 1,
-      rotate: -45,
-      transition: {
-        duration: 0.4,
-        type: "spring",
-        stiffness: 260,
-        damping: 20,
-      },
-    },
-  }
-
   return (
     <section className="home-page-section home-thoughts-section">
       <div className="section-title-container">
