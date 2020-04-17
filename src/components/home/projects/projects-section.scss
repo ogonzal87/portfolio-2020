@@ -20,7 +20,7 @@ $project-card-width: 1000px;
   background-attachment: fixed;
 
   &::before {
-    border-radius: 8px;
+    border-radius: og-shape(tertiary);
   }
 
   @media (max-width: 767px) {

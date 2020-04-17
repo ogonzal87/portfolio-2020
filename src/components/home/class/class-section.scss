@@ -29,6 +29,10 @@
     background-size: contain;
     background-attachment: fixed;
 
+    &::before {
+      border-radius: og-shape(tertiary);
+    }
+
     @media (max-width: 767px) {
       background-size: cover;
       background-attachment: initial;

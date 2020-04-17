@@ -64,7 +64,6 @@ export default () => {
     animate: {
       scale: 1.02,
       transition: {
-        // when: "beforeChildren",
         staggerChildren: 0.1,
       },
     },
