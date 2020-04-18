@@ -40,6 +40,15 @@ $project-card-width: 1000px;
     object-fit: cover;
     display: block;
     box-shadow: 0 15px 45px -5px rgba(10, 16, 34, 0.3);
+    background-size: cover !important;
+    background-attachment: unset !important;
+    border-radius: og-shape(tertiary) !important;
+
+    &::before {
+      background-size: cover !important;
+      background-attachment: unset !important;
+      border-radius: og-shape(tertiary);
+    }
   }
 
   &:hover {
