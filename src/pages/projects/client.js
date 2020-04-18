@@ -39,7 +39,7 @@ const ClientProjectPage = () => {
     <Layout>
       <SEO title="Client work - VIEWN" />
       <div className="project-page">
-        <TopNav work about resume />
+        <TopNav work about />
 
         <div className="hero-container">
           <div className="hero-container__text-container">

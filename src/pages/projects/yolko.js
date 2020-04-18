@@ -68,7 +68,7 @@ const YolkoProjectPage = () => {
     <Layout>
       <SEO title="Personal work - Yolko" />
       <div className="project-page">
-        <TopNav work about resume />
+        <TopNav work about />
 
         <div className="hero-container">
           <div className="hero-container__text-container">
