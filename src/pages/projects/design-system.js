@@ -28,7 +28,7 @@ const DSProjectPage = () => {
     <Layout>
       <SEO title="OSCARHQ.DS Design System" />
       <div className="project-page design-system-page">
-        <TopNav work about resume />
+        <TopNav work about />
         <div className="hero-container">
           <div className="hero-container__text-container">
             <span className="og-text-style-overline">

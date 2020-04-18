@@ -1,10 +1,10 @@
 .project-page {
   padding: 0 0 200px 0;
-  position: relative;
   overflow: hidden;
 
   @include respond-to(phone) {
     max-width: 375px;
+    padding: $og-space-16;
 
     p {
       @include og-text-style-body2();
@@ -16,7 +16,7 @@
   }
 
   .hero-container {
-    max-width: 1300px;
+    max-width: 1400px;
     height: 100vh;
     display: flex;
     justify-content: space-between;
@@ -25,7 +25,8 @@
     position: relative;
 
     @include respond-to(phone) {
-      padding-top: og-space(space-64) * 1.5;
+      padding-top: og-space(space-128);
+      height: initial;
     }
 
     .hero-container__text-container {
