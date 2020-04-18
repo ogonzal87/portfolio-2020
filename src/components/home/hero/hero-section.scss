@@ -42,7 +42,7 @@
   }
 
   .hero-empty-div {
-    height: 200px;
+    height: 250px;
 
     @include respond-to(phone) {
       height: 150px;
@@ -95,7 +95,7 @@
 
   .hero-subheading-text {
     max-width: 62ch;
-    color: lighten(og-color(text, secondary), 20%);
+    color: og-color(text, secondary);
     text-align: center;
     line-height: 2rem;
 

@@ -24,31 +24,31 @@ const CodeSection = () => {
       <ul className="code-cards-list">
         <CodeProjectCard
           title="Instagram face filter"
-          description="Made a few face filers (effects) for Instagram."
+          description="Made a few face filers (effects) for Instagram. You can play with them on your Insta by giving it a click ⬆."
           src={Images.faceFilterImg}
           href="https://instagram.com/a/r/?effect_id=1077625679243023"
         />
         <CodeProjectCard
           title="OSKRHQ.DS 2.0"
-          description="This sandbox showcases my Design System's architecture and consumption of Design Tokens."
+          description="This sandbox showcases my Design System's architecture and consumption of Design Tokens which I use for all my projects like this portfolio."
           src={Images.dsImg}
           href="https://codesandbox.io/embed/oskrhq-playground-app-x7mhz?fontsize=14&theme=dark&view=preview"
         />
         <CodeProjectCard
           title="Emotion recognition"
-          description="Created an app that recognizes face gestures and displays the emotion using Machine Learning and the browser."
+          description="An app that recognizes face gestures and displays the corresponding emotion using Machine Learning and the browser."
           src={Images.emotionImg}
           href="https://emotion-recognition.surge.sh/"
         />
         <CodeProjectCard
           title="Cam-aleon"
-          description="App I created that takes a color shown to the camera and colors a really cool chameleon I drew."
+          description="An app that takes any color shown to the camera and colors a little chameleon I drew using Procreate."
           src={Images.chameleonImg}
           href="https://cam-aleon.surge.sh/"
         />
         <CodeProjectCard
           title="Pokemon game"
-          description="A Pokemon game app I created using Vanilla Javascript and CSS Custom Properties. Wanted to build it without relying on any UI Framework/Libraries like React."
+          description="A Pokemon cards game app I created using Vanilla Javascript and CSS Custom Properties. Wanted to build it without any UI Frameworks."
           src={Images.pokemonImg}
           href="https://pokemon-game.surge.sh/"
         />

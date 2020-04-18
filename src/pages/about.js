@@ -22,7 +22,7 @@ const AboutPage = () => {
     <Layout>
       <SEO title="About me - Oscar Gonzalez" />
       <div style={{ position: "relative" }}>
-        <TopNav work about resume />
+        <TopNav work about />
         <div className="about-page">
           <SectionHero>
             <div className="img-container">
@@ -32,16 +32,16 @@ const AboutPage = () => {
             <div className="text-container">
               <p className=" ">
                 On a more personal note... My name is Oscar and I am a Colombian
-                coffee addict (I blame it on my roots). I am also a self-taught
+                coffee addict (I blame it on my roots). I am a self-taught
                 designer and developer. I actually went to Business School, not
                 by choice...{" "}
                 <span role="img" aria-label="unamused emoji">
                   😒
                 </span>
-                . My passion is anything Design-y and Development-y. When I am
-                not creating digital things, I play my uke, ride my bike "La
-                Negra", Latin dance and scuba dive every chance I get. Also, I
-                love nature so much I even trim its bushes... Literally.
+                . My passions lie at the intersection of Design and Code. When I
+                am not creating digital things, I like making music, ride my
+                bike "La Negra", Latin dance and scuba dive every chance I get.
+                Also, I love nature so much I even trim its bushes... Literally.
                 Creating moss art is one of my favorite hobbies. Check it out{" "}
                 <a
                   href="https://www.instagram.com/musgho/"
@@ -57,8 +57,9 @@ const AboutPage = () => {
               <br />
               <p className="special-text-styling">Current Interests</p>
               <p className="og-text-style-body1">
-                I am really into decentralized autonomous systems, crypto
-                assets, machine learning, 3D design, AR and VR.
+                I am really into accessibility/inclusivity, decentralized
+                autonomous systems, crypto assets, machine learning, 3D design,
+                AR and VR.
               </p>
             </div>
           </SectionHero>

@@ -12,7 +12,7 @@ const StudioSection = () => {
       <div className="text-container">
         <p className="home-studio-section-paragraph">
           I was born and raised in Colombia, Miami is home but now I live in San
-          Francisco working for{" "}
+          Francisco working at{" "}
           <a
             href="https://www.linkedin.com/"
             target="_blank"
@@ -21,9 +21,9 @@ const StudioSection = () => {
           >
             LinkedIn
           </a>
-          . I’ve been working as a interdisciplinary Designer for over a decade
-          and spent some years working as a Front-End developer as well. I am
-          currently focusing in building multi-platform{" "}
+          . I’ve worked as a interdisciplinary Designer for over 15 years - 3 of
+          those working as a Front-End developer. I am currently focusing on
+          building and maintaining multi-platform{" "}
           <span className="hightlighted-offset">Design Systems</span> for large
           enterprises with a strong foundation in{" "}
           <span className="hightlighted-offset">accessibility</span> and{" "}
