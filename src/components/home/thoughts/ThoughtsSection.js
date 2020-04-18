@@ -74,13 +74,12 @@ export default () => {
 
   return (
     <section className="home-page-section home-thoughts-section">
-      <div className="section-title-container">
-        <img
-          src={thoughtsImg}
-          alt="title"
-          className="home-brush-lettering thoughts"
-        />
-      </div>
+      <img
+        src={thoughtsImg}
+        alt="title"
+        className="home-brush-lettering thoughts"
+      />
+
       <motion.ul
         className="home-posts-container"
         animate="animate"

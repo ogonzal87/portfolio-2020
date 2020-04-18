@@ -43,7 +43,7 @@ const TopNav = ({ work, about, resume, ...props }) => {
   )
 
   return (
-    <nav className="top-nav">
+    <nav className="top-nav" {...props}>
       <motion.div
         initial={{ scale: 0 }}
         animate={{ rotate: 360, scale: 1 }}

@@ -4,12 +4,22 @@
   margin: 0 auto;
   position: relative;
 
+  @include respond-to(phone) {
+    padding-top: 150px;
+  }
+
   .code-cards-list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-row-gap: 32px;
     grid-column-gap: 54px;
     padding: 0;
+
+    @include respond-to(phone) {
+      grid-template-columns: 1fr;
+      grid-row-gap: 64px;
+      padding: 0 $og-space-16;
+    }
 
     .code-card {
       position: relative;
@@ -91,6 +101,16 @@
 
           p {
             margin: 0 0 og-space(space-08) 0;
+          }
+
+          @include respond-to(phone) {
+            h5 {
+              font-size: og-font-size(subheading2);
+            }
+
+            p {
+              font-size: og-font-size(body2);
+            }
           }
         }
       }

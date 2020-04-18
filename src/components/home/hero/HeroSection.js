@@ -69,7 +69,7 @@ class HeroSection extends React.Component {
 
           <motion.div
             variants={ogAnimation.fadeUpItem}
-            style={{ height: "200px" }}
+            className="hero-empty-div"
           ></motion.div>
 
           <Tilt

@@ -19,20 +19,18 @@ export default () => {
   `)
 
   return (
-    <section>
+    <section className="home-class-section">
       <a
         href="https://skl.sh/2yhdemt"
         target="_blank"
         rel="noopener noreferrer"
-        className="home-class-section home-page-section"
+        className="home-page-section"
       >
-        <div className="section-title-container">
-          <img
-            src={classHandLetteringImg}
-            alt="number"
-            className="home-brush-lettering class"
-          />
-        </div>
+        <img
+          src={classHandLetteringImg}
+          alt="number"
+          className="home-brush-lettering class"
+        />
         <BackgroundImage
           fluid={data.skillShareClassImg.childImageSharp.fluid}
           className="class-card"

@@ -3,9 +3,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: row;
   max-width: 1200px;
   margin: 0 auto;
   position: relative;
+
+  @include respond-to(phone) {
+    max-width: 100%;
+    padding-bottom: 100px;
+    flex-direction: column;
+  }
 
   .text-container {
     display: flex;
@@ -13,6 +20,24 @@
     flex-direction: column;
     max-width: 65ch;
     margin-right: 48px;
+
+    @include respond-to(phone) {
+      max-width: 100%;
+      margin-right: 0px;
+      font-size: og-font-size(body2);
+    }
+
+    .home-studio-section-paragraph {
+      @include respond-to(phone) {
+        font-size: og-font-size(body2);
+        padding: 0 $og-space-16;
+      }
+    }
+
+    .stack-graphic {
+      width: 100%;
+      margin-bottom: 32px;
+    }
 
     // .columns {
     //   display: grid;
@@ -38,6 +63,10 @@
     border-radius: 50% 0 50% 50%;
     z-index: 9;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+
+    @include respond-to(phone) {
+      width: 100%;
+    }
   }
 
   .studio-decorative-div1 {
@@ -48,6 +77,10 @@
     right: -50px;
     top: -50px;
     z-index: -1;
+
+    @include respond-to(phone) {
+      display: none;
+    }
   }
 
   .studio-decorative-div2 {
@@ -57,10 +90,9 @@
     z-index: -1;
     border-radius: 50%;
     box-sizing: border-box;
-  }
 
-  @include respond-to(phone) {
-    margin: 0 auto;
-    flex-direction: column;
+    @include respond-to(phone) {
+      display: none;
+    }
   }
 }

@@ -12,6 +12,10 @@
     width: 100vw;
     top: 0;
     left: 0;
+
+    @include respond-to(phone) {
+      display: none;
+    }
     // -webkit-filter: drop-shadow(4px 3px 2px rgba(0, 0, 0, 0.7));
     // filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
   }
@@ -33,6 +37,15 @@
     @include respond-to(phone) {
       width: 350px;
       margin: 0 auto;
+      top: 40%;
+    }
+  }
+
+  .hero-empty-div {
+    height: 200px;
+
+    @include respond-to(phone) {
+      height: 150px;
     }
   }
 
@@ -42,6 +55,10 @@
     margin-top: og-space(space-64) * 2;
     position: absolute;
     bottom: og-space(space-16);
+
+    @include respond-to(phone) {
+      display: none;
+    }
   }
 
   p {
@@ -59,7 +76,6 @@
       font-size: og-font-size(body2);
     }
 
-    padding-bottom: 100px;
     grid-row-gap: 100px;
   }
 
@@ -80,13 +96,14 @@
   .hero-subheading-text {
     max-width: 62ch;
     color: lighten(og-color(text, secondary), 20%);
-    font-weight: og-font-weight(light);
     text-align: center;
     line-height: 2rem;
 
     @include respond-to(phone) {
+      color: og-color(text, secondary);
       font-size: og-font-size(body1);
       padding: og-space(space-16);
+      line-height: og-line-height(body1);
     }
   }
 

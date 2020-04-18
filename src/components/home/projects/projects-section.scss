@@ -1,12 +1,20 @@
 $project-card-width: 1000px;
 
 .home-project-card-container {
+  border-radius: og-shape(secondary);
   width: $project-card-width;
   margin: $og-space-128 * 1.5 auto;
+
+  @include respond-to(phone) {
+    padding: 16px;
+    min-height: 200px;
+    width: 100%;
+    margin: $og-space-80 auto;
+  }
 }
 
 .home-project-card {
-  border-radius: 16px;
+  border-radius: og-shape(tertiary);
   max-width: $project-card-width;
   position: relative;
   box-shadow: 0 1px 1px 1px rgba(10, 16, 34, 0.08);
@@ -23,12 +31,15 @@ $project-card-width: 1000px;
     border-radius: og-shape(tertiary);
   }
 
-  @media (max-width: 767px) {
+  @include respond-to(phone) {
     background-size: cover;
     background-attachment: initial;
     padding: 8px;
     min-height: 200px;
-    margin: 0 -20px;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    box-shadow: 0 15px 45px -5px rgba(10, 16, 34, 0.3);
   }
 
   &:hover {
@@ -45,8 +56,8 @@ $project-card-width: 1000px;
 
   @include respond-to(phone) {
     max-width: 88px;
-    top: og-space(space-48);
-    left: 0;
+    top: -$og-space-48;
+    left: $og-space-16;
   }
 }
 

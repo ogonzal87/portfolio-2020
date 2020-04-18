@@ -45,7 +45,6 @@ $breakpoints: (
 
 // App Components
 @import "./components/portfolio-footer.scss";
-@import "./components/design-process-card.scss";
 @import "./components/top-nav.scss";
 
 * {
@@ -63,7 +62,7 @@ html {
   background: og-color(background, app);
 
   @include respond-to(phone) {
-    padding: og-space(space-08);
+    // padding: og-space(space-08);
   }
 
   .crafted-quote {

@@ -1,15 +1,15 @@
 .home-class-section {
   position: relative;
   margin-top: 200px;
-  width: calc(100% + 40px);
+  width: 100%;
   box-sizing: border-box;
   position: relative;
   max-width: 1400px;
   margin: 0 auto;
-  z-index: 1;
 
   @include respond-to(phone) {
-    margin-top: 200px;
+    margin-top: 0px;
+    padding: 0 $og-space-16;
   }
 
   .class-card {
@@ -28,6 +28,7 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-attachment: fixed;
+    z-index: 2;
 
     &::before {
       border-radius: og-shape(tertiary);
@@ -38,6 +39,7 @@
       background-attachment: initial;
       padding: 8px;
       min-height: 200px;
+      box-shadow: 0 15px 45px -5px rgba(10, 16, 34, 0.3);
     }
 
     &:hover {

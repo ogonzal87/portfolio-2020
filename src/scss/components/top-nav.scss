@@ -18,7 +18,7 @@ $background-nav: #f9fafc;
     padding: 0 og-space(space-48);
 
     @include respond-to(phone) {
-      max-width: og-space(space-48);
+      max-width: og-space(space-64);
       padding: 0 og-space(space-16);
     }
   }

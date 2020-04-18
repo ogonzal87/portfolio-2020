@@ -7,11 +7,7 @@ import { Parallax } from "react-scroll-parallax"
 const StudioSection = () => {
   return (
     <section className="home-studio-section">
-      <img
-        src={StudioImg}
-        alt="Studio"
-        className="home-brush-lettering studio"
-      />
+      <img src={StudioImg} alt="" className="home-brush-lettering studio" />
 
       <div className="text-container">
         <p className="home-studio-section-paragraph">
@@ -37,8 +33,9 @@ const StudioSection = () => {
         <h4 className="og-text-style-overline">My Stack</h4>
         <img className="stack-graphic" src={StackGraphic} alt="my stack" />
       </div>
+
       <div className="profile-img-wrapper">
-        <Parallax y={[-20, 20]} tagOuter="figure">
+        <Parallax y={[-30, 30]} tagOuter="figure">
           <img
             className="studio-profile-picture"
             src={profilePic}
