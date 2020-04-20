@@ -15,12 +15,10 @@ const MosqueImg = styled.div`
   background-repeat: no-repeat;
 `
 
-const CreativeLabMosque = ({ ...rest }) => {
+const CreativeLabMosque = () => {
   const data = useStaticQuery(graphql`
     query MosqueLabImages {
-      calligraphy1: file(
-        relativePath: { eq: "images/creative-lab/calligraphy1.jpg" }
-      ) {
+      ketchup: file(relativePath: { eq: "images/creative-lab/ketchup.jpg" }) {
         childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid
@@ -58,8 +56,8 @@ const CreativeLabMosque = ({ ...rest }) => {
         }
       }
 
-      calligraphy5: file(
-        relativePath: { eq: "images/creative-lab/calligraphy5.jpg" }
+      coloredBall: file(
+        relativePath: { eq: "images/creative-lab/colored-ball.jpg" }
       ) {
         childImageSharp {
           fluid {
@@ -78,9 +76,7 @@ const CreativeLabMosque = ({ ...rest }) => {
         }
       }
 
-      calligraphy7: file(
-        relativePath: { eq: "images/creative-lab/calligraphy7.jpg" }
-      ) {
+      planets: file(relativePath: { eq: "images/creative-lab/planets.jpg" }) {
         childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid
@@ -88,8 +84,8 @@ const CreativeLabMosque = ({ ...rest }) => {
         }
       }
 
-      calligraphy8: file(
-        relativePath: { eq: "images/creative-lab/calligraphy8.jpg" }
+      cartoonFace: file(
+        relativePath: { eq: "images/creative-lab/cartoon-face.jpg" }
       ) {
         childImageSharp {
           fluid {
@@ -156,8 +152,8 @@ const CreativeLabMosque = ({ ...rest }) => {
         }
       }
 
-      illustration1: file(
-        relativePath: { eq: "images/creative-lab/illustration1.jpg" }
+      cartoonfaces: file(
+        relativePath: { eq: "images/creative-lab/cartoonfaces.jpg" }
       ) {
         childImageSharp {
           fluid {
@@ -166,9 +162,7 @@ const CreativeLabMosque = ({ ...rest }) => {
         }
       }
 
-      illustration2: file(
-        relativePath: { eq: "images/creative-lab/illustration2.jpg" }
-      ) {
+      avocato: file(relativePath: { eq: "images/creative-lab/avocato.jpg" }) {
         childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid
@@ -201,6 +195,46 @@ const CreativeLabMosque = ({ ...rest }) => {
           }
         }
       }
+
+      raton: file(relativePath: { eq: "images/creative-lab/raton.jpg" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+
+      cute666: file(relativePath: { eq: "images/creative-lab/666.jpg" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+
+      shot: file(relativePath: { eq: "images/creative-lab/shot.jpg" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+
+      bird: file(relativePath: { eq: "images/creative-lab/bird.jpg" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+
+      pencil: file(relativePath: { eq: "images/creative-lab/pencil.jpg" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
     }
   `)
 
@@ -214,13 +248,23 @@ const CreativeLabMosque = ({ ...rest }) => {
           }}
         ></MosqueImg>
         <Img
-          fluid={data.calligraphy1.childImageSharp.fluid}
+          fluid={data.ketchup.childImageSharp.fluid}
           style={{ gridArea: `b` }}
         />
-        <Img
-          fluid={data.calligraphy2.childImageSharp.fluid}
-          style={{ gridArea: `c` }}
-        />
+        <video
+          style={{ gridArea: `c`, width: "100%" }}
+          controls
+          autoPlay
+          muted
+          loop
+          preload="auto"
+          id="parallax-sword"
+        >
+          <source
+            src={require("../../../assets/images/creative-lab/parallax-sword.mp4")}
+            type="video/mp4"
+          />
+        </video>
         <MosqueImg
           style={{ backgroundImage: `url(${mustacheMov})`, gridArea: `d` }}
         ></MosqueImg>
@@ -233,7 +277,7 @@ const CreativeLabMosque = ({ ...rest }) => {
           style={{ gridArea: `f` }}
         />
         <Img
-          fluid={data.calligraphy5.childImageSharp.fluid}
+          fluid={data.coloredBall.childImageSharp.fluid}
           style={{ gridArea: `g` }}
         />
         <Img
@@ -241,12 +285,8 @@ const CreativeLabMosque = ({ ...rest }) => {
           style={{ gridArea: `h` }}
         />
         <Img
-          fluid={data.calligraphy7.childImageSharp.fluid}
-          style={{ gridArea: `i !important` }}
-        />
-        <Img
-          fluid={data.calligraphy8.childImageSharp.fluid}
-          style={{ gridArea: `j` }}
+          fluid={data.planets.childImageSharp.fluid}
+          style={{ gridArea: `i` }}
         />
         <Img
           fluid={data.hiddenGem.childImageSharp.fluid}
@@ -281,16 +321,40 @@ const CreativeLabMosque = ({ ...rest }) => {
           style={{ gridArea: `r` }}
         />
         <Img
-          fluid={data.illustration1.childImageSharp.fluid}
+          fluid={data.cartoonfaces.childImageSharp.fluid}
           style={{ gridArea: `s` }}
         />
         <Img
-          fluid={data.illustration2.childImageSharp.fluid}
+          fluid={data.avocato.childImageSharp.fluid}
           style={{ gridArea: `t` }}
         />
         <Img
           fluid={data.hustle.childImageSharp.fluid}
           style={{ gridArea: `u` }}
+        />
+        <Img
+          fluid={data.raton.childImageSharp.fluid}
+          style={{ gridArea: `w` }}
+        />
+        <Img
+          fluid={data.cute666.childImageSharp.fluid}
+          style={{ gridArea: `x` }}
+        />
+        <Img
+          fluid={data.cartoonFace.childImageSharp.fluid}
+          style={{ gridArea: `j` }}
+        />
+        <Img
+          fluid={data.shot.childImageSharp.fluid}
+          style={{ gridArea: `y` }}
+        />
+        <Img
+          fluid={data.bird.childImageSharp.fluid}
+          style={{ gridArea: `z` }}
+        />
+        <Img
+          fluid={data.pencil.childImageSharp.fluid}
+          style={{ gridArea: `aa` }}
         />
         <MosqueImg
           style={{ backgroundImage: `url(${calligraphyMov})`, gridArea: `v` }}

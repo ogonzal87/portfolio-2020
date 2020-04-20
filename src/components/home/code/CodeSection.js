@@ -1,6 +1,7 @@
 import React from "react"
 import codeLetteringImg from "../../../assets/images/hand-brush/code.png"
 import CodeProjectCard from "./code-card"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 const Images = {
   faceFilterImg: require("../../../assets/images/code/face-filter.gif"),
@@ -59,6 +60,16 @@ const CodeSection = () => {
           href="https://design-debates.netlify.com/"
         />
       </ul>
+
+      <AniLink
+        paintDrip
+        to="/code-projects"
+        duration={0.75}
+        hex="#5900FF"
+        className="show-more-link"
+      >
+        Show more ➡
+      </AniLink>
     </section>
   )
 }

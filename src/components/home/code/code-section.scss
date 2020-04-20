@@ -116,4 +116,16 @@
       }
     }
   }
+
+  .show-more-link {
+    width: 200px;
+    padding: $og-space-16;
+    margin: 0 auto;
+    display: block;
+    margin-top: $og-space-64;
+    @include og-border(thickest, brand, solid);
+    font-weight: og-font-weight(bold);
+    text-align: center;
+    border-radius: og-shape(primary);
+  }
 }

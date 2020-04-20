@@ -7,20 +7,22 @@
   height: 100%;
   grid-template-areas:
     "a   a   e"
-    "a   a   h"
-    "b   c   g"
-    "f   d   d"
+    "a   a   w"
+    "g   c   c"
+    "b   c   c"
+    "x   d   d"
     "i   i   j"
-    "i   i   j"
+    "i   i   t"
     "k   l   l"
     "k   l   l"
     "m   l   l"
     "m   n   q"
-    "p   p   q"
-    "u   u   t"
+    "p   p   aa"
+    "u   u   y"
+    "u   u   z"
     "s   s   r"
     "s   s   o"
-    "v   .   .";
+    "v   h   f";
 
   @media (max-width: 767px) {
     grid-template-columns: 1fr;
@@ -30,6 +32,9 @@
       "c"
       "d"
       "e"
+      "w"
+      "z"
+      "y"
       "f"
       "g"
       "h"
