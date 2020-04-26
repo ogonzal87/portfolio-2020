@@ -8,7 +8,6 @@ const Images = {
   dsImg: require("../../../assets/images/code/oskrds.gif"),
   emotionImg: require("../../../assets/images/code/emotion-recognition.gif"),
   pokemonImg: require("../../../assets/images/code/pokemon.gif"),
-  // designCalImg :"require(../../../assets/images/code/design-cal.gif"),
   chameleonImg: require("../../../assets/images/code/cam-aleon.gif"),
   designDebatesImg: require("../../../assets/images/code/design-debates.jpg"),
 }

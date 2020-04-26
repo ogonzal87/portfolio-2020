@@ -114,6 +114,22 @@ html {
     mix-blend-mode: difference;
     background-blend-mode: difference;
   }
+
+  .hightlighted-offse-very-important {
+    // color: var(--og-brand-color3);
+    font-weight: bold;
+    position: relative;
+    background-image: linear-gradient(
+      to right,
+      var(--og-brand-color2),
+      var(--og-brand-color2)
+    );
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: 100% 8px;
+    mix-blend-mode: difference;
+    background-blend-mode: difference;
+  }
 }
 
 ::-moz-selection {

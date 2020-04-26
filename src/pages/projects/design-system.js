@@ -1,8 +1,9 @@
 import React from "react"
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
+
 import vnHeroImg from "../../assets/images/DS/ds-hero.png"
-import ShowcaseImg from "../../assets/images/DS/ds-showcase.jpg"
+// import ShowcaseImg from "../../assets/images/DS/ds-showcase.jpg"
 import PortfolioFooter from "../../components/footer"
 import number1 from "../../assets/images/hand-brush/01.png"
 import number2 from "../../assets/images/hand-brush/02.png"
@@ -11,7 +12,7 @@ import number4 from "../../assets/images/hand-brush/04.png"
 import number5 from "../../assets/images/hand-brush/05.png"
 import TopNav from "../../components/top-nav"
 import UltimateProposalImg from "../../assets/images/DS/ulti-uikit-demo.gif"
-import DSStyleSheet from "../../assets/images/DS/style-sheet.jpg"
+// import DSStyleSheet from "../../assets/images/DS/style-sheet.jpg"
 import DSUIElements from "../../assets/images/DS/ui-kit-elements.jpg"
 import DSBreakdown from "../../assets/images/DS/part-of-design-system.jpg"
 import DSButtonsDemo from "../../assets/images/DS/buttons-demo.gif"
@@ -23,7 +24,40 @@ import DSImplement2 from "../../assets/images/DS/dimsum-storybook.gif"
 import DSImplement3 from "../../assets/images/DS/em-uikit-show.gif"
 import DSImplement4 from "../../assets/images/DS/theming.gif"
 
+import { graphql, useStaticQuery } from "gatsby"
+import Img from "gatsby-image"
+
 const DSProjectPage = () => {
+  const data = useStaticQuery(graphql`
+    query DesignSystemPageImages {
+      ShowcaseImg: file(relativePath: { eq: "images/DS/ds-showcase.jpg" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+
+      DSStyleSheet: file(relativePath: { eq: "images/DS/style-sheet.jpg" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+
+      DSUIElements: file(
+        relativePath: { eq: "images/DS/ui-kit-elements.jpg" }
+      ) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `)
+
   return (
     <Layout>
       <SEO title="OSCARHQ.DS Design System" />
@@ -39,18 +73,9 @@ const DSProjectPage = () => {
             </h2>
 
             <p>
-              OSKRHQ.DS is a{" "}
-              <strong>
-                <i>themeable</i>
-              </strong>{" "}
-              Design System I created for my personal brand to achieve a
-              harmonious identity through various media outputs and to showcase
-              the process of creation and maintenance.{" "}
-              <strong>
-                In fact, this website, along with every design material I
-                produce, consumes the system.
-              </strong>{" "}
-              More specifically, it is a Design Guide <strong>*and*</strong>{" "}
+              OSKRHQ.DS is a Design System for my personal brand. This website,
+              along with every design material I produce, consumes the system.
+              More specifically, it is a Design Guide <strong>and</strong>{" "}
               Component Library written in ReactJS with a unique SASS
               architecture. It is also an open-sourced project you can download{" "}
               <a
@@ -60,38 +85,18 @@ const DSProjectPage = () => {
               >
                 here
               </a>
-              , and has an accompanying UI Kit built in Sketch App with Smart
-              symbols you can find{" "}
+              , and has an accompanying Figma Library found{" "}
               <a
-                href="https://github.com/ogonzal87/oskrhq-uikit"
+                href="https://www.figma.com/file/z76YKa3fuhJukaWTvEBxjV/OSKR.DS?node-id=10%3A92"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 here
               </a>
-              . I also built it as a POC to persuade design and dev teams at my
-              current employer to join me in building one for the company.
+              . I also built it as a POC to persuade design and dev teams at a
+              past employer to join me in building one for the company. Below is
+              the story.
             </p>
-
-            <h3
-              className="og-text-style-overline"
-              style={{
-                background: "#5900FF",
-                color: "white",
-                padding: "4px 8px",
-                borderRadius: "3px",
-              }}
-            >
-              Update
-            </h3>
-            <p>
-              The story told below was the first iteration of the system. I have
-              since learned from feedback and usage and updated the Design
-              System from the ground up carefully considering accessibility. You
-              can find the latest and play with the code by hitting the button
-              below.
-            </p>
-
             <p className="og-text-style-overline">
               Creative Direction and Multidisciplinary Design
             </p>
@@ -190,8 +195,8 @@ const DSProjectPage = () => {
           ></iframe>
         </div>
 
-        <img
-          src={ShowcaseImg}
+        <Img
+          fluid={data.ShowcaseImg.childImageSharp.fluid}
           className="project-showcase-img"
           alt="showcase"
         />
@@ -387,8 +392,8 @@ const DSProjectPage = () => {
           </div>
         </div>
 
-        <img
-          src={DSStyleSheet}
+        <Img
+          fluid={data.DSStyleSheet.childImageSharp.fluid}
           className="project-displayfb-img"
           alt="style sheet"
         />
@@ -414,8 +419,8 @@ const DSProjectPage = () => {
           </div>
         </div>
 
-        <img
-          src={DSUIElements}
+        <Img
+          fluid={data.DSUIElements.childImageSharp.fluid}
           className="project-displayfb-img"
           alt="design system elements"
         />

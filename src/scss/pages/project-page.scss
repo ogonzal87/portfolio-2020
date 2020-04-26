@@ -23,6 +23,7 @@
     align-items: center;
     margin: 0 auto;
     position: relative;
+    padding-left: $og-space-48;
 
     @include respond-to(phone) {
       padding-top: og-space(space-128);
@@ -30,7 +31,7 @@
     }
 
     .hero-container__text-container {
-      max-width: 546px;
+      max-width: 75ch;
 
       @include respond-to(phone) {
         box-sizing: border-box;
