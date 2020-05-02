@@ -20,7 +20,6 @@
       top: -220px;
       left: -221px;
       transform: rotate(-8deg);
-
       @include respond-to(phone) {
         top: 0px;
         left: -20%;

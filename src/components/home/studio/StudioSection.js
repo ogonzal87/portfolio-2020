@@ -66,22 +66,14 @@ class StudioSection extends React.Component {
 
         <div className="text-container">
           <p className="home-studio-section-paragraph">
-            I was born and raised in Colombia, Miami is home but now I live in
-            San Francisco working at{" "}
-            <a
-              href="https://www.linkedin.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hightlighted-offset"
-            >
-              LinkedIn
-            </a>
-            . I’ve worked as a interdisciplinary Designer for over a decade or
-            exactly{" "}
-            <span className="hightlighted-offse-very-important">{`${year} years, ${months} months, ${days} days, ${hours} hours, ${minute} minutes, ${seconds} seconds, ${milliseconds} milliseconds `}</span>
-            . 3 of those years working as a Front-End developer. I am currently
-            focusing on building and maintaining multi-platform Design Systems
-            for large enterprises with a strong foundation in{" "}
+            I was born and raised in Colombia, Miami is home but I live in San
+            Francisco. I’ve worked as a interdisciplinary Designer for over a
+            decade. Or exactly{" "}
+            <span className="hightlighted-offse-very-important">{`${year} years, ${months} months, ${days} days, ${hours} hours, ${minute} minutes, ${seconds} seconds, ${milliseconds} milliseconds.`}</span>
+            <br></br>3 of those years working as a Front-End developer. I am
+            currently focusing on building, growing and maintaining
+            multi-platform Design Systems for large enterprises with a strong
+            foundation in{" "}
             <span className="hightlighted-offset">accessibility</span> and{" "}
             <span className="hightlighted-offset">inclusivity</span>.
           </p>

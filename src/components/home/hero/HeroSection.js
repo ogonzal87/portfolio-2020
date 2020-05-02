@@ -94,7 +94,7 @@ class HeroSection extends React.Component {
           </Tilt>
 
           <motion.i variants={ogAnimation.fadeUpItem}>
-            <h5 className="hero-subheading-text">
+            <h2 className="hero-subheading-text">
               I’m a{" "}
               <a
                 href="https://uxplanet.org/ux-engineers-what-we-are-2b0c4d10b3a6"
@@ -104,8 +104,16 @@ class HeroSection extends React.Component {
               >
                 UX Engineer
               </a>{" "}
-              and Product Designer. By day I design and {"<code />"} digital
-              products specializing in multi-platform{" "}
+              and Product Designer. By day I work on digital interfaces at{" "}
+              <a
+                href="https://www.linkedin.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hightlighted-offset"
+              >
+                LinkedIn
+              </a>{" "}
+              concentrating on multi-platform{" "}
               <a
                 href="https://codesandbox.io/embed/oskrhq-playground-app-x7mhz?fontsize=14&theme=dark&view=preview"
                 target="_blank"
@@ -113,10 +121,10 @@ class HeroSection extends React.Component {
                 className="hightlighted-offset"
               >
                 Design Systems
-              </a>{" "}
-              for large enterprises. By night I enjoy making art with code,
-              making moss art and doing illustrations.
-            </h5>
+              </a>
+              . By night I enjoy making art with code, creating moss art and
+              doing calligraphy and illustrations.
+            </h2>
           </motion.i>
 
           <motion.p

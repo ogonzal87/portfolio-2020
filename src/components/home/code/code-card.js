@@ -67,7 +67,7 @@ const CodeProjectCard = ({
   >
     <motion.div className="img-wrapper" whileHover="animate">
       <a href={href} target="_blank" rel="noopener noreferrer">
-        <img src={src} alt="card hero" />
+        <img src={src} alt="card hero" className="card-image" />
         <motion.div className="cta-overlay" variants={fadeItem}>
           <p className="og-text-style-heading4">Play with it =></p>
         </motion.div>

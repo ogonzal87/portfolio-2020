@@ -252,7 +252,12 @@ const CreativeLabMosque = () => {
           style={{ gridArea: `b` }}
         />
         <video
-          style={{ gridArea: `c`, width: "100%" }}
+          style={{
+            gridArea: `c`,
+            width: "100%",
+            height: "100%",
+            background: "black",
+          }}
           controls
           autoPlay
           muted

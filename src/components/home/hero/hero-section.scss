@@ -98,6 +98,7 @@
     color: og-color(text, secondary);
     text-align: center;
     line-height: 2rem;
+    font-size: og-font-size(heading5);
 
     @include respond-to(phone) {
       color: og-color(text, secondary);
