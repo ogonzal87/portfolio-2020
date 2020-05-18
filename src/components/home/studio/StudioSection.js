@@ -1,5 +1,5 @@
 import React from "react"
-import profilePic from "../../../assets/images/profile-pic3.jpg"
+import profilePic from "../../../assets/images/profile-pic4.png"
 import StudioImg from "../../../assets/images/hand-brush/studio.png"
 import StackGraphic from "../../../assets/images/stack.svg"
 import { Parallax } from "react-scroll-parallax"
@@ -66,11 +66,11 @@ class StudioSection extends React.Component {
 
         <div className="text-container">
           <p className="home-studio-section-paragraph">
-            I was born and raised in Colombia, Miami is home but I live in San
-            Francisco. I’ve worked as a interdisciplinary Designer for over a
-            decade. Or exactly{" "}
-            <span className="hightlighted-offse-very-important">{`${year} years, ${months} months, ${days} days, ${hours} hours, ${minute} minutes, ${seconds} seconds, ${milliseconds} milliseconds.`}</span>
-            <br></br>3 of those years working as a Front-End developer. I am
+            I was born and raised in Colombia, Miami is home, but I live in San
+            Francisco. I’ve worked as an interdisciplinary Designer for over a
+            decade. Or precisely{" "}
+            <span className="hightlighted-offse-very-important">{`${year} years, ${months} months, ${days} days, ${hours} hours, ${minute} minutes, ${seconds} seconds, ${milliseconds} milliseconds;`}</span>
+            <br></br>three of those years working as a Front-End developer. I am
             currently focusing on building, growing and maintaining
             multi-platform Design Systems for large enterprises with a strong
             foundation in{" "}

@@ -27,6 +27,8 @@
 
     @include respond-to(phone) {
       padding-top: og-space(space-128);
+      padding-left: og-space(space-04);
+      padding-right: og-space(space-04);
       height: initial;
     }
 
@@ -55,6 +57,12 @@
 
       span {
         margin-right: 40px;
+        margin-top: auto;
+
+        @include respond-to(phone) {
+          margin-right: $og-space-16;
+          margin-top: $og-space-08;
+        }
       }
 
       .project-btn__cta {

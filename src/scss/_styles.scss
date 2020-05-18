@@ -145,7 +145,7 @@ html {
   height: 200px;
   width: 200px;
   border-radius: 50%;
-  border: 8px solid var(--og-brand-color3);
+  border: og-rem(8px) solid var(--og-brand-color3);
   pointer-events: none;
   mix-blend-mode: difference;
   background-blend-mode: difference;
@@ -155,7 +155,7 @@ html {
   }
 }
 
-body {
+​ body {
   background: repeating-linear-gradient(
     0deg,
     rgba(black, 0.03),

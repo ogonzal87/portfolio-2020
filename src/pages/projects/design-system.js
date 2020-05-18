@@ -100,10 +100,18 @@ const DSProjectPage = () => {
             <p className="og-text-style-overline">
               Creative Direction and Multidisciplinary Design
             </p>
-            <span className="og-text-style-overline">Design Systems</span>
-            <span className="og-text-style-overline">Development</span>
-            <span className="og-text-style-overline">Sales</span>
-            <span className="og-text-style-overline">Research</span>
+            <div
+              style={{
+                display: "flex",
+                flexWrap: "wrap",
+              }}
+            >
+              <span className="og-text-style-overline">Design Systems</span>
+              <span className="og-text-style-overline">Development</span>
+              <span className="og-text-style-overline">Sales</span>
+              <span className="og-text-style-overline">Research</span>
+            </div>
+
             <a
               href="https://codesandbox.io/embed/oskrhq-playground-app-x7mhz?fontsize=14&theme=dark&view=preview"
               className="project-btn__cta"
