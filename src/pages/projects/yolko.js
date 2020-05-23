@@ -206,7 +206,7 @@ const YolkoProjectPage = () => {
               alt=""
               className="project-design-process-number"
             />
-            <h5 className="design-process__section-title ds-headline-text-style">
+            <h5 className="design-process__section-title ds-headline-text-style hightlighted-offset">
               EMPATHIZE
             </h5>
           </div>
@@ -245,7 +245,7 @@ const YolkoProjectPage = () => {
               alt="number"
               className="project-design-process-number"
             />
-            <h5 className="design-process__section-title ds-headline-text-style">
+            <h5 className="design-process__section-title ds-headline-text-style hightlighted-offset">
               Define
             </h5>
           </div>
@@ -310,7 +310,7 @@ const YolkoProjectPage = () => {
               alt=""
               className="project-design-process-number"
             />
-            <h5 className="design-process__section-title ds-headline-text-style">
+            <h5 className="design-process__section-title ds-headline-text-style hightlighted-offset">
               Ideate
             </h5>
           </div>
@@ -390,7 +390,7 @@ const YolkoProjectPage = () => {
               alt=""
               className="project-design-process-number"
             />
-            <h5 className="design-process__section-title ds-headline-text-style">
+            <h5 className="design-process__section-title ds-headline-text-style hightlighted-offset">
               Prototype
             </h5>
           </div>
@@ -417,7 +417,7 @@ const YolkoProjectPage = () => {
               alt=""
               className="project-design-process-number"
             />
-            <h5 className="design-process__section-title ds-headline-text-style">
+            <h5 className="design-process__section-title ds-headline-text-style hightlighted-offset">
               Test
             </h5>
           </div>
@@ -464,7 +464,7 @@ const YolkoProjectPage = () => {
               alt=""
               className="project-design-process-number"
             />
-            <h5 className="design-process__section-title ds-headline-text-style">
+            <h5 className="design-process__section-title ds-headline-text-style hightlighted-offset">
               Implement
             </h5>
           </div>
@@ -588,7 +588,7 @@ const YolkoProjectPage = () => {
 
         <div className="design-process__section-container">
           <div className="project-design-process-title-container">
-            <h5 className="design-process__section-title ds-headline-text-style">
+            <h5 className="design-process__section-title ds-headline-text-style hightlighted-offset">
               lessons learned
             </h5>
           </div>

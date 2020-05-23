@@ -241,8 +241,9 @@
       }
 
       .design-process__section-title {
-        color: og-color(text, secondary);
+        color: og-color(text, link);
         text-transform: uppercase;
+        font-weight: og-font-weight(bold);
         font-weight: og-font-weight(normal);
       }
     }

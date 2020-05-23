@@ -12,8 +12,6 @@ import number4 from "../../assets/images/hand-brush/04.png"
 import number5 from "../../assets/images/hand-brush/05.png"
 import TopNav from "../../components/top-nav"
 import UltimateProposalImg from "../../assets/images/DS/ulti-uikit-demo.gif"
-// import DSStyleSheet from "../../assets/images/DS/style-sheet.jpg"
-import DSUIElements from "../../assets/images/DS/ui-kit-elements.jpg"
 import DSBreakdown from "../../assets/images/DS/part-of-design-system.jpg"
 import DSButtonsDemo from "../../assets/images/DS/buttons-demo.gif"
 import DSButtonsCode from "../../assets/images/DS/buttons-code.jpg"
@@ -228,7 +226,9 @@ const DSProjectPage = () => {
               alt="number"
               className="project-design-process-number"
             />
-            <h4 className="design-process__section-title">Empathize</h4>
+            <h4 className="design-process__section-title hightlighted-offset">
+              Empathize
+            </h4>
           </div>
           <div>
             <p>
@@ -264,7 +264,9 @@ const DSProjectPage = () => {
               alt="number"
               className="project-design-process-number"
             />
-            <h4 className="design-process__section-title">Define</h4>
+            <h4 className="design-process__section-title hightlighted-offset">
+              Define
+            </h4>
           </div>
           <div>
             <p>
@@ -379,7 +381,7 @@ const DSProjectPage = () => {
               alt="number"
               className="project-design-process-number"
             />
-            <h4 className="design-process__section-title">
+            <h4 className="design-process__section-title hightlighted-offset">
               Ideate & Prototype
             </h4>
           </div>
@@ -527,7 +529,9 @@ const DSProjectPage = () => {
               alt="number"
               className="project-design-process-number"
             />
-            <h4 className="design-process__section-title">Test</h4>
+            <h4 className="design-process__section-title hightlighted-offset">
+              Test
+            </h4>
           </div>
           <div>
             <p>
@@ -594,7 +598,9 @@ const DSProjectPage = () => {
               alt="number"
               className="project-design-process-number"
             />
-            <h4 className="design-process__section-title">Implement</h4>
+            <h4 className="design-process__section-title hightlighted-offset">
+              Implement
+            </h4>
           </div>
           <div>
             <p>
@@ -755,7 +761,9 @@ const DSProjectPage = () => {
 
         <div className="design-process__section-container">
           <div className="project-design-process-title-container">
-            <h4 className="design-process__section-title">lessons learned</h4>
+            <h4 className="design-process__section-title hightlighted-offset">
+              lessons learned
+            </h4>
           </div>
           <div>
             <p>

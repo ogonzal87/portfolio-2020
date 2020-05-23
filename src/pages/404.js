@@ -44,6 +44,7 @@ const NotFoundPage = () => (
 
       <div style={{ width: "100%", height: "100%", position: "absolute" }}>
         <iframe
+          title="404 page"
           src="https://giphy.com/embed/14glWZLXkYWDzW"
           width={"100%"}
           height={"100%"}

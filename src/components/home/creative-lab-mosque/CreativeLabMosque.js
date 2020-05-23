@@ -2,9 +2,10 @@ import React from "react"
 import styled from "styled-components"
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
-import calligraphyMov from "../../../assets/images/creative-lab/calligraphy.gif"
-import mustacheMov from "../../../assets/images/creative-lab/mustache.gif"
-import skullARIllustration from "../../../assets/images/creative-lab/skull-ar-illustration.gif"
+import calligraphyVid from "../../../assets/images/creative-lab/calligraphy.gif"
+import mustacheVid from "../../../assets/images/creative-lab/mustache.mp4"
+import parallaxSwordVid from "../../../assets/images/creative-lab/parallax-sword.mp4"
+import skullARVid from "../../../assets/images/code/skullAR2.mp4"
 
 const MosqueImg = styled.div`
   width: 100%;
@@ -238,42 +239,37 @@ const CreativeLabMosque = () => {
     }
   `)
 
+  function createVideo(videoSource, location) {
+    return (
+      <video
+        playsInline
+        autoPlay
+        muted
+        loop
+        preload="auto"
+        style={{
+          gridArea: `${location}`,
+          width: "100%",
+          height: "100%",
+          background: "black",
+          objectFit: "cover",
+        }}
+      >
+        <source src={videoSource} type="video/mp4" />
+      </video>
+    )
+  }
+
   return (
     <div>
       <div className="home-mosque-grid">
-        <MosqueImg
-          style={{
-            backgroundImage: `url(${skullARIllustration})`,
-            gridArea: `a`,
-          }}
-        ></MosqueImg>
+        {createVideo(skullARVid, "a")}
         <Img
           fluid={data.ketchup.childImageSharp.fluid}
           style={{ gridArea: `b` }}
         />
-        <video
-          style={{
-            gridArea: `c`,
-            width: "100%",
-            height: "100%",
-            background: "black",
-          }}
-          playsInline
-          controls
-          autoPlay
-          muted
-          loop
-          preload="auto"
-          id="parallax-sword"
-        >
-          <source
-            src={require("../../../assets/images/creative-lab/parallax-sword.mp4")}
-            type="video/mp4"
-          />
-        </video>
-        <MosqueImg
-          style={{ backgroundImage: `url(${mustacheMov})`, gridArea: `d` }}
-        ></MosqueImg>
+        {createVideo(parallaxSwordVid, "c")}
+        {createVideo(mustacheVid, "d")}
         <Img
           fluid={data.calligraphy3.childImageSharp.fluid}
           style={{ gridArea: `e` }}
@@ -363,7 +359,7 @@ const CreativeLabMosque = () => {
           style={{ gridArea: `aa` }}
         />
         <MosqueImg
-          style={{ backgroundImage: `url(${calligraphyMov})`, gridArea: `v` }}
+          style={{ backgroundImage: `url(${calligraphyVid})`, gridArea: `v` }}
         ></MosqueImg>
       </div>
     </div>

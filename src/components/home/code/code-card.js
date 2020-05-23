@@ -51,7 +51,7 @@ const rotateHoverItem2 = {
 }
 
 const CodeProjectCard = ({
-  src,
+  video,
   description,
   title,
   buttonName,
@@ -67,7 +67,7 @@ const CodeProjectCard = ({
   >
     <motion.div className="img-wrapper" whileHover="animate">
       <a href={href} target="_blank" rel="noopener noreferrer">
-        <img src={src} alt="card hero" className="card-image" />
+        {video}
         <motion.div className="cta-overlay" variants={fadeItem}>
           <p className="og-text-style-heading4">Play with it =></p>
         </motion.div>
@@ -84,7 +84,7 @@ const CodeProjectCard = ({
     <div className="card-bottom-container">
       <div className="card-text-container">
         <h5 className="og-text-style-heading6">{title}</h5>
-        <p className="og-text-style-captiond">{description}</p>
+        <p className="og-text-style-caption">{description}</p>
       </div>
     </div>
   </motion.li>
