@@ -28,12 +28,24 @@
     @include respond-to(phone) {
       max-width: 100%;
       margin-right: 0px;
-      font-size: og-font-size(body2);
+      font-size: og-font-size(body1) !important;
+
+      p {
+        width: 100%;
+      }
+
+      h4 {
+        padding-left: og-rem(16px);
+      }
+
+      img {
+        padding: 0 og-rem(16px);
+      }
     }
 
     .home-studio-section-paragraph {
       @include respond-to(phone) {
-        font-size: og-font-size(body2);
+        font-size: og-font-size(body1);
         padding: 0 $og-space-16;
       }
     }

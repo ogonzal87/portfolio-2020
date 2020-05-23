@@ -258,6 +258,7 @@ const CreativeLabMosque = () => {
             height: "100%",
             background: "black",
           }}
+          playsInline
           controls
           autoPlay
           muted
