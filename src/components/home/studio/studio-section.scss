@@ -54,33 +54,23 @@
       width: 100%;
       margin-bottom: 32px;
     }
-
-    // .columns {
-    //   display: grid;
-    //   grid-template-columns: 1fr 1fr;
-
-    //   .column {
-    //     list-style: none;
-    //     padding-left: 0;
-    //   }
-
-    //   h4 {
-    //     margin: og-space(space-08) 0 0 0;
-    //   }
-    // }
   }
 
   .profile-img-wrapper {
     position: relative;
   }
 
-  .studio-profile-picture {
-    max-width: 573px;
+  .gatsby-image-wrapper {
+    width: 573px;
     z-index: 9;
 
     @include respond-to(phone) {
-      width: 100%;
+      width: 95vw;
     }
+  }
+
+  .studio-profile-picture {
+    height: auto;
   }
 
   .studio-decorative-div1 {

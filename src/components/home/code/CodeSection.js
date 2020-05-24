@@ -14,11 +14,11 @@ const CodeSection = () => {
     return (
       <video
         playsInline
-        autoPlay
         muted
         loop
-        preload="auto"
         className="card-image"
+        onMouseOver={event => event.target.play()}
+        onMouseOut={event => event.target.pause()}
       >
         <source src={videoSource} type="video/mp4" />
       </video>
@@ -28,7 +28,7 @@ const CodeSection = () => {
   return (
     <section className="home-code-section">
       <img
-        video={codeLetteringImg}
+        src={codeLetteringImg}
         alt=""
         className="home-brush-lettering code"
       />

@@ -10,7 +10,7 @@
 
   .code-cards-list {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-row-gap: 32px;
     grid-column-gap: 54px;
     padding: 0;
@@ -36,30 +36,37 @@
           video,
           img {
             width: 100%;
-            height: 310px;
+            height: 380px;
             object-fit: cover;
+            cursor: pointer;
+            border-radius: og-shape(quaternary);
+
+            @include respond-to(phone) {
+              height: 310px;
+            }
           }
 
           .card-image {
-            border-radius: og-shape(quaternary);
-            background: linear-gradient(
-              to bottom right,
-              #b827fc 0%,
-              #2c90fc 25%,
-              #b8fd33 50%,
-              #fec837 75%,
-              #fd1892 100%
-            );
-            border: 12px solid transparent;
-            border-image: linear-gradient(
-              to bottom right,
-              #b827fc 0%,
-              #2c90fc 25%,
-              #b8fd33 50%,
-              #fec837 75%,
-              #fd1892 100%
-            );
-            border-image-slice: 1;
+            border: og-rem(16px) solid var(--og-brand-color2);
+            // background: linear-gradient(
+            //   to bottom right,
+            //   #b827fc 0%,
+            //   #2c90fc 25%,
+            //   #b8fd33 50%,
+            //   #fec837 75%,
+            //   #fd1892 100%
+            // );
+            // border: 12px solid transparent;
+            // border-image: linear-gradient(
+            //   to bottom right,
+            //   #b827fc 0%,
+            //   #2c90fc 25%,
+            //   #b8fd33 50%,
+            //   #fec837 75%,
+            //   #fd1892 100%
+            // );
+            // border-image-slice: 1;
+            border-radius: og-shape(quaternary) !important;
           }
         }
 
@@ -69,7 +76,7 @@
           align-items: flex-end;
           justify-content: flex-end;
           border-radius: 0px 0px $og-space-24 $og-space-24;
-          height: 100%;
+          height: 23%;
           width: 100%;
           bottom: 7px;
           left: 0;
@@ -93,7 +100,7 @@
         .selection-decorator-bar1 {
           position: absolute;
           height: 50px;
-          width: 150%;
+          width: 130%;
           top: 40%;
           margin-top: -18px;
           left: -25%;
@@ -105,8 +112,8 @@
         .selection-decorator-bar2 {
           position: absolute;
           height: 50px;
-          width: 150%;
-          top: 60%;
+          width: 130%;
+          top: 30%;
           margin-top: -18px;
           left: -25%;
           z-index: -1;

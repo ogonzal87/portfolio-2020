@@ -2,19 +2,10 @@ import React from "react"
 import styled from "styled-components"
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
-import calligraphyVid from "../../../assets/images/creative-lab/calligraphy.gif"
+// import calligraphyVid from "../../../assets/images/creative-lab/calligraphy.gif"
 import mustacheVid from "../../../assets/images/creative-lab/mustache.mp4"
 import parallaxSwordVid from "../../../assets/images/creative-lab/parallax-sword.mp4"
 import skullARVid from "../../../assets/images/code/skullAR2.mp4"
-
-const MosqueImg = styled.div`
-  width: 100%;
-  height: 100%;
-  min-height: 400px;
-  background-position: 50% 50%;
-  background-size: cover;
-  background-repeat: no-repeat;
-`
 
 const CreativeLabMosque = () => {
   const data = useStaticQuery(graphql`
@@ -243,10 +234,10 @@ const CreativeLabMosque = () => {
     return (
       <video
         playsInline
-        autoPlay
+        onMouseOver={event => event.target.play()}
+        onMouseOut={event => event.target.pause()}
         muted
         loop
-        preload="auto"
         style={{
           gridArea: `${location}`,
           width: "100%",
@@ -358,12 +349,12 @@ const CreativeLabMosque = () => {
           fluid={data.pencil.childImageSharp.fluid}
           style={{ gridArea: `aa` }}
         />
-        <MosqueImg
-          style={{ backgroundImage: `url(${calligraphyVid})`, gridArea: `v` }}
-        ></MosqueImg>
       </div>
     </div>
   )
 }
+// <MosqueImg
+//           style={{ backgroundImage: `url(${calligraphyVid})`, gridArea: `v` }}
+//         ></MosqueImg>
 
 export default CreativeLabMosque

@@ -1,8 +1,8 @@
 import React from "react"
-import profilePic from "../../../assets/images/profile-pic4.png"
 import StudioImg from "../../../assets/images/hand-brush/studio.png"
 import StackGraphic from "../../../assets/images/stack.svg"
 import { Parallax } from "react-scroll-parallax"
+import ProfilePicture from "./ProfilePicture"
 
 class StudioSection extends React.Component {
   state = {
@@ -60,6 +60,7 @@ class StudioSection extends React.Component {
       seconds,
       milliseconds,
     } = this.state
+
     return (
       <section className="home-studio-section">
         <img src={StudioImg} alt="" className="home-brush-lettering studio" />
@@ -84,10 +85,9 @@ class StudioSection extends React.Component {
 
         <div className="profile-img-wrapper">
           <Parallax y={[-30, 30]} tagOuter="figure">
-            <img
+            <ProfilePicture
               className="studio-profile-picture"
-              src={profilePic}
-              alt="profile"
+              style={{ width: "573px" }}
             />
           </Parallax>
 
