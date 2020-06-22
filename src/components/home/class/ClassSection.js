@@ -19,31 +19,44 @@ export default () => {
   `)
 
   return (
-    <section className="home-class-section">
-      <a
-        href="https://skl.sh/2yhdemt"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="home-page-section"
-      >
-        <img
-          src={classHandLetteringImg}
-          alt="number"
-          className="home-brush-lettering class"
-        />
-        <BackgroundImage
-          fluid={data.skillShareClassImg.childImageSharp.fluid}
-          className="class-card"
+    <div style={{ position: "relative" }}>
+      <p className="marquee marquee-class">
+        <span>
+          classes classes classes classes classes classes classes classes
+          classes classes classes classes classes classes classes classes
+          classes classes classes classes classes classes classes classes
+          classes classes classes classes classes classes classes classes
+          classes classes classes classes classes classes classes classes
+          classes classes classes classes classes
+        </span>
+      </p>
+      <section className="home-class-section">
+        <a
+          href="https://skl.sh/2yhdemt"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="home-page-section"
         >
-          <div className="home-project-card-title-container">
-            <span className="og-text-style-overline">SkillShare class</span>
-            <h3 className="project-title">Should Designers Code?</h3>
-            <span className="og-text-style-overline project-card__footer-text">
-              A HUMBLE ATTEMPT TO BUILD EMPATHY BETWEEN DESIGNERS AND DEVELOPERS
-            </span>
-          </div>
-        </BackgroundImage>
-      </a>
-    </section>
+          <img
+            src={classHandLetteringImg}
+            alt="number"
+            className="home-brush-lettering class"
+          />
+          <BackgroundImage
+            fluid={data.skillShareClassImg.childImageSharp.fluid}
+            className="class-card"
+          >
+            <div className="home-project-card-title-container">
+              <span className="og-text-style-overline">SkillShare class</span>
+              <h3 className="project-title">Should Designers Code?</h3>
+              <span className="og-text-style-overline project-card__footer-text">
+                A HUMBLE ATTEMPT TO BUILD EMPATHY BETWEEN DESIGNERS AND
+                DEVELOPERS
+              </span>
+            </div>
+          </BackgroundImage>
+        </a>
+      </section>
+    </div>
   )
 }

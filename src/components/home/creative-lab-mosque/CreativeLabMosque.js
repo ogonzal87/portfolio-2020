@@ -1,11 +1,16 @@
 import React from "react"
-import styled from "styled-components"
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 // import calligraphyVid from "../../../assets/images/creative-lab/calligraphy.gif"
-import mustacheVid from "../../../assets/images/creative-lab/mustache.mp4"
-import parallaxSwordVid from "../../../assets/images/creative-lab/parallax-sword.mp4"
-import skullARVid from "../../../assets/images/code/skullAR2.mp4"
+import mustacheVidMP4 from "../../../assets/images/creative-lab/mustache.mp4"
+import mustacheVidWEB from "../../../assets/images/creative-lab/mustache.webm"
+import mustacheVidPoster from "../../../assets/images/creative-lab/mustache.jpg"
+import parallaxSwordVidMP4 from "../../../assets/images/creative-lab/parallax-sword.mp4"
+import parallaxSwordVidWEB from "../../../assets/images/creative-lab/parallax-sword.webm"
+import parallaxSwordVidPoster from "../../../assets/images/creative-lab/parallax-sword.jpg"
+import skullARVidMP4 from "../../../assets/images/creative-lab/skullAR.mp4"
+import skullARVidWEB from "../../../assets/images/creative-lab/skullAR.webm"
+import skullARVidPoster from "../../../assets/images/creative-lab/skullAR.jpg"
 
 const CreativeLabMosque = () => {
   const data = useStaticQuery(graphql`
@@ -230,7 +235,12 @@ const CreativeLabMosque = () => {
     }
   `)
 
-  function createVideo(videoSource, location) {
+  function createVideo(
+    videoSourceMP4,
+    videoSourceWEB,
+    videoSourcePoster,
+    location
+  ) {
     return (
       <video
         playsInline
@@ -238,6 +248,7 @@ const CreativeLabMosque = () => {
         onMouseOut={event => event.target.pause()}
         muted
         loop
+        poster={videoSourcePoster}
         style={{
           gridArea: `${location}`,
           width: "100%",
@@ -246,7 +257,9 @@ const CreativeLabMosque = () => {
           objectFit: "cover",
         }}
       >
-        <source src={videoSource} type="video/mp4" />
+        <source src={videoSourceWEB} type="video/webm" />
+        <source src={videoSourceMP4} type="video/mp4" />
+        Your browser does not support the video tag.
       </video>
     )
   }
@@ -254,13 +267,18 @@ const CreativeLabMosque = () => {
   return (
     <div>
       <div className="home-mosque-grid">
-        {createVideo(skullARVid, "a")}
+        {createVideo(skullARVidMP4, skullARVidWEB, skullARVidPoster, "a")}
         <Img
           fluid={data.ketchup.childImageSharp.fluid}
           style={{ gridArea: `b` }}
         />
-        {createVideo(parallaxSwordVid, "c")}
-        {createVideo(mustacheVid, "d")}
+        {createVideo(
+          parallaxSwordVidMP4,
+          parallaxSwordVidWEB,
+          parallaxSwordVidPoster,
+          "c"
+        )}
+        {createVideo(mustacheVidMP4, mustacheVidWEB, mustacheVidPoster, "d")}
         <Img
           fluid={data.calligraphy3.childImageSharp.fluid}
           style={{ gridArea: `e` }}

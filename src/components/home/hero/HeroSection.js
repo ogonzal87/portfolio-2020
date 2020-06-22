@@ -93,39 +93,40 @@ class HeroSection extends React.Component {
             </AniLink>
           </Tilt>
 
-          <motion.i variants={ogAnimation.fadeUpItem}>
-            <h2 className="hero-subheading-text">
-              I’m a{" "}
-              <a
-                href="https://uxplanet.org/ux-engineers-what-we-are-2b0c4d10b3a6"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hightlighted-offset"
-              >
-                UX Engineer
-              </a>{" "}
-              and Product Designer. By day I work on digital interfaces at{" "}
-              <a
-                href="https://www.linkedin.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hightlighted-offset"
-              >
-                LinkedIn
-              </a>{" "}
-              concentrating on multi-platform{" "}
-              <a
-                href="https://codesandbox.io/embed/oskrhq-playground-app-x7mhz?fontsize=14&theme=dark&view=preview"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hightlighted-offset"
-              >
-                Design Systems
-              </a>
-              . By night I enjoy making art with code, creating moss art and
-              doing calligraphy and illustrations.
-            </h2>
-          </motion.i>
+          <motion.h2
+            className="hero-subheading-text"
+            variants={ogAnimation.fadeUpItem}
+          >
+            I’m a self-taught{" "}
+            <a
+              href="https://uxplanet.org/ux-engineers-what-we-are-2b0c4d10b3a6"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hightlighted-offset"
+            >
+              UX Engineer
+            </a>{" "}
+            and Product Designer. By day I work on digital interfaces at{" "}
+            <a
+              href="https://www.linkedin.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hightlighted-offset"
+            >
+              LinkedIn
+            </a>{" "}
+            concentrating on multi-platform{" "}
+            <a
+              href="https://codesandbox.io/embed/oskrhq-playground-app-x7mhz?fontsize=14&theme=dark&view=preview"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hightlighted-offset"
+            >
+              Design Systems
+            </a>
+            . By night I enjoy making art with code, creating moss art, and
+            doing calligraphy and illustrations.
+          </motion.h2>
 
           <motion.p
             variants={ogAnimation.fadeUpItem}
@@ -153,6 +154,14 @@ class HeroSection extends React.Component {
               rel="noopener noreferrer"
             >
               Codepen
+            </a>{" "}
+            ·{" "}
+            <a
+              href="https://codesandbox.io/u/ogonzal87"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Codesandbox
             </a>{" "}
             ·{" "}
             <a

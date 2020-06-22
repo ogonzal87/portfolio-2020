@@ -55,6 +55,7 @@
     margin-top: og-space(space-64) * 2;
     position: absolute;
     bottom: og-space(space-16);
+    font-weight: og-font-weight(bold);
 
     @include respond-to(phone) {
       display: none;

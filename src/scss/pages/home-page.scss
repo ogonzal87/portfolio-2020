@@ -14,6 +14,7 @@
   .home-brush-lettering {
     position: absolute;
     z-index: -1;
+    opacity: 0.3;
 
     &.studio {
       width: 850px;
@@ -28,12 +29,12 @@
     }
 
     &.class {
-      top: -150px;
+      top: -350px;
       left: -100px;
-      transform: rotate(-10deg);
+      transform: rotate(-5deg);
 
       @include respond-to(phone) {
-        top: 0px;
+        top: -150px;
         left: -15%;
         width: 375px;
       }
@@ -41,12 +42,12 @@
 
     &.code {
       min-width: 600px;
-      top: -200px;
-      left: -100px;
+      top: -210px;
+      left: -180px;
       transform: rotate(-10deg);
 
       @include respond-to(phone) {
-        top: 20px;
+        top: -30px;
         left: -20%;
         min-width: 80px;
         width: 375px;
@@ -55,9 +56,9 @@
 
     &.thoughts {
       min-width: 800px;
-      top: -120px;
-      left: -100px;
-      transform: rotate(-10deg);
+      top: -200px;
+      left: 20px;
+      transform: rotate(-5deg);
 
       @include respond-to(phone) {
         top: 80px;

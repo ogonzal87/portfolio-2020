@@ -1,9 +1,7 @@
 import React from "react"
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
-
 import vnHeroImg from "../../assets/images/DS/ds-hero.png"
-// import ShowcaseImg from "../../assets/images/DS/ds-showcase.jpg"
 import PortfolioFooter from "../../components/footer"
 import number1 from "../../assets/images/hand-brush/01.png"
 import number2 from "../../assets/images/hand-brush/02.png"

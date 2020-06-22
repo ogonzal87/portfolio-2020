@@ -94,14 +94,18 @@ $project-card-width: 1000px;
     margin-top: og-space(space-16);
     margin-bottom: og-space(space-16);
     color: og-color(text, primary-on-dark);
-    font-weight: og-font-weight(bold);
-    font-size: 80px;
-    font-family: "VT323", monospace !important;
-    text-shadow: 2px 2px var(--og-brand-color2), 4px 4px var(--og-brand-color3);
-    // letter-spacing: 8px;
+    font-size: 70px;
+    text-shadow: 3px 3px var(--og-brand-color2), 6px 6px var(--og-brand-color3);
+    font-family: "KemcoPixel";
+    // font-weight: bold;
+    // font-style: italic;
+    letter-spacing: 8px;
+    line-height: 0.9;
 
     @include respond-to(phone) {
-      font-size: og-font-size(heading4);
+      text-shadow: 2px 2px var(--og-brand-color2),
+        4px 4px var(--og-brand-color3);
+      font-size: og-font-size(heading5);
       margin-top: og-space(space-04);
       margin-bottom: og-space(space-04);
     }

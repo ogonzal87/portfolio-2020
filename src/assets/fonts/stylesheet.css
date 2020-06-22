@@ -1,0 +1,39 @@
+@font-face {
+  font-family: "Alien Encounters";
+  src: url("AlienEncountersBoldItalic.woff2") format("woff2"),
+    url("AlienEncountersBoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Alien Encounters";
+  src: url("AlienEncountersItalic.woff2") format("woff2"),
+    url("AlienEncountersItalic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Alien Encounters";
+  src: url("AlienEncountersBold.woff2") format("woff2"),
+    url("AlienEncountersBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Alien Encounters";
+  src: url("AlienEncounters.woff2") format("woff2"),
+    url("AlienEncounters.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "KemcoPixel";
+
+  src: url("KemcoPixelBold.woff") format("woff"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}

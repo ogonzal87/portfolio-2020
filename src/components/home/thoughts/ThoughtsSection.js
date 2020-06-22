@@ -16,14 +16,16 @@ export default () => {
           }
         }
       }
-      mediumPost1Img: file(relativePath: { eq: "images/duotone1.jpg" }) {
+      mediumPost1Img: file(relativePath: { eq: "images/anatomy-hero.jpg" }) {
         childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      mediumPost2Img: file(relativePath: { eq: "images/duotone2.jpg" }) {
+      mediumPost2Img: file(
+        relativePath: { eq: "images/dictionary-hero1.jpg" }
+      ) {
         childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid
@@ -31,7 +33,7 @@ export default () => {
         }
       }
 
-      mediumPost3Img: file(relativePath: { eq: "images/duotone3.jpg" }) {
+      mediumPost3Img: file(relativePath: { eq: "images/language-hero.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 1400) {
             ...GatsbyImageSharpFluid
@@ -39,7 +41,7 @@ export default () => {
         }
       }
 
-      mediumPost4Img: file(relativePath: { eq: "images/walle-min.png" }) {
+      mediumPost4Img: file(relativePath: { eq: "images/walle-hero.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 1400) {
             ...GatsbyImageSharpFluid
@@ -47,7 +49,15 @@ export default () => {
         }
       }
 
-      mediumPost5Img: file(relativePath: { eq: "images/oskrhq-ds-min.jpg" }) {
+      mediumPost5Img: file(relativePath: { eq: "images/ds-hero.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 1400) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+
+      mediumPost6Img: file(relativePath: { eq: "images/ex-machina.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 1400) {
             ...GatsbyImageSharpFluid
@@ -66,157 +76,202 @@ export default () => {
     animate: {
       opacity: 1,
       transition: {
-        duration: 0.1,
+        duration: 0.4,
         ease: easing,
       },
     },
   }
 
   return (
-    <section className="home-page-section home-thoughts-section">
-      <img
-        src={thoughtsImg}
-        alt="title"
-        className="home-brush-lettering thoughts"
-      />
+    <div style={{ position: "relative" }}>
+      <p className="marquee">
+        <span>
+          thoughts thoughts thoughts thoughts thoughts thoughts thoughts
+          thoughts thoughts thoughts thoughts thoughts thoughts thoughts
+          thoughts thoughts thoughts thoughts thoughts thoughts thoughts
+          thoughts thoughts thoughts thoughts thoughts thoughts thoughts
+          thoughts thoughts thoughts thoughts thoughts thoughts thoughts
+          thoughts thoughts thoughts thoughts thoughts thoughts thoughts
+          thoughts thoughts thoughts
+        </span>
+      </p>
+      <section className="home-page-section home-thoughts-section">
+        <img
+          src={thoughtsImg}
+          alt="title"
+          className="home-brush-lettering thoughts"
+        />
 
-      <motion.ul
-        className="home-posts-container"
-        animate="animate"
-        initial="initial"
-      >
-        <motion.li>
-          <motion.div className="home-post-card">
-            <motion.a
-              href="https://medium.muz.li/the-anatomy-of-all-digital-interfaces-11d43f55eaf"
-              target="_blank"
-              rel="noopener noreferrer"
-              whileHover="animate"
-            >
-              <Img
-                fluid={data.mediumPost1Img.childImageSharp.fluid}
-                alt="article post"
-                className="img-thumbnail"
-              />
-              <motion.div className="cta-overlay" variants={fadeItem}>
-                <p className="og-text-style-heading4">Read it =></p>
-              </motion.div>
-            </motion.a>
-          </motion.div>
-          <div className="post-text-container">
-            <h5 className="og-text-style-heading6">
-              The Anatomy of All Digital Interfaces
-            </h5>
-            <span className="ds-overlay-text-style">MEDIUM, MUZ.LI</span>
-          </div>
-        </motion.li>
+        <motion.ul
+          className="home-posts-container"
+          animate="animate"
+          initial="initial"
+        >
+          <motion.li>
+            <motion.div className="home-post-card">
+              <motion.a
+                href="https://medium.com/p/why-great-conversationalists-make-great-designers-c845039b9ab5?source=email-f1128363359a--writer.postDistributed&sk=44404496ea3566cc9c224673cc5c4a16"
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover="animate"
+              >
+                <Img
+                  fluid={data.mediumPost6Img.childImageSharp.fluid}
+                  alt="article post"
+                  className="img-thumbnail"
+                />
+                <motion.div className="cta-overlay" variants={fadeItem}>
+                  <p className="og-text-style-heading4">Read it =></p>
+                </motion.div>
+              </motion.a>
+            </motion.div>
 
-        <motion.li>
-          <motion.div className="home-post-card">
-            <motion.a
-              href="https://medium.muz.li/crafting-a-new-visual-language-912d3ac8df43"
-              target="_blank"
-              rel="noopener noreferrer"
-              whileHover="animate"
-            >
-              <Img
-                fluid={data.mediumPost3Img.childImageSharp.fluid}
-                alt="article post"
-                className="img-thumbnail"
-              />
-              <motion.div className="cta-overlay" variants={fadeItem}>
-                <p className="og-text-style-heading4">Read it =></p>
-              </motion.div>
-            </motion.a>
-          </motion.div>
-          <div className="post-text-container">
-            <h5 className="og-text-style-heading6">
-              Crafting a New Visual Language
-            </h5>
-            <span className="ds-overlay-text-style">MEDIUM, MUZ.LI</span>
-          </div>
-        </motion.li>
+            <div className="post-text-container">
+              <h5 className="og-text-style-heading6">
+                Why Great Conversationalists make Great Designers
+              </h5>
 
-        <motion.li>
-          <motion.div className="home-post-card">
-            <motion.a
-              href="https://blog.prototypr.io/a-dictionary-for-a-design-language-3afae1579586"
-              target="_blank"
-              rel="noopener noreferrer"
-              whileHover="animate"
-            >
-              <Img
-                fluid={data.mediumPost2Img.childImageSharp.fluid}
-                alt="article post"
-                className="img-thumbnail"
-              />
-              <motion.div className="cta-overlay" variants={fadeItem}>
-                <p className="og-text-style-heading4">Read it =></p>
-              </motion.div>
-            </motion.a>
-          </motion.div>
-          <div className="post-text-container">
-            <h5 className="og-text-style-heading6">
-              A Dictionary for a Design Language
-            </h5>
-            <span className="ds-overlay-text-style">MEDIUM, PROTOTYPR</span>
-          </div>
-        </motion.li>
+              <span className="ds-overlay-text-style">
+                MEDIUM, UX Collective
+              </span>
+            </div>
+          </motion.li>
 
-        <motion.li>
-          <motion.div className="home-post-card">
-            <motion.a
-              href="https://uxdesign.cc/humanizing-interfaces-yep-cheesy-but-it-works-da6c8ca8aee7"
-              target="_blank"
-              rel="noopener noreferrer"
-              whileHover="animate"
-            >
-              <Img
-                fluid={data.mediumPost4Img.childImageSharp.fluid}
-                alt="article post"
-                className="img-thumbnail"
-              />
-              <motion.div className="cta-overlay" variants={fadeItem}>
-                <p className="og-text-style-heading4">Read it =></p>
-              </motion.div>
-            </motion.a>
-          </motion.div>
-          <div className="post-text-container">
-            <h5 className="og-text-style-heading6">
-              Homosapien-ing Interfaces
-            </h5>
-            <span className="ds-overlay-text-style">MEDIUM, UX Collective</span>
-          </div>
-        </motion.li>
+          <motion.li>
+            <motion.div className="home-post-card">
+              <motion.a
+                href="https://medium.com/@ogonzal87/how-i-made-a-themeable-design-system-for-my-professional-brand-oskrhq-ds-1c10f5b87587"
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover="animate"
+              >
+                <Img
+                  fluid={data.mediumPost5Img.childImageSharp.fluid}
+                  alt="article post"
+                  className="img-thumbnail"
+                />
+                <motion.div className="cta-overlay" variants={fadeItem}>
+                  <p className="og-text-style-heading4">Read it =></p>
+                </motion.div>
+              </motion.a>
+            </motion.div>
 
-        <motion.li>
-          <motion.div className="home-post-card">
-            <motion.a
-              href="https://medium.com/@ogonzal87/how-i-made-a-themeable-design-system-for-my-professional-brand-oskrhq-ds-1c10f5b87587"
-              target="_blank"
-              rel="noopener noreferrer"
-              whileHover="animate"
-            >
-              <Img
-                fluid={data.mediumPost5Img.childImageSharp.fluid}
-                alt="article post"
-                className="img-thumbnail"
-              />
-              <motion.div className="cta-overlay" variants={fadeItem}>
-                <p className="og-text-style-heading4">Read it =></p>
-              </motion.div>
-            </motion.a>
-          </motion.div>
+            <div className="post-text-container">
+              <h5 className="og-text-style-heading6">
+                How I made a themeable Design System for my Professional Brand
+              </h5>
 
-          <div className="post-text-container">
-            <h5 className="og-text-style-heading6">
-              How I made a themeable Design System for my Professional Brand
-            </h5>
+              <span className="ds-overlay-text-style">MEDIUM, Javascript</span>
+            </div>
+          </motion.li>
 
-            <span className="ds-overlay-text-style">MEDIUM</span>
-          </div>
-        </motion.li>
-      </motion.ul>
-    </section>
+          <motion.li>
+            <motion.div className="home-post-card">
+              <motion.a
+                href="https://uxdesign.cc/humanizing-interfaces-yep-cheesy-but-it-works-da6c8ca8aee7"
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover="animate"
+              >
+                <Img
+                  fluid={data.mediumPost4Img.childImageSharp.fluid}
+                  alt="article post"
+                  className="img-thumbnail"
+                />
+                <motion.div className="cta-overlay" variants={fadeItem}>
+                  <p className="og-text-style-heading4">Read it =></p>
+                </motion.div>
+              </motion.a>
+            </motion.div>
+            <div className="post-text-container">
+              <h5 className="og-text-style-heading6">
+                Homosapien-ing Interfaces
+              </h5>
+              <span className="ds-overlay-text-style">
+                MEDIUM, UX Collective
+              </span>
+            </div>
+          </motion.li>
+
+          <motion.li>
+            <motion.div className="home-post-card">
+              <motion.a
+                href="https://blog.prototypr.io/a-dictionary-for-a-design-language-3afae1579586"
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover="animate"
+              >
+                <Img
+                  fluid={data.mediumPost2Img.childImageSharp.fluid}
+                  alt="article post"
+                  className="img-thumbnail"
+                />
+                <motion.div className="cta-overlay" variants={fadeItem}>
+                  <p className="og-text-style-heading4">Read it =></p>
+                </motion.div>
+              </motion.a>
+            </motion.div>
+            <div className="post-text-container">
+              <h5 className="og-text-style-heading6">
+                A Dictionary for a Design Language
+              </h5>
+              <span className="ds-overlay-text-style">MEDIUM, PROTOTYPR</span>
+            </div>
+          </motion.li>
+
+          <motion.li>
+            <motion.div className="home-post-card">
+              <motion.a
+                href="https://medium.muz.li/crafting-a-new-visual-language-912d3ac8df43"
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover="animate"
+              >
+                <Img
+                  fluid={data.mediumPost3Img.childImageSharp.fluid}
+                  alt="article post"
+                  className="img-thumbnail"
+                />
+                <motion.div className="cta-overlay" variants={fadeItem}>
+                  <p className="og-text-style-heading4">Read it =></p>
+                </motion.div>
+              </motion.a>
+            </motion.div>
+            <div className="post-text-container">
+              <h5 className="og-text-style-heading6">
+                Crafting a New Visual Language
+              </h5>
+              <span className="ds-overlay-text-style">MEDIUM, MUZ.LI</span>
+            </div>
+          </motion.li>
+
+          <motion.li>
+            <motion.div className="home-post-card">
+              <motion.a
+                href="https://medium.muz.li/the-anatomy-of-all-digital-interfaces-11d43f55eaf"
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover="animate"
+              >
+                <Img
+                  fluid={data.mediumPost1Img.childImageSharp.fluid}
+                  alt="article post"
+                  className="img-thumbnail"
+                />
+                <motion.div className="cta-overlay" variants={fadeItem}>
+                  <p className="og-text-style-heading4">Read it =></p>
+                </motion.div>
+              </motion.a>
+            </motion.div>
+            <div className="post-text-container">
+              <h5 className="og-text-style-heading6">
+                The Anatomy of All Digital Interfaces
+              </h5>
+              <span className="ds-overlay-text-style">MEDIUM, MUZ.LI</span>
+            </div>
+          </motion.li>
+        </motion.ul>
+      </section>
+    </div>
   )
 }

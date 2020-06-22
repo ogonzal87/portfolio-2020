@@ -51,6 +51,7 @@
         width: 100%;
         height: 268px;
         border-radius: og-shape(tertiary);
+        @include og-border(thin);
       }
 
       .cta-overlay {

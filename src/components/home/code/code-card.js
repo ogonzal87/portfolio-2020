@@ -83,8 +83,8 @@ const CodeProjectCard = ({
     </motion.div>
     <div className="card-bottom-container">
       <div className="card-text-container">
-        <h5 className="og-text-style-heading6">{title}</h5>
-        <p className="og-text-style-caption">{description}</p>
+        <h4 className="og-text-style-heading5">{title}</h4>
+        <p className="og-text-style-body1">{description}</p>
       </div>
     </div>
   </motion.li>

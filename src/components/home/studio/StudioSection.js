@@ -62,40 +62,51 @@ class StudioSection extends React.Component {
     } = this.state
 
     return (
-      <section className="home-studio-section">
-        <img src={StudioImg} alt="" className="home-brush-lettering studio" />
+      <div style={{ position: "relative" }}>
+        <p className="marquee" style={{ width: "1400px", fontSize: "96px" }}>
+          <span>
+            studio studio studio studio studio studio studio studio studio
+            studio studio studio studio studio studio studio studio studio
+            studio studio studio studio studio studio studio studio studio
+            studio studio studio studio studio studio studio studio studio
+            studio studio studio studio studio studio studio studio studio
+          </span>
+        </p>
+        <section className="home-studio-section">
+          <img src={StudioImg} alt="" className="home-brush-lettering studio" />
 
-        <div className="text-container">
-          <p className="home-studio-section-paragraph">
-            I was born and raised in Colombia, Miami is home, but I live in San
-            Francisco. I’ve worked as an interdisciplinary Designer for over a
-            decade. Or precisely{" "}
-            <span className="hightlighted-offse-very-important">{`${year} years, ${months} months, ${days} days, ${hours} hours, ${minute} minutes, ${seconds} seconds, ${milliseconds} milliseconds;`}</span>
-            <br></br>three of those years working as a Front-End developer. I am
-            currently focusing on building, growing and maintaining
-            multi-platform Design Systems for large enterprises with a strong
-            foundation in{" "}
-            <span className="hightlighted-offset">accessibility</span> and{" "}
-            <span className="hightlighted-offset">inclusivity</span>.
-          </p>
+          <div className="text-container">
+            <p className="home-studio-section-paragraph">
+              I was born and raised in Colombia, Miami is home, but I live in
+              San Francisco. I’ve worked as an interdisciplinary Designer for
+              over a decade. Or precisely{" "}
+              <span className="hightlighted-offse-very-important">{`${year} years, ${months} months, ${days} days, ${hours} hours, ${minute} minutes, ${seconds} seconds, ${milliseconds} milliseconds;`}</span>
+              <br></br>three of those years working as a Front-End developer. I
+              am currently focusing on building, growing and maintaining
+              multi-platform Design Systems for large enterprises with a strong
+              foundation in{" "}
+              <span className="hightlighted-offset">accessibility</span> and{" "}
+              <span className="hightlighted-offset">inclusivity</span>.
+            </p>
 
-          <h4 className="og-text-style-overline">My Stack</h4>
-          <img className="stack-graphic" src={StackGraphic} alt="my stack" />
-        </div>
+            <h4 className="og-text-style-overline">My Stack</h4>
+            <img className="stack-graphic" src={StackGraphic} alt="my stack" />
+          </div>
 
-        <div className="profile-img-wrapper">
-          <Parallax y={[-30, 30]} tagOuter="figure">
-            <ProfilePicture
-              className="studio-profile-picture"
-              style={{ width: "573px" }}
-            />
-          </Parallax>
+          <div className="profile-img-wrapper">
+            <Parallax y={[-30, 30]} tagOuter="figure">
+              <ProfilePicture
+                className="studio-profile-picture"
+                style={{ width: "573px" }}
+              />
+            </Parallax>
 
-          <div className="studio-decorative-div1"></div>
+            <div className="studio-decorative-div1"></div>
 
-          <div className="studio-decorative-div2"></div>
-        </div>
-      </section>
+            <div className="studio-decorative-div2"></div>
+          </div>
+        </section>
+      </div>
     )
   }
 }

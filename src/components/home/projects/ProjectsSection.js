@@ -61,6 +61,12 @@ export default () => {
   const easing = [0.6, -0.05, 0.01, 0.99]
 
   const containerStagger = {
+    initial: {
+      scale: 1,
+      transition: {
+        staggerChildren: 0.1,
+      },
+    },
     animate: {
       scale: 1.02,
       transition: {
@@ -73,6 +79,10 @@ export default () => {
     initial: {
       y: 20,
       opacity: 0,
+      transition: {
+        duration: 0.6,
+        ease: easing,
+      },
     },
     animate: {
       y: 0,
