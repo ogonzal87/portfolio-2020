@@ -124,8 +124,8 @@ class HeroSection extends React.Component {
             >
               Design Systems
             </a>
-            . By night I enjoy making art with code, creating moss art, and
-            doing calligraphy and illustrations.
+            . By night I make art with code and nature, and some calligraphy and
+            illustrations.
           </motion.h2>
 
           <motion.p

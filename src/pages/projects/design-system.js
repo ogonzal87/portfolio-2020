@@ -9,19 +9,47 @@ import number3 from "../../assets/images/hand-brush/03.png"
 import number4 from "../../assets/images/hand-brush/04.png"
 import number5 from "../../assets/images/hand-brush/05.png"
 import TopNav from "../../components/top-nav"
-import UltimateProposalImg from "../../assets/images/DS/ulti-uikit-demo.gif"
+import UltimateProposalMP4 from "../../assets/images/DS/ulti-uikit-demo.mp4"
+import UltimateProposalWEBM from "../../assets/images/DS/ulti-uikit-demo.webm"
+import UltimateProposalPoster from "../../assets/images/DS/ulti-uikit-demo.jpg"
 import DSBreakdown from "../../assets/images/DS/part-of-design-system.jpg"
-import DSButtonsDemo from "../../assets/images/DS/buttons-demo.gif"
+import DSButtonsDemoMP4 from "../../assets/images/DS/buttons-demo.mp4"
+import DSButtonsDemoWEBM from "../../assets/images/DS/buttons-demo.webm"
+import DSButtonsDemoPoster from "../../assets/images/DS/buttons-demo.jpg"
 import DSButtonsCode from "../../assets/images/DS/buttons-code.jpg"
 import DSPackageJSON from "../../assets/images/DS/package-json.jpg"
 import DSDefineImg1 from "../../assets/images/DS/ds-explanation.jpg"
 import DSDefineImg2 from "../../assets/images/DS/ds-architecture1.jpg"
-import DSImplement2 from "../../assets/images/DS/dimsum-storybook.gif"
-import DSImplement3 from "../../assets/images/DS/em-uikit-show.gif"
-import DSImplement4 from "../../assets/images/DS/theming.gif"
+import DSImplement2MP4 from "../../assets/images/DS/dimsum-storybook.mp4"
+import DSImplement2WEBM from "../../assets/images/DS/dimsum-storybook.webm"
+import DSImplement2Poster from "../../assets/images/DS/dimsum-storybook.jpg"
+import DSImplement3MP4 from "../../assets/images/DS/em-uikit-show.mp4"
+import DSImplement3WEBM from "../../assets/images/DS/em-uikit-show.webm"
+import DSImplement3Poster from "../../assets/images/DS/em-uikit-show.jpg"
+import DSImplement4MP4 from "../../assets/images/DS/theming.mp4"
+import DSImplement4WEBM from "../../assets/images/DS/theming.webm"
+import DSImplement4Poster from "../../assets/images/DS/theming.jpg"
 
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
+
+function createVideo(videoSourceMP4, videoSourceWEB, videoPoster) {
+  return (
+    <video
+      playsInline
+      muted
+      loop
+      poster={videoPoster}
+      onMouseOver={event => event.target.play()}
+      onMouseOut={event => event.target.pause()}
+      className="project-displayfb-img"
+    >
+      <source src={videoSourceWEB} type="video/webm" />
+      <source src={videoSourceMP4} type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  )
+}
 
 const DSProjectPage = () => {
   const data = useStaticQuery(graphql`
@@ -148,13 +176,11 @@ const DSProjectPage = () => {
           </div>
           <div className="dossier__tools-container">
             <p className="og-text-style-overline">Tools</p>
-            <p>Whiteboard, ReactJS, Sketch App, SASS, Storybook, Coffee.</p>
+            <p>Whiteboard, ReactJS, Figma, SASS, Storybook, Coffee.</p>
           </div>
           <div className="dossier__role-container">
             <p className="og-text-style-overline">Role</p>
-            <p>
-              Creative Director, Designer, Developer, Salesman and instigator.
-            </p>
+            <p>Creative Director, Designer, Developer, and instigator.</p>
           </div>
           <div className="dossier__hypothesis-container">
             <p className="og-text-style-overline">Hypothetical Solution</p>
@@ -297,27 +323,28 @@ const DSProjectPage = () => {
             </p>
 
             <p>
-              Using my weekend time, loads of coffee and a lot of trial and
-              error, I created a UI Kit for my design team and ended up using
-              Brand.ai (a tool for syncing symbols) so we could all be in sync.
-              I also constructed the Symbols so they would match 1-to-1 with the
-              components in code, even matching the Overrides of the Symbols to
-              the API's of the components (Component Attributes). This removed
-              any confusion or ambiguity that could arise when handing over the
-              designs to devs. Just having this UI Kit being part of the design
-              process helped us tremendously in building our very own Design
-              System, Ignite, and then making it part of the Ultimate Software
-              culture. Below you can see a video of the proposal I presented to
-              my boss for the UI Kit showcasing the process and efficiency.
+              After spending a few weekends working on this, and a lot of trial
+              and error, I created a UI Kit for my design team and ended up
+              using Brand.ai (a tool for syncing symbols) so we could all be in
+              sync. I also constructed the Symbols so they would match 1-to-1
+              with the components in code, even matching the Overrides of the
+              Symbols to the API's of the components (Component Attributes).
+              This removed any confusion or ambiguity that could arise when
+              handing over the designs to devs. Just having this UI Kit being
+              part of the design process helped us tremendously in building our
+              very own Design System, Ignite, and then making it part of the
+              Ultimate Software culture. Below you can see a video of the
+              proposal I presented to my boss for the UI Kit showcasing the
+              process and efficiency.
             </p>
           </div>
         </div>
 
-        <img
-          src={UltimateProposalImg}
-          className="project-displayfb-img"
-          alt="proposal"
-        />
+        {createVideo(
+          UltimateProposalMP4,
+          UltimateProposalWEBM,
+          UltimateProposalPoster
+        )}
 
         <div className="design-process__section-container">
           <div className="project-design-process-title-container" />
@@ -500,11 +527,7 @@ const DSProjectPage = () => {
           </div>
         </div>
 
-        <img
-          src={DSButtonsDemo}
-          className="project-displayfb-img"
-          alt="buttons demo"
-        />
+        {createVideo(DSButtonsDemoMP4, DSButtonsDemoWEBM, DSButtonsDemoPoster)}
 
         <div
           className="design-process__section-container"
@@ -623,11 +646,7 @@ const DSProjectPage = () => {
           </div>
         </div>
 
-        <img
-          src={DSImplement2}
-          className="project-displayfb-img"
-          alt="design system implementation"
-        />
+        {createVideo(DSImplement2MP4, DSImplement2WEBM, DSImplement2Poster)}
 
         <div className="design-process__section-container">
           <div className="project-design-process-title-container" />
@@ -663,11 +682,7 @@ const DSProjectPage = () => {
           </div>
         </div>
 
-        <img
-          src={DSImplement3}
-          className="project-displayfb-img"
-          alt="design system implementation"
-        />
+        {createVideo(DSImplement3MP4, DSImplement3WEBM, DSImplement3Poster)}
 
         <div className="design-process__section-container">
           <div className="project-design-process-title-container" />
@@ -713,11 +728,7 @@ const DSProjectPage = () => {
           </div>
         </div>
 
-        <img
-          src={DSImplement4}
-          className="project-displayfb-img"
-          alt="design system implementation"
-        />
+        {createVideo(DSImplement4MP4, DSImplement4WEBM, DSImplement4Poster)}
 
         <div className="design-process__section-container">
           <div className="project-design-process-title-container">

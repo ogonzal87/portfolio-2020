@@ -62,13 +62,11 @@ export default () => {
 
   const containerStagger = {
     initial: {
-      scale: 1,
       transition: {
         staggerChildren: 0.1,
       },
     },
     animate: {
-      scale: 1.02,
       transition: {
         staggerChildren: 0.1,
       },
