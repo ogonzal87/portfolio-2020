@@ -123,9 +123,9 @@ class HeroSection extends React.Component {
               className="hightlighted-offset"
             >
               Design Systems
-            </a>
-            . By night I make art with code and nature, and some calligraphy and
-            illustrations.
+            </a>{" "}
+            and an upcoming LinkedIn redesign. By night I make art with code or
+            plants, some calligraphy, illustrations and music.
           </motion.h2>
 
           <motion.p
@@ -165,7 +165,7 @@ class HeroSection extends React.Component {
             </a>{" "}
             ·{" "}
             <a
-              href="https://medium.muz.li/the-anatomy-of-all-digital-interfaces-11d43f55eaf"
+              href="https://medium.com/@ogonzal87"
               target="_blank"
               rel="noopener noreferrer"
             >

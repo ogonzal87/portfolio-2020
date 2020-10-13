@@ -28,7 +28,7 @@
 
   .portfolio-logo-img {
     position: absolute;
-    top: 50%;
+    top: 48%;
     left: 50%;
     transform: translate(-50%, -50%);
     max-width: 723px;
@@ -95,7 +95,8 @@
   }
 
   .hero-subheading-text {
-    max-width: 62ch;
+    // margin-top: 40px;
+    max-width: 65ch;
     color: og-color(text, secondary);
     text-align: center;
     line-height: 2rem;

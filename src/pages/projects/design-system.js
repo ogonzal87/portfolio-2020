@@ -97,13 +97,16 @@ const DSProjectPage = () => {
             </h2>
 
             <p>
-              OSKRHQ.DS is a Design System for my personal brand. This website,
-              along with every design material I produce, consumes the system.
-              More specifically, it is a Design Guide <strong>and</strong>{" "}
-              Component Library written in ReactJS with a unique SASS
-              architecture. It is also an open-sourced project you can download{" "}
+              OSKRHQ.DS is a Design System for my personal brand. More
+              specifically, it's a Design Guide <strong>and</strong> a Component
+              Library using <span className="hightlighted-offset">ReactJS</span>{" "}
+              with a unique{" "}
+              <span className="hightlighted-offset">SASS architecture</span>.{" "}
+              This website, and every personal project I work on, consumes the
+              system in code and design. It's also an open-sourced project you
+              can check out{" "}
               <a
-                href="https://github.com/ogonzal87/oskrhq-design-system"
+                href="https://codesandbox.io/embed/oskrhq-playground-app-x7mhz?fontsize=14&theme=dark&view=preview"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -117,12 +120,16 @@ const DSProjectPage = () => {
               >
                 here
               </a>
-              . I also built it as a POC to persuade design and dev teams at a
-              past employer to join me in building one for the company. Below is
-              the story.
+              .{" "}
+            </p>
+            <p>
+              I built it as a POC to persuade design and dev teams at a past
+              employer to build one for the company, and I have been adjusting
+              it based on my learnings while working on LinkedIn's new Design
+              System. Below is the story.
             </p>
             <p className="og-text-style-overline">
-              Creative Direction and Multidisciplinary Design
+              Creative Direction & Multidisciplinary Design
             </p>
             <div
               style={{
@@ -172,11 +179,14 @@ const DSProjectPage = () => {
           </div>
           <div className="dossier__duration-container">
             <p className="og-text-style-overline">Duration</p>
-            <p>May 2017 - Present</p>
+            <p>Mar 2018 - Present</p>
           </div>
           <div className="dossier__tools-container">
             <p className="og-text-style-overline">Tools</p>
-            <p>Whiteboard, ReactJS, Figma, SASS, Storybook, Coffee.</p>
+            <p>
+              ReactJS, Figma, SASS, Storybook, Gatsby, Design Tokens, Framer
+              Motion, and Coffee.
+            </p>
           </div>
           <div className="dossier__role-container">
             <p className="og-text-style-overline">Role</p>

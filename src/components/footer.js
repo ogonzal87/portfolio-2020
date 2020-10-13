@@ -28,7 +28,15 @@ const PortfolioFooter = () => (
       </a>{" "}
       ·{" "}
       <a
-        href="https://medium.muz.li/the-anatomy-of-all-digital-interfaces-11d43f55eaf"
+        href="https://codesandbox.io/u/ogonzal87"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Codesandbox
+      </a>{" "}
+      ·{" "}
+      <a
+        href="https://medium.com/@ogonzal87"
         target="_blank"
         rel="noopener noreferrer"
       >

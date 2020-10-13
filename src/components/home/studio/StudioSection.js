@@ -77,19 +77,26 @@ class StudioSection extends React.Component {
 
           <div className="text-container">
             <p className="home-studio-section-paragraph">
-              I was born and raised in Colombia, Miami is home, but I live in
-              San Francisco. I’ve worked as an interdisciplinary Designer for
-              over a decade. Or precisely{" "}
-              <span className="hightlighted-offse-very-important">{`${year} years, ${months} months, ${days} days, ${hours} hours, ${minute} minutes, ${seconds} seconds, ${milliseconds} milliseconds;`}</span>
-              <br></br>three of those years working as a Front-End developer. I
-              am currently focusing on building, growing and maintaining
+              I was born and raised in Colombia (not <i>Columbia</i>), Miami is{" "}
+              <strong>🏡 Home</strong>, but I design and code from a desk in San
+              Francisco. Although I went to school for Business, I have been
+              working as an interdisciplinary Designer for over a decade - or
+              precisely{" "}
+              <span className="hightlighted-offse-very-important">{`${year} years, ${months} months, ${days} days, ${hours} hours, ${minute} minutes, ${seconds} seconds, ${milliseconds} milliseconds.`}</span>
+              <br></br>However, for three of those years, I worked as a
+              Front-end Engineer.
+            </p>
+            <p>
+              I am currently focusing on building, growing and maintaining
               multi-platform Design Systems for large enterprises with a strong
               foundation in{" "}
               <span className="hightlighted-offset">accessibility</span> and{" "}
               <span className="hightlighted-offset">inclusivity</span>.
             </p>
 
-            <h4 className="og-text-style-overline">My Stack</h4>
+            <h3 className="og-text-style-overline">
+              <strong>My Stack</strong>
+            </h3>
             <img className="stack-graphic" src={StackGraphic} alt="my stack" />
           </div>
 

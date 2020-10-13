@@ -7,6 +7,7 @@ $og-button-transitions: all og-duration(base) og-easing(base);
 // Primary Button
 $og-button-primary-background-color: og-color(background, brand);
 $og-button-primary-text-color: og-color(text, primary-on-dark);
+$og-button-primary-text-color--hover: og-color(text, link);
 $og-button-primary-background-color--hover: og-color(background, brand-hover);
 $og-button-primary-background-color--focused: og-color(
   background,
@@ -91,6 +92,8 @@ $og-button-ghost-background-color--focused: lighten(
 
   &:hover {
     background: $og-button-primary-background-color--hover;
+    color: $og-button-primary-text-color--hover;
+    font-weight: og-font-weight(bold);
   }
 
   &:focus,
