@@ -245,7 +245,9 @@ const CreativeLabMosque = () => {
       <video
         playsInline
         onMouseOver={event => event.target.play()}
+        onFocus={event => event.target.play()}
         onMouseOut={event => event.target.pause()}
+        onBlur={event => event.target.pause()}
         muted
         loop
         poster={videoSourcePoster}

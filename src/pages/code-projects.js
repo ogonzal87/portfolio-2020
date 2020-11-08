@@ -41,7 +41,9 @@ function createVideo(videoSourceMP4, videoSourceWEB, videoPoster) {
       className="card-image"
       poster={videoPoster}
       onMouseOver={event => event.target.play()}
+      onFocus={event => event.target.play()}
       onMouseOut={event => event.target.pause()}
+      onBlur={event => event.target.pause()}
     >
       <source src={videoSourceWEB} type="video/webm" />
       <source src={videoSourceMP4} type="video/mp4" />

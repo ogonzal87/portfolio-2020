@@ -41,7 +41,9 @@ function createVideo(videoSourceMP4, videoSourceWEB, videoPoster) {
       loop
       poster={videoPoster}
       onMouseOver={event => event.target.play()}
+      onFocus={event => event.target.play()}
       onMouseOut={event => event.target.pause()}
+      onBlur={event => event.target.pause()}
       className="project-displayfb-img"
     >
       <source src={videoSourceWEB} type="video/webm" />

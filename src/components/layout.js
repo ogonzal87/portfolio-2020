@@ -20,21 +20,20 @@ class Layout extends React.Component {
     const { children } = this.props
 
     return (
-      <div>
-        <div>
-          <main onMouseMove={e => this.handleMouseMove(e)}>
-            <div
-              className="cursor"
-              style={{
-                left: xMain,
-                top: yMain,
-                zIndex: 999,
-              }}
-            />
-            {children}
-          </main>
-        </div>
-      </div>
+      <>
+        <div className="toasty">This is a Toast!</div>
+        <main onMouseMove={e => this.handleMouseMove(e)}>
+          <div
+            className="cursor"
+            style={{
+              left: xMain,
+              top: yMain,
+              zIndex: 999,
+            }}
+          />
+          {children}
+        </main>
+      </>
     )
   }
 }
