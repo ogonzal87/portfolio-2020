@@ -1,7 +1,7 @@
 $og-button-m-padding: $og-space-24;
 $og-button-s-padding: $og-space-16;
 $og-button-border: none;
-$og-button-shape: og-shape(primary, default);
+$og-button-shape: og-shape(secondary, default);
 $og-button-transitions: all og-duration(base) og-easing(base);
 
 // Primary Button
@@ -20,7 +20,7 @@ $og-button-secondary-text-color: og-color(text, link);
 $og-button-secondary-text-color--hover: og-color(text, link-hover);
 $og-button-secondary-text-color--focused: og-color(text, link-focused);
 
-// Posistive Button
+// Positive Button
 $og-button-positive-background-color: og-color(background, positive);
 $og-button-positive-text-color: og-color(text, primary-on-dark);
 $og-button-positive-background-color--hover: og-color(
@@ -32,7 +32,7 @@ $og-button-positive-background-color--focused: og-color(
   positive-focused
 );
 
-// // Danger Button
+// Danger Button
 $og-button-negative-background-color: og-color(background, negative);
 $og-button-negative-text-color: og-color(text, primary-on-dark);
 $og-button-negative-background-color--hover: og-color(
@@ -44,23 +44,17 @@ $og-button-negative-background-color--focused: og-color(
   negative-focused
 );
 
-// // Info Button
+// Info Button
 $og-button-info-background-color: og-color(background, info);
 $og-button-info-text-color: og-color(text, primary-on-dark);
 $og-button-info-background-color--hover: og-color(background, info-hover);
 $og-button-info-background-color--focused: og-color(background, info-focused);
 
-// // Ghost Button
+// Ghost Button
 $og-button-ghost-background-color: transparent;
 $og-button-ghost-text-color: og-color(text, link);
-$og-button-ghost-background-color--hover: lighten(
-  og-color(background, brand-hover),
-  25%
-);
-$og-button-ghost-background-color--focused: lighten(
-  og-color(background, brand-hover),
-  20%
-);
+$og-button-ghost-background-color--hover: og-color(background, brand-hover);
+$og-button-ghost-background-color--focused: og-color(background, brand-hover);
 
 // Text buttons
 

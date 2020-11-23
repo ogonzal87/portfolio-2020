@@ -21,7 +21,6 @@ class Layout extends React.Component {
 
     return (
       <>
-        <div className="toasty">This is a Toast!</div>
         <main onMouseMove={e => this.handleMouseMove(e)}>
           <div
             className="cursor"
