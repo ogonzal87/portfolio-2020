@@ -30,34 +30,31 @@ const AboutPage = () => {
             </div>
 
             <div className="text-container">
-              <p className=" ">
-                On a more personal note... My name is Oscar and I am a Colombian
-                coffee addict (I blame it on my roots). I am a self-taught
-                designer and developer. I actually went to Business School, not
+              <p>
+                My name is Oscar. I am a self-taught
+                designer and developer. I went to Business School, but not
                 by choice...{" "}
                 <span role="img" aria-label="unamused emoji">
                   😒
                 </span>
-                . My passions lie at the intersection of Design and Code. When I
+                . My passion lies at the intersection of Design and Code. When I
                 am not creating digital things, I like making music, ride my
-                bike "La Negra", Latin dance and scuba dive every chance I get.
-                Also, I love nature so much I even trim its bushes... Literally.
-                Creating moss art is one of my favorite hobbies. Check it out{" "}
-                <a
+                bike "La Negra", Latin dance, calligraphy, illustrating and I am a PADI certified Advanced Open Water Diver.
+                Also, I <a
                   href="https://www.instagram.com/musgho/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  here
+                make art with moss
                 </a>
                 .
               </p>
               <br />
-              <br />
-              <br />
+              
+              
               <p className="special-text-styling">Current Interests</p>
               <p className="og-text-style-body1">
-                I am really into accessibility/inclusivity, decentralized
+                I am really into anything Design Systems, accessibility and inclusivity (studying right now to get <a href="https://www.accessibilityassociation.org/wascertification" target="_blank" rel="noopener noreferrer">WAS certified</a>), decentralized
                 autonomous systems, crypto assets, machine learning, 3D design,
                 AR and VR.
               </p>

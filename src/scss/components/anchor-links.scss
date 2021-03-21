@@ -1,0 +1,28 @@
+.anchor-links {
+  position: fixed;
+  top: 180px;
+  left: 54px;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+
+  @include respond-to(phone) {
+    display: none;
+  }
+
+  a {
+    min-height: 32px;
+    min-width: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+  }
+
+  .dot {
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background-color: og-color(text, primary-disabled);
+  }
+}

@@ -267,7 +267,7 @@ const CreativeLabMosque = () => {
   }
 
   return (
-    <div>
+    <div id="creative-lab-mosque">
       <div className="home-mosque-grid">
         {createVideo(skullARVidMP4, skullARVidWEB, skullARVidPoster, "a")}
         <Img

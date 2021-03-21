@@ -1,6 +1,5 @@
 import React from "react"
 import NameLogo from "../../../assets/logos/logo3.svg"
-import Link from "gatsby-link"
 import Tilt from "react-tilt"
 import palmsIllustrationFront from "../../../assets/images/palms/front.svg"
 import palmsIllustrationMiddle from "../../../assets/images/palms/middle.svg"
@@ -32,6 +31,7 @@ class HeroSection extends React.Component {
         exit={{ opacity: 0 }}
         initial="initial"
         animate="animate"
+        id="hero"
       >
         <img
           src={palmsIllustrationFront}
@@ -115,7 +115,7 @@ class HeroSection extends React.Component {
             >
               LinkedIn
             </a>{" "}
-            concentrating on multi-platform{" "}
+            concentrating on accessible multi-platform{" "} 
             <a
               href="https://codesandbox.io/embed/oskrhq-playground-app-x7mhz?fontsize=14&theme=dark&view=preview"
               target="_blank"
@@ -123,71 +123,10 @@ class HeroSection extends React.Component {
               className="hightlighted-offset"
             >
               Design Systems
-            </a>{" "}
-            and an upcoming LinkedIn redesign. By night I make art with code or
+            </a>,{" "}
+            product redesign and Dark Mode. By night I make art with code or
             plants, some calligraphy, illustrations and music.
           </motion.h2>
-
-          <motion.p
-            variants={ogAnimation.fadeUpItem}
-            className="home-contact-links"
-          >
-            <Link to="/about">About</Link> ·{" "}
-            <a
-              href="mailto:someone@example.com?Subject=Hello%20again"
-              target="_top"
-            >
-              oscar@oskrhq.com
-            </a>{" "}
-            ·{" "}
-            <a
-              href="https://github.com/ogonzal87"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Github
-            </a>{" "}
-            ·{" "}
-            <a
-              href="https://codepen.io/ogonzal87/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Codepen
-            </a>{" "}
-            ·{" "}
-            <a
-              href="https://codesandbox.io/u/ogonzal87"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Codesandbox
-            </a>{" "}
-            ·{" "}
-            <a
-              href="https://medium.com/@ogonzal87"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Medium
-            </a>{" "}
-            ·{" "}
-            <a
-              href="https://dribbble.com/ogonzal87"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Dribbble
-            </a>{" "}
-            ·{" "}
-            <a
-              href="https://www.instagram.com/oskrhq/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Instagram
-            </a>
-          </motion.p>
         </motion.div>
       </motion.div>
     )

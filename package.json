@@ -9,6 +9,7 @@
     "gatsby-background-image": "^1.0.1",
     "gatsby-cli": "^2.12.117",
     "gatsby-image": "^2.3.1",
+    "gatsby-plugin-anchor-links": "^1.2.0",
     "gatsby-plugin-google-analytics": "^2.2.2",
     "gatsby-plugin-manifest": "^2.3.3",
     "gatsby-plugin-offline": "^3.1.2",

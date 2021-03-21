@@ -110,7 +110,7 @@ export default () => {
   }
 
   return (
-    <section>
+    <section id="projects">
       <motion.div
         initial="initial"
         className="home-project-card-container"

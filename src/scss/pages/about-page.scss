@@ -12,19 +12,6 @@
     position: relative;
   }
 
-  .taking-clients {
-    position: absolute;
-    left: og-space(space-64) * 1.5;
-    top: og-space(space-64);
-    color: og-color(text, link);
-    max-width: 20ch;
-    transform: rotate(-43deg);
-
-    @include respond-to(phone) {
-      display: none;
-    }
-  }
-
   .profile-img {
     max-width: 500px;
     border-radius: 10px;
@@ -40,7 +27,7 @@
   }
 
   .text-container {
-    padding: og-space(space-48) og-space(space-48) * 1.5;
+    padding: 0 og-space(space-48) * 1.5;
     max-width: 60ch;
     position: relative;
 

@@ -95,7 +95,7 @@ export default () => {
           thoughts thoughts thoughts
         </span>
       </p>
-      <section className="home-page-section home-thoughts-section">
+      <section className="home-page-section home-thoughts-section" id="thoughts">
         <img
           src={thoughtsImg}
           alt="title"

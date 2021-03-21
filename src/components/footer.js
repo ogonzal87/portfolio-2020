@@ -3,12 +3,14 @@ import FlamingoImg1 from "../assets/images/footer/flamingo-1.svg"
 import FlamingoImg2 from "../assets/images/footer/flamingo-2.svg"
 import WaterImg from "../assets/images/footer/water.svg"
 import SunImg from "../assets/images/footer/sun.svg"
+import Link from "gatsby-link"
 
 const PortfolioFooter = () => (
   <div className="portfolio-footer-container">
-    <p className="text">
-      <a href="mailto:someone@example.com?Subject=Hello%20again" target="_top">
-        oscar@oskrhq.com
+    <p className="text home-contact-links">
+      <Link to="/about">About</Link> ·{" "}
+      <a href="mailto:oskr.fuent@gmail.com?Subject=Hola" target="_top">
+        oskr.fuent@gmail.com
       </a>{" "}
       ·{" "}
       <a
@@ -44,7 +46,7 @@ const PortfolioFooter = () => (
       </a>{" "}
       ·{" "}
       <a
-        href="https://dribbble.com/ogonzal87"
+        href="https://dribbble.com/oskrhq"
         target="_blank"
         rel="noopener noreferrer"
       >

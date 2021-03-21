@@ -72,7 +72,7 @@ class StudioSection extends React.Component {
             studio studio studio studio studio studio studio studio studio
           </span>
         </p>
-        <section className="home-studio-section">
+        <section className="home-studio-section" id="studio">
           <img src={StudioImg} alt="" className="home-brush-lettering studio" />
 
           <div className="text-container">
@@ -88,15 +88,14 @@ class StudioSection extends React.Component {
               went to school for Business, I have been working as an
               interdisciplinary Designer for over a decade - or precisely{" "}
               <span className="hightlighted-offse-very-important">{`${year} years, ${months} months, ${days} days, ${hours} hours, ${minute} minutes, ${seconds} seconds, ${milliseconds} milliseconds.`}</span>
-              <br></br>However, for three of those years, I worked as a
-              Front-end Engineer.
+              <br></br>Four of those years, I worked as a Design Systems front-end Engineer.
             </p>
             <p>
               I am currently focusing on building, growing and maintaining
               multi-platform Design Systems for large enterprises with a strong
               foundation in{" "}
               <span className="hightlighted-offset">accessibility</span> and{" "}
-              <span className="hightlighted-offset">inclusivity</span>.
+              <span className="hightlighted-offset">inclusivity</span> - studying right now to get <a href="https://www.accessibilityassociation.org/wascertification" target="_blank" rel="noopener noreferrer">WAS certified</a> in January 2021.
             </p>
 
             <h3 className="og-text-style-overline">

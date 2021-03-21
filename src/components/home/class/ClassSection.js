@@ -30,7 +30,7 @@ export default () => {
           classes classes classes classes classes
         </span>
       </p>
-      <section className="home-class-section">
+      <section className="home-class-section" id="classes">
         <a
           href="https://skl.sh/2yhdemt"
           target="_blank"

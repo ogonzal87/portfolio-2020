@@ -52,7 +52,7 @@ const CodeSection = () => {
           code code code
         </span>
       </p>
-      <section className="home-code-section">
+      <section className="home-code-section" id="code">
         <img
           src={codeLetteringImg}
           alt=""
