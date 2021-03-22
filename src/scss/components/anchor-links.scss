@@ -1,6 +1,7 @@
 .anchor-links {
   position: fixed;
-  top: 180px;
+  top: 50%;
+  transform: translateY(-50%);
   left: 54px;
   z-index: 999;
   display: flex;
@@ -23,6 +24,10 @@
     height: 8px;
     width: 8px;
     border-radius: 50%;
-    background-color: og-color(text, primary-disabled);
+    border: 1px solid rgba(0, 0, 0, 0.45);
+    // mix-blend-mode: exclusion;
+    mix-blend-mode: difference;
+
+    // background-color: og-color(text, primary-disabled);
   }
 }

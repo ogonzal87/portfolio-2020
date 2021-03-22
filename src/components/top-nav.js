@@ -52,6 +52,7 @@ const TopNav = ({ work, about, resume, ...props }) => {
           type: "spring",
           stiffness: 260,
           damping: 20,
+          delay: .75
         }}
       >
         <AniLink to="/" paintDrip duration={0.75} hex="#5900FF">

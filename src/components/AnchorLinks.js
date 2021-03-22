@@ -6,7 +6,8 @@ import ogAnimation from "../assets/animations/animations-helper"
 const AnchorLinks = () => (
   <motion.div variants={ogAnimation.fadeItem} initial="initial" animate="animate" className="anchor-links">
     <AnchorLink to="/#hero" title="Introduction">
-        <span className="dot" style={{background: "var(--og-brand-color3)"}}></span>
+        <span className="dot" style={{background: "var(--og-brand-color3)",
+    border: "1px solid var(--og-brand-color3)"}}></span>
     </AnchorLink>
     <AnchorLink to="/#projects" title="Work">
         <span className="dot"></span>

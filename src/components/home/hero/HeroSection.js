@@ -61,7 +61,7 @@ class HeroSection extends React.Component {
             variants={ogAnimation.fadeUpItem}
           >
             Hola!{" "}
-            <span role="img" aria-label="emoji">
+            <span role="img" aria-label="emoji" alt=" ">
               👋🏼
             </span>{" "}
             mi nombre es
