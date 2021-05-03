@@ -77,14 +77,7 @@ class StudioSection extends React.Component {
 
           <div className="text-container">
             <p className="home-studio-section-paragraph">
-              I was born and raised in Colombia (not <i>Columbia</i>), Miami is{" "}
-              <strong>
-                <span role="img" aria-label="Home">
-                  🏡
-                </span>{" "}
-                Home
-              </strong>
-              , but I design and code from a desk in San Francisco. Although I
+              I was born and raised in Colombia (not <i>Columbia</i>), Although I
               went to school for Business, I have been working as an
               interdisciplinary Designer for over a decade - or precisely{" "}
               <span className="hightlighted-offse-very-important">{`${year} years, ${months} months, ${days} days, ${hours} hours, ${minute} minutes, ${seconds} seconds, ${milliseconds} milliseconds.`}</span>

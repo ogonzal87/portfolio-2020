@@ -32,14 +32,8 @@ const AboutPage = () => {
             <div className="text-container">
               <p>
                 My name is Oscar. I am a self-taught
-                designer and developer. I went to Business School, but not
-                by choice...{" "}
-                <span role="img" aria-label="unamused emoji">
-                  😒
-                </span>
-                . My passion lies at the intersection of Design and Code. When I
-                am not creating digital things, I like making music, ride my
-                bike "La Negra", Latin dance, calligraphy, illustrating and I am a PADI certified Advanced Open Water Diver.
+                designer and developer. Although I went to Business School, my passion lies at the intersection of Design and Code. When I
+                am not creating digital things, I like making music, Latin dance, calligraphy, illustrating and I am a PADI certified Advanced Open Water Diver.
                 Also, I <a
                   href="https://www.instagram.com/musgho/"
                   target="_blank"
