@@ -77,7 +77,7 @@ class StudioSection extends React.Component {
 
           <div className="text-container">
             <p className="home-studio-section-paragraph">
-              I was born and raised in Colombia (not <i>Columbia</i>), Although I
+              I was born and raised in Colombia (not <i>Columbia</i>). Although I
               went to school for Business, I have been working as an
               interdisciplinary Designer for over a decade - or precisely{" "}
               <span className="hightlighted-offse-very-important">{`${year} years, ${months} months, ${days} days, ${hours} hours, ${minute} minutes, ${seconds} seconds, ${milliseconds} milliseconds.`}</span>
@@ -88,7 +88,7 @@ class StudioSection extends React.Component {
               multi-platform Design Systems for large enterprises with a strong
               foundation in{" "}
               <span className="hightlighted-offset">accessibility</span> and{" "}
-              <span className="hightlighted-offset">inclusivity</span> - studying right now to get <a href="https://www.accessibilityassociation.org/wascertification" target="_blank" rel="noopener noreferrer">WAS certified</a> in January 2021.
+              <span className="hightlighted-offset">inclusivity</span> - studying right now to get <a href="https://www.accessibilityassociation.org/wascertification" target="_blank" rel="noopener noreferrer">WAS</a> and <a href="https://www.accessibilityassociation.org/cpacccertification" target="_blank" rel="noopener noreferrer">CPACC</a> certified.
             </p>
 
             <h3 className="og-text-style-overline">

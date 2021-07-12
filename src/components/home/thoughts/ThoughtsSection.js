@@ -64,6 +64,14 @@ export default () => {
           }
         }
       }
+
+      mediumPost7Img: file(relativePath: { eq: "images/design-tokens.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 1400) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
     }
   `)
 
@@ -107,6 +115,42 @@ export default () => {
           animate="animate"
           initial="initial"
         >
+
+
+
+
+          <motion.li>
+            <motion.div className="home-post-card">
+              <motion.a
+                href="https://uxdesign.cc/design-tokens-cheatsheet-927fc1404099"
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover="animate"
+              >
+                <Img
+                  fluid={data.mediumPost7Img.childImageSharp.fluid}
+                  alt="article post"
+                  className="img-thumbnail"
+                />
+                <motion.div className="cta-overlay" variants={fadeItem}>
+                  <p className="og-text-style-heading4">Read it =></p>
+                </motion.div>
+              </motion.a>
+            </motion.div>
+
+            <div className="post-text-container">
+              <h5 className="og-text-style-heading6">
+                Design Tokens cheatsheet
+              </h5>
+
+              <span className="ds-overlay-text-style">
+                MEDIUM, UX Collective
+              </span>
+            </div>
+          </motion.li>
+
+
+
           <motion.li>
             <motion.div className="home-post-card">
               <motion.a

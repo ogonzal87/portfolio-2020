@@ -48,7 +48,7 @@ const AboutPage = () => {
               
               <p className="special-text-styling">Current Interests</p>
               <p className="og-text-style-body1">
-                I am really into anything Design Systems, accessibility and inclusivity (studying right now to get <a href="https://www.accessibilityassociation.org/wascertification" target="_blank" rel="noopener noreferrer">WAS certified</a>), decentralized
+                I am really into anything Design Systems, accessibility and inclusivity (studying right now get <a href="https://www.accessibilityassociation.org/wascertification" target="_blank" rel="noopener noreferrer">WAS</a> and <a href="https://www.accessibilityassociation.org/cpacccertification" target="_blank" rel="noopener noreferrer">CPACC</a> certified), decentralized
                 autonomous systems, crypto assets, machine learning, 3D design,
                 AR and VR.
               </p>
