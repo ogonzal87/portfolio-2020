@@ -3,6 +3,8 @@ import StudioImg from "../../../assets/images/hand-brush/studio.png"
 import StackGraphic from "../../../assets/images/stack.svg"
 import { Parallax } from "react-scroll-parallax"
 import ProfilePicture from "./ProfilePicture"
+import WASLogo from "../../../assets/logos/WAS-logo.png"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 class StudioSection extends React.Component {
   state = {
@@ -77,28 +79,26 @@ class StudioSection extends React.Component {
 
           <div className="text-container">
             <p className="home-studio-section-paragraph">
-              I was born and raised in Colombia (not <i>Columbia</i>). Although I
-              went to school for Business, I have been working as an
-              interdisciplinary Designer for over a decade - or precisely{" "}
+              I have been working as an interdisciplinary Designer for over a decade - or precisely{" "}
               <span className="hightlighted-offse-very-important">{`${year} years, ${months} months, ${days} days, ${hours} hours, ${minute} minutes, ${seconds} seconds, ${milliseconds} milliseconds.`}</span>
-              <br></br>Four of those years, I worked as a Design Systems front-end Engineer.
+              <br></br>I worked as a Design Systems front-end engineer for four of those years. 
             </p>
-            <p>
+            <p className="home-studio-section-paragraph">
               I am currently focusing on building, growing and maintaining
               multi-platform Design Systems for large enterprises with a strong
               foundation in{" "}
               <span className="hightlighted-offset">accessibility</span> and{" "}
-              <span className="hightlighted-offset">inclusivity</span> - studying right now to get <a href="https://www.accessibilityassociation.org/wascertification" target="_blank" rel="noopener noreferrer">WAS</a> and <a href="https://www.accessibilityassociation.org/cpacccertification" target="_blank" rel="noopener noreferrer">CPACC</a> certified.
+              <span className="hightlighted-offset">inclusivity</span>, and I hold a <a href="https://www.accessibilityassociation.org/wascertification" target="_blank" rel="noopener noreferrer">technical accessibility specialist certification (WAS)</a> from The International Association of Accessibility Professionals <a href="https://www.accessibilityassociation.org/cpacccertification" target="_blank" rel="noopener noreferrer">(IAAP)</a>.
             </p>
 
-            <h3 className="og-text-style-overline">
+            <h3 className="og-text-style-overline home-studio-section-paragraph">
               <strong>My Stack</strong>
             </h3>
             <img className="stack-graphic" src={StackGraphic} alt="my stack" />
           </div>
 
           <div className="profile-img-wrapper">
-            <Parallax y={[-30, 30]} tagOuter="figure">
+            <Parallax y={[-35, 30]} tagOuter="figure">
               <ProfilePicture
                 className="studio-profile-picture"
                 style={{ width: "573px" }}
@@ -107,9 +107,21 @@ class StudioSection extends React.Component {
 
             <div className="studio-decorative-div1"></div>
 
-            <div className="studio-decorative-div2"></div>
+            <div className="studio-decorative-div2 was-certification-logo">
+              <a href="https://www.accessibilityassociation.org/wascertification" target="_blank" rel="noopener noreferrer"><img src={WASLogo} atl="IAAP WAS circular badge logo for International Association of Accessibility Professionals (IAAP) Web Accessibility Specialist (WAS) credential. A dark blue circle with three lines of centered white text that read: IAAP WAS Certified. There is a smaller light blue circle that surrounds the dark blue inner circle that designates the WAS credential color scheme."/></a>
+            </div>
           </div>
         </section>
+
+        <AniLink
+          paintDrip
+          to="/about"
+          duration={0.75}
+          hex="#5900FF"
+          className="show-more-link"
+        >
+          Learn more about me ➡
+        </AniLink>
       </div>
     )
   }

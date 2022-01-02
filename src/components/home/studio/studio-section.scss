@@ -1,5 +1,5 @@
 .home-studio-section {
-  padding: 200px 0;
+  padding-top: 200px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -58,6 +58,7 @@
 
   .profile-img-wrapper {
     position: relative;
+    margin-top: -100px;
   }
 
   .gatsby-image-wrapper {
@@ -88,15 +89,47 @@
   }
 
   .studio-decorative-div2 {
-    height: 100px;
-    width: 100px;
+    height: 140px;
+    width: 140px;
     background-color: var(--og-brand-color2);
-    z-index: -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
     border-radius: 50%;
-    box-sizing: border-box;
+    box-shadow: 0 15px 45px -5px rgba(44, 54, 81, 0.3);
+    transition: all og-easing(overshoot) og-duration(fast);
+
+    &:hover {
+      transform: translateY(-1px);
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    img {
+      height: 120px;
+      width: 120px;
+    }
 
     @include respond-to(phone) {
       display: none;
     }
   }
+}
+
+.show-more-link {
+  width: 280px;
+  padding: $og-space-16;
+  margin: 0 auto;
+  display: block;
+  margin-top: $og-space-32;
+  @include og-border(thickest, brand, solid);
+  font-weight: og-font-weight(bold);
+  text-align: center;
+  border-radius: og-shape(primary);
+  margin-bottom: 200px;
 }

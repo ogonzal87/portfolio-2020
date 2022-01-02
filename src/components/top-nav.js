@@ -63,7 +63,7 @@ const TopNav = ({ work, about, resume, ...props }) => {
       <ul>
         <li>{WorkLink}</li>
         <li>{AboutLink}</li>
-        <li>{ResumeLink}</li>
+        <li>{ResumeLink}</li> 
       </ul>
     </nav>
   )

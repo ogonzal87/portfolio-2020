@@ -124,7 +124,7 @@ class HeroSection extends React.Component {
             >
               Design Systems
             </a>,{" "}
-            product redesign and Dark Mode. By night I make art with code or
+            product redesign, Dark Mode and Accessibility. By night I make art with code or
             plants, some calligraphy, illustrations and music.
           </motion.h2>
         </motion.div>
