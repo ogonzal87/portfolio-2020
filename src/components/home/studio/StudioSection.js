@@ -81,14 +81,14 @@ class StudioSection extends React.Component {
             <p className="home-studio-section-paragraph">
               I have been working as an interdisciplinary Designer for over a decade - or precisely{" "}
               <span className="hightlighted-offse-very-important">{`${year} years, ${months} months, ${days} days, ${hours} hours, ${minute} minutes, ${seconds} seconds, ${milliseconds} milliseconds.`}</span>
-              <br></br>I worked as a Design Systems front-end engineer for four of those years. 
+              <br></br>For four of those years, I worked as a Design Systems front-end engineer, and I have contributed to several open source projects, including <a href="https://github.com/nodejs/node" target="_blank" rel="noopener noreferrer">Node.JS</a>. 
             </p>
             <p className="home-studio-section-paragraph">
-              I am currently focusing on building, growing and maintaining
+              I am currently focusing on building, growing, and maintaining
               multi-platform Design Systems for large enterprises with a strong
               foundation in{" "}
               <span className="hightlighted-offset">accessibility</span> and{" "}
-              <span className="hightlighted-offset">inclusivity</span>, and I hold a <a href="https://www.accessibilityassociation.org/wascertification" target="_blank" rel="noopener noreferrer">technical accessibility specialist certification (WAS)</a> from The International Association of Accessibility Professionals <a href="https://www.accessibilityassociation.org/cpacccertification" target="_blank" rel="noopener noreferrer">(IAAP)</a>.
+              <span className="hightlighted-offset">inclusivity</span> - I hold a <a href="https://www.accessibilityassociation.org/wascertification" target="_blank" rel="noopener noreferrer">technical accessibility specialist certification (WAS)</a> from The International Association of Accessibility Professionals <a href="https://www.accessibilityassociation.org/cpacccertification" target="_blank" rel="noopener noreferrer">(IAAP)</a>. I have also provided consultancy services to many early-stage startups, and I mentor other designers. 
             </p>
 
             <h3 className="og-text-style-overline home-studio-section-paragraph">

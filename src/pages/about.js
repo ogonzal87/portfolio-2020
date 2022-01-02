@@ -31,7 +31,7 @@ const AboutPage = () => {
 
             <div className="text-container">
               <p>
-              I was born and raised in Colombia. My family and I moved to the States in my teens for security reasons.  I began my career as a high school janitor but taught myself to design and code while going to school for Business. I now work as a Staff Designer for LinkedIn and I was an early crypto-asset investor. When I am not creating digital things, I like making music (guitar, piano, and ukulele), Latin dance, calligraphy art pieces, and illustrations. I also like  <a
+              I was born and raised in Colombia. My family and I moved to the States in my teens for security reasons. I began my career as a high school janitor but taught myself to design and code while going to school for Business. I now work as a Staff Designer for LinkedIn and I was an early crypto-asset investor. When I am not creating digital things, I like making music (guitar, piano, and ukulele), Latin dance, calligraphy art pieces, and illustrations. I also like  <a
                   href="https://www.instagram.com/musgho/"
                   target="_blank"
                   rel="noopener noreferrer"
