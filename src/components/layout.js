@@ -1,7 +1,5 @@
 import React from "react"
 import "../scss/_styles.scss"
-import {motion} from "framer-motion"
-import ogAnimation from "../assets/animations/animations-helper"
 
 class Layout extends React.Component {
   state = {

@@ -3,7 +3,6 @@ import Link from "gatsby-link"
 import logo from "../assets/logos/logo4.svg"
 import ResumePDF from "../assets/images/oscar-gonzalez-resume.pdf"
 import { motion } from "framer-motion"
-import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 const TopNav = ({ work, about, resume, ...props }) => {
   const WorkLink = work ? (
