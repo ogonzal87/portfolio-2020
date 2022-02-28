@@ -55,9 +55,9 @@ const TopNav = ({ work, about, resume, ...props }) => {
           delay: .75
         }}
       >
-        <AniLink to="/" paintDrip duration={0.75} hex="#5900FF">
+        <Link to="/" paintDrip duration={0.75} hex="#5900FF">
           <img src={logo} className="og-logo" alt="logo" />
-        </AniLink>
+        </Link>
       </motion.div>
 
       <ul>

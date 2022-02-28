@@ -183,7 +183,6 @@ html {
   display: inline-block;
   z-index: 999;
   line-height: 1.5;
-  // padding-left: 100%;
   will-change: transform;
   animation: marquee 900s linear infinite;
   color: var(--og-brand-color2);
@@ -231,7 +230,6 @@ html {
 }
 
 /* Respect user preferences about animations */
-
 @media (prefers-reduced-motion: reduce) {
   .marquee {
     white-space: normal;
@@ -243,6 +241,7 @@ html {
 }
 
 .contact-me-circle {
+  overflow: hidden;
   mix-blend-mode: difference;
   background-blend-mode: difference;
   font-weight: bold;
@@ -250,7 +249,6 @@ html {
   bottom: -80px;
   right: -80px;
   text-transform: uppercase;
-  font-size: 17px;
   font-weight: 700;
   -webkit-animation-name: rotate;
   -moz-animation-name: rotate;
@@ -280,7 +278,7 @@ html {
 
   text {
     fill: var(--og-brand-color3) !important;
-    text-shadow: 1px 1px var(--og-brand-color2), 2px 2px var(--og-brand-color1);
+    text-shadow: 1px 1px var(--og-brand-color2);
     font-size: 17px;
     // font-family: "KemcoPixel";
   }

@@ -29,7 +29,7 @@ class HomePage extends React.Component {
 
             <AnchorLinks />
 
-            <HeroSection />
+            <HeroSection /> 
 
             <ProjectsSection />
 
@@ -44,10 +44,11 @@ class HomePage extends React.Component {
             <CreativeLabMosque />
 
             <PortfolioFooter />
-          </div>
+          </div>  
         </ParallaxProvider>
 
-        <motion.svg variants={ogAnimation.fadeItem} initial="initial" animate="animate" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="280px" height="280px" viewBox="0 0 280 280" enableBackground="new 0 0 300 300" className="contact-me-circle">
+
+        <motion.svg variants={ogAnimation.ContactMeCircle} initial="initial" animate="animate" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="280px" height="280px" viewBox="0 0 280 280" enableBackground="new 0 0 300 300" className="contact-me-circle">
           <defs>
               <path id="circlePath" d="M0.5,140a139.5,139.5 0 1,0 279,0a139.5,139.5 0 1,0 -279,0"/>
           </defs>
@@ -56,7 +57,7 @@ class HomePage extends React.Component {
               <use xlinkHref="#circlePath" fill="none"/>
               <text fill="">
                   <textPath xlinkHref="#circlePath" >
-                      <a style={{fontWeight: "700"}} href="mailto:oskr.fuent@gmail.com?Subject=Hola" target="_top">oskr.fuent@gmail.com</a>{" ∙ "}
+                      <a href="mailto:oskr.fuent@gmail.com?Subject=Hola" target="_top">oskr.fuent@gmail.com</a>{" ∙ "}
                       <a href="https://github.com/ogonzal87" target="_blank" rel="noopener noreferrer">Github</a>{" ∙ "}
                       <a href="https://codepen.io/ogonzal87/" target="_blank" rel="noopener noreferrer">Codepen</a>{" ∙ "} 
                       <a href="https://codesandbox.io/u/ogonzal87" target="_blank" rel="noopener noreferrer">Codesandbox</a>{" ∙ "} 
@@ -66,7 +67,7 @@ class HomePage extends React.Component {
                   </textPath>
               </text>
           </g>
-        </motion.svg>
+        </motion.svg>  
       </Layout>
     )
   }

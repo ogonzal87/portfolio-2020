@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//hacksw/handcal//NONSGML v1.0//EN
+BEGIN:VEVENT
+UID:101002859.1641829500
+URL:https://local.demandforce.com/b/premierdermatologypartnersmiami
+DTSTART;TZID=America/New_York:20220110T104500
+DTEND;TZID=America/New_York:20220110T110000
+DTSTAMP:20220110T154500Z
+SUMMARY:Appointment at Premier Dermatology Partners-Miami
+DESCRIPTION:Please call Premier Dermatology Partners-Miami at 7865272693 if
+  you are unable to make this appointment. See you then! -- This appointmen
+ t reminder provided as a service of Demandforce\, Inc.
+LOCATION:3431 NE 1st ave.\, Miami\, FL\, 33137
+END:VEVENT
+END:VCALENDAR

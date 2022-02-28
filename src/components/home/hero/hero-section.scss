@@ -99,8 +99,8 @@
     max-width: 75ch;
     color: og-color(text, secondary);
     text-align: center;
-    line-height: 2rem;
-    font-size: og-font-size(heading5);
+    line-height: 1.7rem;
+    font-size: og-font-size(heading6);
 
     @include respond-to(phone) {
       color: og-color(text, secondary);

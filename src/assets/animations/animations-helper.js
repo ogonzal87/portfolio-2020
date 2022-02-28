@@ -28,6 +28,7 @@ const ogAnimation = {
   fadeItem: {
     initial: {
       opacity: 0,
+      
     },
     animate: {
       opacity: 1,
@@ -37,6 +38,26 @@ const ogAnimation = {
       },
     },
   },
+
+  ContactMeCircle: {
+    initial: {
+      opacity: 0,
+      display: "none",
+      background: "blue",
+      position: "static",
+    },
+    animate: {
+      opacity: 1,
+      display: "block",
+      background: "red",
+      position: "fixed",
+      transition: {
+        duration: 5,
+        ease: easing,
+      },
+    },
+  },
+
 
   hover: {
     scale: 1.02,
