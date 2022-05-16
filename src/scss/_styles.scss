@@ -240,56 +240,106 @@ html {
   }
 }
 
-.contact-me-circle {
-  overflow: hidden;
-  mix-blend-mode: difference;
-  background-blend-mode: difference;
-  font-weight: bold;
-  position: fixed;
-  bottom: -80px;
-  right: -80px;
-  text-transform: uppercase;
-  font-weight: 700;
-  -webkit-animation-name: rotate;
-  -moz-animation-name: rotate;
-  -ms-animation-name: rotate;
-  -o-animation-name: rotate;
-  animation-name: rotate;
-  -webkit-animation-duration: 25s;
-  -moz-animation-duration: 25s;
-  -ms-animation-duration: 25s;
-  -o-animation-duration: 25s;
-  animation-duration: 25s;
-  -webkit-animation-iteration-count: infinite;
-  -moz-animation-iteration-count: infinite;
-  -ms-animation-iteration-count: infinite;
-  -o-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-  -moz-animation-timing-function: linear;
-  -ms-animation-timing-function: linear;
-  -o-animation-timing-function: linear;
-  animation-timing-function: linear;
-  cursor: pointer;
 
-  a {
+
+.contact-me-circle-container {
+  position: relative;
+  
+  .about-me-prompt-container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-direction: column;
+
+    opacity: 1;
+    position: fixed;
+    bottom: 32px;
+    right: 20px; 
+    height: 106px;
+    z-index: 999;
+
+    img {
+      position: absolute;
+      bottom:0px;
+      right: -10px;
+      height: 200px; 
+    }
+
+    a {
+      border-radius: 100%;
+      width: 48px;
+      height: 48px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin: 0;
+
+      .button-text {
+        opacity: 0;
+      }
+
+      &:hover {
+        opacity: 1;
+        width: auto;
+        border-radius: $og-button-shape;
+
+        .button-text {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  .contact-me-circle {
+    overflow: hidden;
+    mix-blend-mode: difference;
+    background-blend-mode: difference;
+    font-weight: bold;
+    position: fixed;
+    bottom: -80px;
+    right: -80px;
+    text-transform: uppercase;
     font-weight: 700;
+    -webkit-animation-name: rotate;
+    -moz-animation-name: rotate;
+    -ms-animation-name: rotate;
+    -o-animation-name: rotate;
+    animation-name: rotate;
+    -webkit-animation-duration: 25s;
+    -moz-animation-duration: 25s;
+    -ms-animation-duration: 25s;
+    -o-animation-duration: 25s;
+    animation-duration: 25s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -ms-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+    -ms-animation-timing-function: linear;
+    -o-animation-timing-function: linear;
+    animation-timing-function: linear;
+    cursor: pointer;
+  
+    a {
+      font-weight: 700;
+    }
+  
+    text {
+      fill: var(--og-brand-color3) !important;
+      text-shadow: 1px 1px var(--og-brand-color2);
+      font-size: 17px;
+    }
+  
+    @include respond-to(phone) {
+      display: none;
+    }
   }
-
-  text {
-    fill: var(--og-brand-color3) !important;
-    text-shadow: 1px 1px var(--og-brand-color2);
-    font-size: 17px;
-    // font-family: "KemcoPixel";
+  
+  .contact-me-circle:hover {
+    animation-play-state: paused;
   }
-
-  @include respond-to(phone) {
-    display: none;
-  }
-}
-
-.contact-me-circle:hover {
-  animation-play-state: paused;
 }
 
 @-webkit-keyframes rotate {
