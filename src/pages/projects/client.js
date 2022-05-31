@@ -56,76 +56,85 @@ const ClientProjectPage = () => {
               tailored marketing experience to create a closer relationship
               between that customer and the brand.
             </p>
-            <span className="special-text-styling">UX Research</span>
-            <span className="special-text-styling">Brand Identity</span>
-            <p className="special-text-styling">
-              Product, Interaction and Experience Design
-            </p>
+            <div className="tag-container">
+              <div className="tag">Brand Identity</div>
+              <div className="tag">UX Research</div>
+              <div className="tag">Product Design</div>
+              <div className="tag">Development</div>
+            </div>
           </div>
           <div className="hero-container__img-container">
             <img src={viewnHeroImg} className="project-viewn-hero" alt="Hero" />
           </div>
         </div>
 
-        {/* <h3 className="project-section-title">DOSSIER</h3> */}
         <div className="case-study-dossier-container">
-          <div className="dossier__problem-container">
-            <p className="special-text-styling">Problem</p>
-            <p>
-              I was hired to create a product that would help non-technical
-              marketers like Rafael, our user persona, create meaningful
-              relationships between brands and its customers. I also was hired
-              to craft a Brand Identity that would resonate with him. Today,
-              Rafael has to dig through lots of data to create effective
-              marketing campaigns for the customers of the brands he manages.
-              Many of the efforts are done manually and many times he relies on
-              the help of other people like Data Analysts who query the data for
-              him.
-            </p>
+          <div className="dossier__problem-solution-grid">
+            <div className="dossier__problem-container">
+              <p className="special-text-styling">Problem</p>
+              <p>
+                I was hired to create a product that would help non-technical
+                marketers like Rafael, our user persona, create meaningful
+                relationships between brands and its customers. I also was hired
+                to craft a Brand Identity that would resonate with him. Today,
+                Rafael has to dig through lots of data to create effective
+                marketing campaigns for the customers of the brands he manages.
+                Many of the efforts are done manually and many times he relies
+                on the help of other people like Data Analysts who query the
+                data for him.
+              </p>
+            </div>
+
+            <div className="dossier__hypothesis-container">
+              <p className="special-text-styling">Solution</p>
+              <p>
+                A platform that would allow Rafael to aggregate the data about a
+                specific customer housed in many data bases and create a unified
+                customer profile. With this profile, Rafael could measure and
+                track the customer's engagement with the brand and provide
+                him/her with a tailored marketing experience, creating a closer
+                relationship between the customer and the brand.
+              </p>
+            </div>
           </div>
-          <div className="dossier__users-container">
-            <p className="special-text-styling">Primary Users</p>
-            <p>
-              Non-technical marketers wanting to create stronger and meaningful
-              relationships with a brand's customers.
-            </p>
-          </div>
-          <div className="dossier__duration-container">
-            <p className="special-text-styling">Duration</p>
-            <p>July 2017 - Present</p>
-          </div>
-          <div className="dossier__tools-container">
-            <p className="special-text-styling">Tools</p>
-            <p>
-              Pen, paper, Invision, Maze, Sketch App, Illustrator, and lots of
-              sticky notes.
-            </p>
-          </div>
-          <div className="dossier__role-container">
-            <p className="special-text-styling">Role</p>
-            <p>Product Designer, Creative Director, and Researcher.</p>
-          </div>
-          <div className="dossier__hypothesis-container">
-            <p className="special-text-styling">Solution</p>
-            <p>
-              A platform that would allow Rafael to aggregate the data about a
-              specific customer housed in many data bases and create a unified
-              customer profile. With this profile, Rafael could measure and
-              track the customer's engagement with the brand and provide him/her
-              with a tailored marketing experience, creating a closer
-              relationship between the customer and the brand.
-            </p>
-          </div>
-          <div className="dossier__constraints-container">
-            <p className="special-text-styling">Constraints & Considerations</p>
-            <p>
-              VIEWN is a Certified Google Partner so the founders wanted their
-              UI to be inspired by Google's.
-            </p>
-          </div>
-          <div className="dossier__platforms-container">
-            <p className="special-text-styling">Platforms</p>
-            <p>Desktop</p>
+
+          <div className="dossier__others-grid">
+            <div className="dossier__users-container">
+              <p className="special-text-styling">Primary Users</p>
+              <p>
+                Non-technical marketers wanting to create stronger and
+                meaningful relationships with a brand's customers.
+              </p>
+            </div>
+            <div className="dossier__duration-container">
+              <p className="special-text-styling">Duration</p>
+              <p>July 2017 - Present</p>
+            </div>
+            <div className="dossier__tools-container">
+              <p className="special-text-styling">Tools</p>
+              <p>
+                Pen, paper, Invision, Maze, Sketch App, Illustrator, and lots of
+                sticky notes.
+              </p>
+            </div>
+            <div className="dossier__role-container">
+              <p className="special-text-styling">Role</p>
+              <p>Product Designer, Creative Director, and Researcher.</p>
+            </div>
+
+            <div className="dossier__constraints-container">
+              <p className="special-text-styling">
+                Constraints & Considerations
+              </p>
+              <p>
+                VIEWN is a Certified Google Partner so the founders wanted their
+                UI to be inspired by Google's.
+              </p>
+            </div>
+            <div className="dossier__platforms-container">
+              <p className="special-text-styling">Platforms</p>
+              <p>Desktop</p>
+            </div>
           </div>
         </div>
 
@@ -144,7 +153,7 @@ const ClientProjectPage = () => {
               alt="number"
               className="project-design-process-number"
             />
-            <h5 className="design-process__section-title ds-headline-text-style hightlighted-offset">
+            <h5 className="design-process__section-title ds-headline-text-style highlighted-offset">
               EMPATHIZE
             </h5>
           </div>
@@ -223,12 +232,12 @@ const ClientProjectPage = () => {
         <div className="project-img-grid">
           <img
             src={MarketResearchImg1}
-            alt="market research exibit"
+            alt="market research exhibit"
             className=""
           />
           <img
             src={MarketResearchImg2}
-            alt="market research exibit"
+            alt="market research exhibit"
             className=""
           />
         </div>
@@ -240,7 +249,7 @@ const ClientProjectPage = () => {
               alt="number"
               className="project-design-process-number"
             />
-            <h5 className="design-process__section-title ds-headline-text-style hightlighted-offset">
+            <h5 className="design-process__section-title ds-headline-text-style highlighted-offset">
               Define
             </h5>
           </div>
@@ -307,7 +316,7 @@ const ClientProjectPage = () => {
               alt="number"
               className="project-design-process-number"
             />
-            <h5 className="design-process__section-title ds-headline-text-style hightlighted-offset">
+            <h5 className="design-process__section-title ds-headline-text-style highlighted-offset">
               Ideate
             </h5>
           </div>
@@ -341,7 +350,7 @@ const ClientProjectPage = () => {
               alt="number"
               className="project-design-process-number"
             />
-            <h5 className="design-process__section-title ds-headline-text-style hightlighted-offset">
+            <h5 className="design-process__section-title ds-headline-text-style highlighted-offset">
               Prototype
             </h5>
           </div>
@@ -371,7 +380,7 @@ const ClientProjectPage = () => {
               alt="number"
               className="project-design-process-number"
             />
-            <h5 className="design-process__section-title ds-headline-text-style hightlighted-offset">
+            <h5 className="design-process__section-title ds-headline-text-style highlighted-offset">
               test
             </h5>
           </div>
@@ -458,7 +467,7 @@ const ClientProjectPage = () => {
               alt=""
               className="project-design-process-number"
             />
-            <h5 className="design-process__section-title ds-headline-text-style hightlighted-offset">
+            <h5 className="design-process__section-title ds-headline-text-style highlighted-offset">
               Implement
             </h5>
           </div>
@@ -477,7 +486,7 @@ const ClientProjectPage = () => {
 
         <div className="design-process__section-container">
           <div className="project-design-process-title-container">
-            <h5 className="design-process__section-title ds-headline-text-style hightlighted-offset">
+            <h5 className="design-process__section-title ds-headline-text-style highlighted-offset">
               From the client
             </h5>
           </div>
@@ -539,7 +548,7 @@ const ClientProjectPage = () => {
 
         <div className="design-process__section-container">
           <div className="project-design-process-title-container">
-            <h5 className="design-process__section-title ds-headline-text-style hightlighted-offset">
+            <h5 className="design-process__section-title ds-headline-text-style highlighted-offset">
               lessons learned
             </h5>
           </div>

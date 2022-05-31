@@ -101,26 +101,25 @@ const DSProjectPage = () => {
             <p>
               OSKRHQ.DS is a Design System for my personal brand. More
               specifically, it's a Design Guide <strong>and</strong> a Component
-              Library using <span className="hightlighted-offset">ReactJS</span>{" "}
+              Library using <span className="highlighted-offset">ReactJS</span>{" "}
               with a unique{" "}
-              <span className="hightlighted-offset">SASS architecture</span>.{" "}
+              <span className="highlighted-offset">SASS architecture</span>.{" "}
               This website, and every personal project I work on, consumes the
-              system in code and design. It's also an open-sourced project you
-              can check out{" "}
+              system in code and design. It's also an{" "}
               <a
-                href="https://codesandbox.io/embed/oskrhq-playground-app-x7mhz?fontsize=14&theme=dark&view=preview"
+                href="https://x7mhz.csb.app/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                here
+                open-sourced project
               </a>
-              , and has an accompanying Figma Library found{" "}
+              , and has an{" "}
               <a
                 href="https://www.figma.com/file/z76YKa3fuhJukaWTvEBxjV/OSKR.DS?node-id=10%3A92"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                here
+                accompanying Figma Library
               </a>
               .{" "}
             </p>
@@ -130,23 +129,16 @@ const DSProjectPage = () => {
               it based on my learnings while working on LinkedIn's new Design
               System. Below is the story.
             </p>
-            <p className="og-text-style-overline">
-              Creative Direction & Multidisciplinary Design
-            </p>
-            <div
-              style={{
-                display: "flex",
-                flexWrap: "wrap",
-              }}
-            >
-              <span className="og-text-style-overline">Design Systems</span>
-              <span className="og-text-style-overline">Development</span>
-              <span className="og-text-style-overline">Sales</span>
-              <span className="og-text-style-overline">Research</span>
+            <div className="tag-container">
+              <div className="tag">Creative Direction</div>
+              <div className="tag">Design Systems</div>
+              <div className="tag">Development</div>
+              <div className="tag">Sales</div>
+              <div className="tag">Research</div>
             </div>
 
             <a
-              href="https://codesandbox.io/embed/oskrhq-playground-app-x7mhz?fontsize=14&theme=dark&view=preview"
+              href="https://x7mhz.csb.app/"
               className="project-btn__cta"
               target="_blank"
               rel="noopener noreferrer"
@@ -162,66 +154,73 @@ const DSProjectPage = () => {
         </div>
 
         <div className="case-study-dossier-container">
-          <div className="dossier__problem-container">
-            <p className="og-text-style-overline">Problem</p>
-            <p>
-              As a designer or developer, you are a walking, talking brand. The
-              products and services you produce become an extension of that
-              brand. As you create artifacts over time, your identity tends to
-              get diluted since you are typically building these artifacts in
-              isolation, or end up building the artifacts from scratch. This
-              creates fragmented experiences for your audience as they move from
-              one artifact to the next. This holds true for an individual or an
-              organization.
-            </p>
+          <div className="dossier__problem-solution-grid">
+            <div className="dossier__problem-container">
+              <p className="og-text-style-overline">Problem</p>
+              <p>
+                As a designer or developer, you are a walking, talking brand.
+                The products and services you produce become an extension of
+                that brand. As you create artifacts over time, your identity
+                tends to get diluted since you are typically building these
+                artifacts in isolation, or end up building the artifacts from
+                scratch. This creates fragmented experiences for your audience
+                as they move from one artifact to the next. This holds true for
+                an individual or an organization.
+              </p>
+            </div>
+            <div className="dossier__hypothesis-container">
+              <p className="og-text-style-overline">Hypothetical Solution</p>
+              <p>
+                <strong>
+                  <i>If</i>
+                </strong>{" "}
+                inconsistent artifacts of design and code dilute a brand and its
+                extensions,{" "}
+                <strong>
+                  <i>then</i>
+                </strong>{" "}
+                implementing a Design System should create a harmonious identity
+                felt by a targeted audience.
+              </p>
+            </div>
           </div>
-          <div className="dossier__users-container">
-            <p className="og-text-style-overline">Primary Users</p>
-            <p>Freelancers, Designers and Developers.</p>
-          </div>
-          <div className="dossier__duration-container">
-            <p className="og-text-style-overline">Duration</p>
-            <p>Mar 2018 - Present</p>
-          </div>
-          <div className="dossier__tools-container">
-            <p className="og-text-style-overline">Tools</p>
-            <p>
-              ReactJS, Figma, SASS, Storybook, Gatsby, Design Tokens, Framer
-              Motion, and Coffee.
-            </p>
-          </div>
-          <div className="dossier__role-container">
-            <p className="og-text-style-overline">Role</p>
-            <p>Creative Director, Designer, Developer, and instigator.</p>
-          </div>
-          <div className="dossier__hypothesis-container">
-            <p className="og-text-style-overline">Hypothetical Solution</p>
-            <p>
-              <strong>
-                <i>If</i>
-              </strong>{" "}
-              inconsistent artifacts of design and code dilute a brand and its
-              extensions,{" "}
-              <strong>
-                <i>then</i>
-              </strong>{" "}
-              implementing a Design System should create a harmonious identity
-              felt by a targeted audience.
-            </p>
-          </div>
-          <div className="dossier__constraints-container">
-            <p className="og-text-style-overline">
-              Constraints & Considerations
-            </p>
-            <p>
-              Provide solutions for both designers and developers, create a
-              common language abstracted from absolute values, and support
-              mobile web and desktop displays.
-            </p>
-          </div>
-          <div className="dossier__platforms-container">
-            <p className="og-text-style-overline">Platforms</p>
-            <p>Mobile web and Desktop</p>
+
+          <div className="dossier__others-grid">
+            <div className="dossier__constraints-container">
+              <p className="og-text-style-overline">
+                Constraints & Considerations
+              </p>
+              <p>
+                Provide solutions for both designers and developers, create a
+                common language abstracted from absolute values, and support
+                mobile web and desktop displays.
+              </p>
+            </div>
+            <div className="dossier__role-container">
+              <p className="og-text-style-overline">Role</p>
+              <p>Creative Director, Designer, Developer, and instigator.</p>
+            </div>
+            <div className="dossier__tools-container">
+              <p className="og-text-style-overline">Tools</p>
+              <p>
+                ReactJS, Figma, SASS, Storybook, Gatsby, Design Tokens, Framer
+                Motion, and Coffee.
+              </p>
+            </div>
+            <div className="dossier__users-container">
+              <p className="og-text-style-overline">Primary Users</p>
+              <p>Freelancers, Designers and Developers.</p>
+            </div>
+
+            <div className="dossier__duration-container">
+              <p className="og-text-style-overline">Duration</p>
+              <p>Mar 2018 - Present</p>
+            </div>
+
+            <div className="dossier__platforms-container">
+              <p className="og-text-style-overline">Platforms</p>
+              <p>Mobile web and Desktop</p>
+            </div>
           </div>
         </div>
 
@@ -262,7 +261,7 @@ const DSProjectPage = () => {
               alt="number"
               className="project-design-process-number"
             />
-            <h4 className="design-process__section-title hightlighted-offset">
+            <h4 className="design-process__section-title highlighted-offset">
               Empathize
             </h4>
           </div>
@@ -300,7 +299,7 @@ const DSProjectPage = () => {
               alt="number"
               className="project-design-process-number"
             />
-            <h4 className="design-process__section-title hightlighted-offset">
+            <h4 className="design-process__section-title highlighted-offset">
               Define
             </h4>
           </div>
@@ -418,7 +417,7 @@ const DSProjectPage = () => {
               alt="number"
               className="project-design-process-number"
             />
-            <h4 className="design-process__section-title hightlighted-offset">
+            <h4 className="design-process__section-title highlighted-offset">
               Ideate & Prototype
             </h4>
           </div>
@@ -562,7 +561,7 @@ const DSProjectPage = () => {
               alt="number"
               className="project-design-process-number"
             />
-            <h4 className="design-process__section-title hightlighted-offset">
+            <h4 className="design-process__section-title highlighted-offset">
               Test
             </h4>
           </div>
@@ -631,7 +630,7 @@ const DSProjectPage = () => {
               alt="number"
               className="project-design-process-number"
             />
-            <h4 className="design-process__section-title hightlighted-offset">
+            <h4 className="design-process__section-title highlighted-offset">
               Implement
             </h4>
           </div>
@@ -782,7 +781,7 @@ const DSProjectPage = () => {
 
         <div className="design-process__section-container">
           <div className="project-design-process-title-container">
-            <h4 className="design-process__section-title hightlighted-offset">
+            <h4 className="design-process__section-title highlighted-offset">
               lessons learned
             </h4>
           </div>

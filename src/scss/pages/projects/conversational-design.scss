@@ -1,0 +1,33 @@
+.project-img-phone-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    width: 400px;
+  }
+}
+
+.design-process__section-container {
+  .og-text-style-heading5 {
+    margin: og-space(space-80) 0 og-space(space-32);
+  }
+
+  .og-text-style-heading6 {
+    margin: og-space(space-80) 0 og-space(space-24);
+  }
+
+  .videos-grid {
+    display: grid;
+    display: grid;
+    grid-column-gap: og-space(space-40);
+    grid-row-gap: og-space(space-64);
+    grid-template-columns: 1fr 1fr;
+
+    video {
+      align-items: center;
+      width: 300px;
+    }
+  }
+}

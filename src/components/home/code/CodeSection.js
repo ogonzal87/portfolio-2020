@@ -28,7 +28,7 @@ const CodeSection = () => {
         playsInline
         muted
         loop
-        className="card-image"
+        className="scenario-video"
         poster={videoPoster}
         onMouseOver={event => event.target.play()}
         onFocus={event => event.target.play()}

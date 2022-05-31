@@ -79,16 +79,44 @@ class StudioSection extends React.Component {
 
           <div className="text-container">
             <p className="home-studio-section-paragraph">
-              I have been working as an interdisciplinary Designer for over a decade - or precisely{" "}
-              <span className="hightlighted-offse-very-important">{`${year} years, ${months} months, ${days} days, ${hours} hours, ${minute} minutes, ${seconds} seconds, ${milliseconds} milliseconds.`}</span>
-              <br></br>For four of those years, I worked as a Design Systems front-end engineer, and I have contributed to several open source projects, including <a href="https://github.com/nodejs/node" target="_blank" rel="noopener noreferrer">Node.JS</a>. 
+              I have been working as an interdisciplinary Designer for over a
+              decade - or precisely{" "}
+              <span className="highlighted-offset-very-important">{`${year} years, ${months} months, ${days} days, ${hours} hours, ${minute} minutes, ${seconds} seconds, ${milliseconds} milliseconds.`}</span>
+              <br></br>For four of those years, I worked as a Design Systems
+              front-end engineer, and I have contributed to several open source
+              projects, including{" "}
+              <a
+                href="https://github.com/nodejs/node"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Node.JS
+              </a>
+              .
             </p>
             <p className="home-studio-section-paragraph">
               I am currently focusing on building, growing, and maintaining
               multi-platform Design Systems for large enterprises with a strong
               foundation in{" "}
-              <span className="hightlighted-offset">accessibility</span> and{" "}
-              <span className="hightlighted-offset">inclusivity</span> - I hold a <a href="https://www.accessibilityassociation.org/wascertification" target="_blank" rel="noopener noreferrer">technical accessibility specialist certification (WAS)</a> from The International Association of Accessibility Professionals <a href="https://www.accessibilityassociation.org/cpacccertification" target="_blank" rel="noopener noreferrer">(IAAP)</a>. I have also provided consultancy services to many early-stage startups, and I mentor other designers. 
+              <span className="highlighted-offset">accessibility</span> and{" "}
+              <span className="highlighted-offset">inclusivity</span> - I hold a{" "}
+              <a
+                href="https://www.accessibilityassociation.org/wascertification"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                technical accessibility specialist certification (WAS)
+              </a>{" "}
+              from The International Association of Accessibility Professionals{" "}
+              <a
+                href="https://www.accessibilityassociation.org/cpacccertification"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                (IAAP)
+              </a>
+              . I have also provided consultancy services to many early-stage
+              startups, and I mentor other designers.
             </p>
 
             <h3 className="og-text-style-overline home-studio-section-paragraph">
@@ -108,7 +136,16 @@ class StudioSection extends React.Component {
             <div className="studio-decorative-div1"></div>
 
             <div className="studio-decorative-div2 was-certification-logo">
-              <a href="https://www.accessibilityassociation.org/wascertification" target="_blank" rel="noopener noreferrer"><img src={WASLogo} atl="IAAP WAS circular badge logo for International Association of Accessibility Professionals (IAAP) Web Accessibility Specialist (WAS) credential. A dark blue circle with three lines of centered white text that read: IAAP WAS Certified. There is a smaller light blue circle that surrounds the dark blue inner circle that designates the WAS credential color scheme."/></a>
+              <a
+                href="https://www.accessibilityassociation.org/wascertification"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src={WASLogo}
+                  atl="IAAP WAS circular badge logo for International Association of Accessibility Professionals (IAAP) Web Accessibility Specialist (WAS) credential. A dark blue circle with three lines of centered white text that read: IAAP WAS Certified. There is a smaller light blue circle that surrounds the dark blue inner circle that designates the WAS credential color scheme."
+                />
+              </a>
             </div>
           </div>
         </section>

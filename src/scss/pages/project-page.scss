@@ -126,12 +126,24 @@
   }
 
   .case-study-dossier-container {
-    max-width: 1200px;
-    margin: 0 auto;
+    max-width: 1400px;
     display: grid;
-    grid-column-gap: og-space(space-64);
-    grid-template-columns: 2fr 1fr 1fr;
-    margin-top: og-space(space-48) * 3;
+    grid-column-gap: og-space(space-80);
+    grid-template-columns: 1fr 1fr;
+    padding: og-space(space-48) og-space(space-96);
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 60px;
+    // box-shadow: 0 15px 45px -5px rgba(10, 16, 34, 0.3);
+    border: 3px solid rgba(0, 0, 0, 0.04);
+
+    p {
+      @include og-text-style-body2();
+    }
+
+    li {
+      @include og-text-style-body2();
+    }
 
     @include respond-to(phone) {
       max-width: 100%;
@@ -141,10 +153,18 @@
       grid-template-columns: 1fr;
       margin-top: og-space(space-48) * 2;
     }
+  }
 
-    .dossier__problem-container {
-      grid-row: span 2;
-    }
+  .dossier__problem-solution-grid {
+    display: grid;
+    padding-bottom: og-space(space-24);
+  }
+
+  .dossier__others-grid {
+    display: grid;
+    grid-column-gap: og-space(space-48);
+    grid-template-columns: 1fr 1fr;
+    padding-top: og-space(space-24);
   }
 
   .project-displayfb-img {
@@ -240,6 +260,7 @@
       }
 
       .design-process__section-title {
+        @include og-text-style-heading4();
         color: og-color(text, link);
         text-transform: uppercase;
         font-weight: og-font-weight(bold);

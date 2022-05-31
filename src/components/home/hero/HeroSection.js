@@ -102,7 +102,7 @@ class HeroSection extends React.Component {
               href="https://uxplanet.org/ux-engineers-what-we-are-2b0c4d10b3a6"
               target="_blank"
               rel="noopener noreferrer"
-              className="hightlighted-offset"
+              className="highlighted-offset"
             >
               UX Engineer
             </a>{" "}
@@ -111,21 +111,21 @@ class HeroSection extends React.Component {
               href="https://www.linkedin.com/"
               target="_blank"
               rel="noopener noreferrer"
-              className="hightlighted-offset"
+              className="highlighted-offset"
             >
               LinkedIn
             </a>{" "}
-            concentrating on accessible multi-platform{" "} 
+            concentrating on accessible multi-platform{" "}
             <a
               href="https://codesandbox.io/embed/oskrhq-playground-app-x7mhz?fontsize=14&theme=dark&view=preview"
               target="_blank"
               rel="noopener noreferrer"
-              className="hightlighted-offset"
+              className="highlighted-offset"
             >
               Design Systems
-            </a>,{" "}
-            product redesign, Dark Mode and Accessibility. By night I make art with code or
-            plants, some calligraphy, illustrations and music.
+            </a>
+            , product redesign, Dark Mode and Accessibility. By night I make art
+            with code or plants, some calligraphy, illustrations and music.
           </motion.h2>
         </motion.div>
       </motion.div>

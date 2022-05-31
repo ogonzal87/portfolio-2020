@@ -114,7 +114,7 @@
 
 @mixin og-text-style-link($weight: regular) {
   line-height: og-line-height(link);
-  font-weight: og-font-weight($weight);
+  font-weight: og-font-weight(bold);
   font-family: $og-text-font-family;
   letter-spacing: og-letter-spacing(link);
   text-rendering: optimizeLegibility;

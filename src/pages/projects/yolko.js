@@ -84,12 +84,13 @@ const YolkoProjectPage = () => {
               up-vote anonymous questions. The app uses AngularJS for the
               front-end, and Firebase for the back-end.
             </p>
-            <p className="special-text-styling">
-              Product, Interaction and Experience Design
-            </p>
-            <span className="special-text-styling">UX Research</span>
-            <span className="special-text-styling">Development</span>
-            <span className="special-text-styling">Creative Direction</span>
+            <div className="tag-container">
+              <div className="tag">UX Research</div>
+              <div className="tag">Design</div>
+              <div className="tag">Development</div>
+              <div className="tag">Creative Direction</div>
+            </div>
+
             <a
               href="https://imyolko.com/#!/"
               className="project-btn__cta"
@@ -110,74 +111,82 @@ const YolkoProjectPage = () => {
           </div>
         </div>
 
-        {/* <h3 className="project-section-title">DOSSIER</h3> */}
         <div className="case-study-dossier-container">
-          <div className="dossier__problem-container">
-            <p className="special-text-styling">Problem</p>
-            <p>
-              As a presenter, you are running blind while in front of an
-              audience since they are only able to provide feedback <i>after</i>{" "}
-              the presentation or you rely on a few to speak for the group. As
-              an attendee, my research showed that{" "}
-              <strong>
-                9 out of 10 people found themselves not wanting to participate
-                out of fear of revealing themselves to other attendees and the
-                presenter
-              </strong>
-              . I saw these as missed opportunities for learning and
-              participation.
-            </p>
+          <div className="dossier__problem-solution-grid">
+            <div className="dossier__problem-container">
+              <p className="special-text-styling">Problem</p>
+              <p>
+                As a presenter, you are running blind while in front of an
+                audience since they are only able to provide feedback{" "}
+                <i>after</i> the presentation or you rely on a few to speak for
+                the group. As an attendee, my research showed that{" "}
+                <strong>
+                  9 out of 10 people found themselves not wanting to participate
+                  out of fear of revealing themselves to other attendees and the
+                  presenter
+                </strong>
+                . I saw these as missed opportunities for learning and
+                participation.
+              </p>
+            </div>
+
+            <div className="dossier__hypothesis-container">
+              <p className="special-text-styling">Hypothetical Solution</p>
+              <p>
+                <strong>
+                  <i>If</i>
+                </strong>{" "}
+                people feel afraid of revealing themselves when asking
+                questions, or expressing their opinions at social settings,{" "}
+                <strong>
+                  <i>then</i>
+                </strong>{" "}
+                aggregating each participant's input while maintaining their
+                privacy will 1) improve their participation and subsequent
+                understanding of the subject being presented, and 2) the
+                presenter could use this data to adjust to the needs of the
+                audience in real time if s/he chooses to.
+              </p>
+            </div>
           </div>
-          <div className="dossier__users-container">
-            <p className="special-text-styling">Primary Users</p>
-            <p>
-              Attendees and presenters at social gatherings such as classes or
-              talks.{" "}
-            </p>
-          </div>
-          <div className="dossier__duration-container">
-            <p className="special-text-styling">Duration</p>
-            <p>Apr 2016 - Nov 2017</p>
-          </div>
-          <div className="dossier__tools-container">
-            <p className="special-text-styling">Tools</p>
-            <p>
-              Pen, paper, AngularJS, Firebase, Sketch App, SASS, Gulp.JS,
-              Node.js, Invision.
-            </p>
-          </div>
-          <div className="dossier__role-container">
-            <p className="special-text-styling">Role</p>
-            <p>Creator, Designer, Researcher and Developer.</p>
-          </div>
-          <div className="dossier__hypothesis-container">
-            <p className="special-text-styling">Hypothetical Solution</p>
-            <p>
-              <strong>
-                <i>If</i>
-              </strong>{" "}
-              people feel afraid of revealing themselves when asking questions,
-              or expressing their opinions at social settings,{" "}
-              <strong>
-                <i>then</i>
-              </strong>{" "}
-              aggregating each participant's input while maintaining their
-              privacy will 1) improve their participation and subsequent
-              understanding of the subject being presented, and 2) the presenter
-              could use this data to adjust to the needs of the audience in real
-              time if s/he chooses to.
-            </p>
-          </div>
-          <div className="dossier__constraints-container">
-            <p className="special-text-styling">Constraints & Considerations</p>
-            <p>
-              Avoid getting the audience distracted and provide anonymity for
-              them.
-            </p>
-          </div>
-          <div className="dossier__platforms-container">
-            <p className="special-text-styling">Platforms</p>
-            <p>Mobile Web and Desktop.</p>
+
+          <div className="dossier__others-grid">
+            <div className="dossier__users-container">
+              <p className="special-text-styling">Primary Users</p>
+              <p>
+                Attendees and presenters at social gatherings such as classes or
+                talks.{" "}
+              </p>
+            </div>
+            <div className="dossier__duration-container">
+              <p className="special-text-styling">Duration</p>
+              <p>Apr 2016 - Nov 2017</p>
+            </div>
+            <div className="dossier__tools-container">
+              <p className="special-text-styling">Tools</p>
+              <p>
+                Pen, paper, AngularJS, Firebase, Sketch App, SASS, Gulp.JS,
+                Node.js, Invision.
+              </p>
+            </div>
+            <div className="dossier__role-container">
+              <p className="special-text-styling">Role</p>
+              <p>Creator, Designer, Researcher and Developer.</p>
+            </div>
+
+            <div className="dossier__constraints-container">
+              <p className="special-text-styling">
+                Constraints & Considerations
+              </p>
+              <p>
+                Avoid getting the audience distracted and provide anonymity for
+                them.
+              </p>
+            </div>
+            <div className="dossier__platforms-container">
+              <p className="special-text-styling">Platforms</p>
+              <p>Mobile Web and Desktop.</p>
+            </div>
           </div>
         </div>
 
@@ -206,7 +215,7 @@ const YolkoProjectPage = () => {
               alt=""
               className="project-design-process-number"
             />
-            <h5 className="design-process__section-title ds-headline-text-style hightlighted-offset">
+            <h5 className="design-process__section-title ds-headline-text-style highlighted-offset">
               EMPATHIZE
             </h5>
           </div>
@@ -245,7 +254,7 @@ const YolkoProjectPage = () => {
               alt="number"
               className="project-design-process-number"
             />
-            <h5 className="design-process__section-title ds-headline-text-style hightlighted-offset">
+            <h5 className="design-process__section-title ds-headline-text-style highlighted-offset">
               Define
             </h5>
           </div>
@@ -310,7 +319,7 @@ const YolkoProjectPage = () => {
               alt=""
               className="project-design-process-number"
             />
-            <h5 className="design-process__section-title ds-headline-text-style hightlighted-offset">
+            <h5 className="design-process__section-title ds-headline-text-style highlighted-offset">
               Ideate
             </h5>
           </div>
@@ -390,7 +399,7 @@ const YolkoProjectPage = () => {
               alt=""
               className="project-design-process-number"
             />
-            <h5 className="design-process__section-title ds-headline-text-style hightlighted-offset">
+            <h5 className="design-process__section-title ds-headline-text-style highlighted-offset">
               Prototype
             </h5>
           </div>
@@ -417,7 +426,7 @@ const YolkoProjectPage = () => {
               alt=""
               className="project-design-process-number"
             />
-            <h5 className="design-process__section-title ds-headline-text-style hightlighted-offset">
+            <h5 className="design-process__section-title ds-headline-text-style highlighted-offset">
               Test
             </h5>
           </div>
@@ -464,7 +473,7 @@ const YolkoProjectPage = () => {
               alt=""
               className="project-design-process-number"
             />
-            <h5 className="design-process__section-title ds-headline-text-style hightlighted-offset">
+            <h5 className="design-process__section-title ds-headline-text-style highlighted-offset">
               Implement
             </h5>
           </div>
@@ -588,7 +597,7 @@ const YolkoProjectPage = () => {
 
         <div className="design-process__section-container">
           <div className="project-design-process-title-container">
-            <h5 className="design-process__section-title ds-headline-text-style hightlighted-offset">
+            <h5 className="design-process__section-title ds-headline-text-style highlighted-offset">
               lessons learned
             </h5>
           </div>

@@ -33,6 +33,7 @@ $breakpoints: (
 @import "./pages/projects/yolko-page.scss";
 @import "./pages/projects/ds-page.scss";
 @import "./pages/projects/client-page.scss";
+@import "./pages/projects/conversational-design.scss";
 
 //Components
 @import "../components/home/hero/hero-section.scss";
@@ -82,6 +83,21 @@ html {
     text-decoration: line-through;
   }
 
+  .tag-container {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: og-space(space-08);
+  }
+
+  .tag {
+    padding: og-space(space-08) og-space(space-16);
+    background-color: rgba(224, 224, 224, 0.6);
+    display: inline-block;
+    border-radius: og-shape(secondary);
+  }
+
   .special-text-styling {
     font-size: 14px;
     color: #828890;
@@ -102,7 +118,7 @@ html {
     }
   }
 
-  .hightlighted-offset {
+  .highlighted-offset {
     position: relative;
     background-image: linear-gradient(
       to right,
@@ -112,11 +128,9 @@ html {
     background-position: bottom left;
     background-repeat: no-repeat;
     background-size: 100% 8px;
-    mix-blend-mode: difference;
-    background-blend-mode: difference;
   }
 
-  .hightlighted-offse-very-important {
+  .highlighted-offset-very-important {
     font-weight: bold;
     position: relative;
     background-image: linear-gradient(
@@ -127,8 +141,6 @@ html {
     background-position: bottom left;
     background-repeat: no-repeat;
     background-size: 100% 8px;
-    mix-blend-mode: difference;
-    background-blend-mode: difference;
   }
 }
 
@@ -240,39 +252,43 @@ html {
   }
 }
 
-
-
 .contact-me-circle-container {
   position: relative;
-  
+
   .about-me-prompt-container {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
     flex-direction: column;
-
     opacity: 1;
     position: fixed;
     bottom: 32px;
-    right: 20px; 
+    right: 50px;
     height: 106px;
     z-index: 999;
 
     img {
       position: absolute;
-      bottom:0px;
+      bottom: 0px;
       right: -10px;
-      height: 200px; 
+      height: 200px;
     }
 
     a {
-      border-radius: 100%;
       width: 48px;
       height: 48px;
       display: flex;
       flex-direction: row;
       align-items: center;
       margin: 0;
+      padding: 0 24px;
+      text-decoration: none;
+      border: 0.0625rem #e0e2e4 solid;
+      border-radius: 100%;
+
+      .button-icon {
+        margin-right: $og-space-12;
+      }
 
       .button-text {
         opacity: 0;
@@ -321,22 +337,22 @@ html {
     -o-animation-timing-function: linear;
     animation-timing-function: linear;
     cursor: pointer;
-  
+
     a {
       font-weight: 700;
     }
-  
+
     text {
       fill: var(--og-brand-color3) !important;
       text-shadow: 1px 1px var(--og-brand-color2);
       font-size: 17px;
     }
-  
+
     @include respond-to(phone) {
       display: none;
     }
   }
-  
+
   .contact-me-circle:hover {
     animation-play-state: paused;
   }
