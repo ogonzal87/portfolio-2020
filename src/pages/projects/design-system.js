@@ -143,7 +143,10 @@ const DSProjectPage = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button className="og-button--primary og-button--medium og-button">
+              <button
+                className="og-button--primary og-button--medium og-button"
+                style={{ marginTop: `32px` }}
+              >
                 View the site
               </button>
             </a>

@@ -57,7 +57,9 @@ export default () => {
         }
       }
 
-      mediumPost6Img: file(relativePath: { eq: "images/ex-machina.jpg" }) {
+      mediumPost6Img: file(
+        relativePath: { eq: "images/design-for-conversations.jpeg" }
+      ) {
         childImageSharp {
           fluid(maxWidth: 1400) {
             ...GatsbyImageSharpFluid
@@ -66,6 +68,26 @@ export default () => {
       }
 
       mediumPost7Img: file(relativePath: { eq: "images/design-tokens.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 1400) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+
+      mediumPost8Img: file(
+        relativePath: { eq: "images/motion-design-tokens.png" }
+      ) {
+        childImageSharp {
+          fluid(maxWidth: 1400) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+
+      mediumPost9Img: file(
+        relativePath: { eq: "images/design-for-blind.png" }
+      ) {
         childImageSharp {
           fluid(maxWidth: 1400) {
             ...GatsbyImageSharpFluid
@@ -103,7 +125,10 @@ export default () => {
           thoughts thoughts thoughts
         </span>
       </p>
-      <section className="home-page-section home-thoughts-section" id="thoughts">
+      <section
+        className="home-page-section home-thoughts-section"
+        id="thoughts"
+      >
         <img
           src={thoughtsImg}
           alt="title"
@@ -115,9 +140,57 @@ export default () => {
           animate="animate"
           initial="initial"
         >
+          <motion.li>
+            <motion.div className="home-post-card">
+              <motion.a
+                href="https://medium.com/@ogonzal87/design-for-the-blind-39eec9ca419b"
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover="animate"
+              >
+                <Img
+                  fluid={data.mediumPost9Img.childImageSharp.fluid}
+                  alt="article post"
+                  className="img-thumbnail"
+                />
+                <motion.div className="cta-overlay" variants={fadeItem}>
+                  <p className="og-text-style-heading4">Read it =></p>
+                </motion.div>
+              </motion.a>
+            </motion.div>
 
+            <div className="post-text-container">
+              <h5 className="og-text-style-heading6">Design for the blind</h5>
 
+              <span className="ds-overlay-text-style">MEDIUM</span>
+            </div>
+          </motion.li>
 
+          <motion.li>
+            <motion.div className="home-post-card">
+              <motion.a
+                href="https://medium.com/@ogonzal87/animation-motion-design-tokens-8cf67ffa36e9"
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover="animate"
+              >
+                <Img
+                  fluid={data.mediumPost8Img.childImageSharp.fluid}
+                  alt="article post"
+                  className="img-thumbnail"
+                />
+                <motion.div className="cta-overlay" variants={fadeItem}>
+                  <p className="og-text-style-heading4">Read it =></p>
+                </motion.div>
+              </motion.a>
+            </motion.div>
+
+            <div className="post-text-container">
+              <h5 className="og-text-style-heading6">Motion Design Tokens</h5>
+
+              <span className="ds-overlay-text-style">MEDIUM</span>
+            </div>
+          </motion.li>
 
           <motion.li>
             <motion.div className="home-post-card">
@@ -149,8 +222,6 @@ export default () => {
             </div>
           </motion.li>
 
-
-
           <motion.li>
             <motion.div className="home-post-card">
               <motion.a
@@ -172,7 +243,7 @@ export default () => {
 
             <div className="post-text-container">
               <h5 className="og-text-style-heading6">
-                Why Great Conversationalists make Great Designers
+                Design for conversations. Not screens.
               </h5>
 
               <span className="ds-overlay-text-style">
@@ -315,6 +386,16 @@ export default () => {
             </div>
           </motion.li>
         </motion.ul>
+
+        <a
+          href="https://medium.com/@ogonzal87"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="show-more-link"
+          style={{ margin: `64px auto`, marginBottom: 0 }}
+        >
+          Read more ➡
+        </a>
       </section>
     </div>
   )

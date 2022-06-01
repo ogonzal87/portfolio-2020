@@ -61,14 +61,14 @@ const CodeSection = () => {
 
         <ul className="code-cards-list">
           <CodeProjectCard
-            title="Instagram face filter"
-            description="Made a few face filers (effects) for Instagram. You can play with them on your Insta by giving it a click ⬆."
+            title="Cam-aleon"
+            description="An app that takes any color shown to the camera and colors a little chameleon I drew using Procreate."
             video={createVideo(
-              faceFilterVidMP4,
-              faceFilterVidWEB,
-              faceFilterVidPoster
+              chameleonVidMP4,
+              chameleonVidWEB,
+              chameleonVidPoster
             )}
-            href="https://instagram.com/a/r/?effect_id=1077625679243023"
+            href="https://cam-aleon.surge.sh/"
           />
           <CodeProjectCard
             title="Skull AR"
@@ -82,21 +82,22 @@ const CodeSection = () => {
             href="https://emotion-recognition.surge.sh/"
           />
           <CodeProjectCard
-            title="Cam-aleon"
-            description="An app that takes any color shown to the camera and colors a little chameleon I drew using Procreate."
-            video={createVideo(
-              chameleonVidMP4,
-              chameleonVidWEB,
-              chameleonVidPoster
-            )}
-            href="https://cam-aleon.surge.sh/"
-          />
-          <CodeProjectCard
             title="Pokemon game"
             description="A Pokemon cards game app I created using Vanilla Javascript and CSS Custom Properties. Wanted to build it without any UI Frameworks."
             video={createVideo(pokemonVidMP4, pokemonVidWEB, pokemonVidPoster)}
             href="https://pokemon-game.surge.sh/"
           />
+          <CodeProjectCard
+            title="Instagram face filter"
+            description="Made a few face filers (effects) for Instagram. You can play with them on your Insta by giving it a click ⬆."
+            video={createVideo(
+              faceFilterVidMP4,
+              faceFilterVidWEB,
+              faceFilterVidPoster
+            )}
+            href="https://instagram.com/a/r/?effect_id=1077625679243023"
+          />
+
           <CodeProjectCard
             title="Design debates"
             description="A democratic approach for when you can't decide which design solution is best. This app let's you show two designs for light targeted feedback."

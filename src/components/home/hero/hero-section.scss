@@ -114,6 +114,23 @@
     max-width: 600px;
     margin: 0 auto;
   }
+
+  .directional-signifier {
+    position: absolute;
+    bottom: og-space(space-32);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: og-space(space-48);
+    width: og-space(space-48);
+    border-radius: og-space(space-48);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    margin: 0 auto;
+
+    i {
+      color: rgba(0, 0, 0, 0.25);
+    }
+  }
 }
 
 @keyframes palmsFadeIn {

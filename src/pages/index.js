@@ -48,7 +48,7 @@ class HomePage extends React.Component {
         </ParallaxProvider>
 
         <div className="contact-me-circle-container">
-          <div className="about-me-prompt-container">
+          {/* <div className="about-me-prompt-container">
             <a className="og-circle-button og-circle-button--ghost">
               <i className="button-icon material-icons">face</i>
               <div className="button-text">Human</div>
@@ -58,7 +58,7 @@ class HomePage extends React.Component {
               <i className="button-icon material-icons">work_outline</i>
               <div className="button-text"> Professional </div>
             </a>
-          </div>
+          </div> */}
 
           <motion.svg
             variants={ogAnimation.ContactMeCircle}

@@ -127,6 +127,12 @@ class HeroSection extends React.Component {
             , product redesign, Dark Mode and Accessibility. By night I make art
             with code or plants, some calligraphy, illustrations and music.
           </motion.h2>
+          <motion.div
+            className="directional-signifier"
+            variants={ogAnimation.fadeUpItem}
+          >
+            <i class="material-icons">arrow_downward</i>
+          </motion.div>
         </motion.div>
       </motion.div>
     )

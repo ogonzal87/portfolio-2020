@@ -5,7 +5,7 @@ import { graphql, useStaticQuery } from "gatsby"
 export default function ProfilePicture() {
   const data = useStaticQuery(graphql`
     query StudioProfileImg {
-      profileImg: file(relativePath: { eq: "images/profile-pic4.png" }) {
+      profileImg: file(relativePath: { eq: "images/me.png" }) {
         childImageSharp {
           fluid(maxWidth: 1400) {
             ...GatsbyImageSharpFluid

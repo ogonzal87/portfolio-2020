@@ -29,17 +29,16 @@ export default () => {
           }
         }
       }
-
-      project1BgImg: file(relativePath: { eq: "images/duotone2.jpg" }) {
+      number4: file(relativePath: { eq: "images/hand-brush/04.png" }) {
         childImageSharp {
-          fluid(maxWidth: 1400) {
+          fluid {
             ...GatsbyImageSharpFluid
           }
         }
       }
 
-      yolkoThumbnail: file(
-        relativePath: { eq: "images/yolko/thumbnail-duotone.jpg" }
+      project1BgImg: file(
+        relativePath: { eq: "images/ds-thumbnail-duotone.png" }
       ) {
         childImageSharp {
           fluid(maxWidth: 1400) {
@@ -48,7 +47,25 @@ export default () => {
         }
       }
 
-      viewnLogo: file(relativePath: { eq: "images/viewn/viewn-logo.jpg" }) {
+      conversationalDesignBgImg: file(
+        relativePath: { eq: "images/cd-thumbnail-duotone.png" }
+      ) {
+        childImageSharp {
+          fluid(maxWidth: 1400) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+
+      yolkoThumbnail: file(relativePath: { eq: "images/yolko-duotone.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 1400) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+
+      viewnLogo: file(relativePath: { eq: "images/vn-thumbnail-duotone.png" }) {
         childImageSharp {
           fluid(maxWidth: 1400) {
             ...GatsbyImageSharpFluid
@@ -117,6 +134,55 @@ export default () => {
         whileHover="animate"
       >
         <AniLink
+          to="/projects/conversational-design/"
+          paintDrip
+          duration={0.75}
+          hex="#5900FF"
+          className="project-link"
+        >
+          <BackgroundImage
+            fluid={data.conversationalDesignBgImg.childImageSharp.fluid}
+            className="home-project-card"
+          >
+            <motion.div
+              variants={rotateHoverItem}
+              className="card-hover-decoration"
+            ></motion.div>
+            <Img
+              className="number"
+              fluid={data.number1.childImageSharp.fluid}
+              alt="Project 2"
+            />
+            <motion.div
+              variants={containerStagger}
+              className="home-project-card-title-container"
+            >
+              <motion.span
+                className="og-text-style-overline"
+                variants={fadeUpItem}
+              >
+                Company work
+              </motion.span>
+              <motion.h3 className="project-title" variants={fadeUpItem}>
+                Feature Introduction Framework
+              </motion.h3>
+              <motion.span
+                className="og-text-style-overline project-card__footer-text"
+                variants={fadeUpItem}
+              >
+                DESIGN SYSTEMS | Interaction Systems | Framework Design
+              </motion.span>
+            </motion.div>
+          </BackgroundImage>
+        </AniLink>
+      </motion.div>
+
+      <motion.div
+        initial="initial"
+        className="home-project-card-container"
+        whileHover="animate"
+      >
+        <AniLink
           to="/projects/design-system/"
           paintDrip
           duration={0.75}
@@ -133,8 +199,8 @@ export default () => {
             ></motion.div>
             <Img
               className="number"
-              fluid={data.number1.childImageSharp.fluid}
-              alt="number 1"
+              fluid={data.number2.childImageSharp.fluid}
+              alt="project 1"
             />
             <motion.div
               variants={containerStagger}
@@ -183,8 +249,8 @@ export default () => {
             ></motion.div>
             <Img
               className="number"
-              fluid={data.number2.childImageSharp.fluid}
-              alt="number 2"
+              fluid={data.number3.childImageSharp.fluid}
+              alt="project 3"
             />
             <motion.div
               className="home-project-card-title-container"
@@ -233,8 +299,8 @@ export default () => {
             ></motion.div>
             <Img
               className="number"
-              fluid={data.number3.childImageSharp.fluid}
-              alt="number 3"
+              fluid={data.number4.childImageSharp.fluid}
+              alt="project 4"
             />
             <motion.div
               className="home-project-card-title-container"

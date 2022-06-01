@@ -7,6 +7,7 @@
   max-width: 1200px;
   margin: 0 auto;
   position: relative;
+  margin-bottom: 400px;
 
   @include respond-to(phone) {
     max-width: 100%;
@@ -18,6 +19,7 @@
     display: flex;
     justify-content: space-around;
     flex-direction: column;
+    position: relative;
 
     margin-right: og-rem(48px);
 
@@ -51,19 +53,24 @@
     }
 
     .stack-graphic {
-      width: 100%;
+      position: absolute;
+      bottom: -380px;
+      left: 0;
       margin-bottom: 32px;
+      overflow: hidden;
     }
   }
 
   .profile-img-wrapper {
     position: relative;
-    margin-top: -100px;
+    margin-top: -50px;
   }
 
   .gatsby-image-wrapper {
-    width: 573px;
+    width: 500px;
+    height: 500px;
     z-index: 9;
+    // overflow: hidden;
 
     @include respond-to(phone) {
       width: 95vw;
@@ -71,7 +78,7 @@
   }
 
   .studio-profile-picture {
-    height: auto;
+    // height: auto;
   }
 
   .studio-decorative-div1 {
@@ -124,12 +131,13 @@
 .show-more-link {
   width: 280px;
   padding: $og-space-16;
-  margin: 0 auto;
+  // margin: 0 auto;
   display: block;
+  z-index: 999;
   margin-top: $og-space-32;
   @include og-border(thickest, brand, solid);
   font-weight: og-font-weight(bold);
   text-align: center;
   border-radius: og-shape(primary);
-  margin-bottom: 200px;
+  // margin-bottom: 200px;
 }

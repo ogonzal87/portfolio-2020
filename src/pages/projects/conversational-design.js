@@ -248,7 +248,7 @@ const ConversationalDesignProjectPage = () => {
           style={{ width: "80%" }}
           alt="demo"
         />
-        <div className="design-process__section-container">
+        <div className="design-process__section-container no-top-margin">
           <div />
           <div>
             <p>
@@ -292,28 +292,36 @@ const ConversationalDesignProjectPage = () => {
                 provide specific components that teams could use, delivering
                 clear guidance on how and when to use them properly.
               </p>
-
-              <h5 className="og-text-style-heading6">Establishing Relevance</h5>
-              <p>
-                Teams are naturally proud of the features they design and would
-                like users to engage with them. However, determining contextual
-                relevance when introducing something to another person is
-                extremely important. We do it unconsciously in the physical
-                world when introducing a friend to another, so we wanted
-                Designers to consider that.
-              </p>
             </div>
           </div>
         </div>
+
+        <div className="design-process__section-container no-top-margin ">
+          <div>
+            <h5 className="og-text-style-heading5">Establishing Relevance</h5>
+          </div>
+          <div>
+            <p>
+              Teams are naturally proud of the features they design and would
+              like users to engage with them. However, determining contextual
+              relevance when introducing something to another person is
+              extremely important. We do it unconsciously in the physical world
+              when introducing a friend to another, so we wanted Designers to
+              consider that.
+            </p>
+          </div>
+        </div>
+
         <img
           src={contextualRelevanceImg}
           alt="tooltip calling out a new feature obscuring other content on the page"
           className="project-displayfb-img"
         />
         <div className="design-process__section-container no-top-margin ">
-          <div />
           <div>
             <h5 className="og-text-style-heading5">Principles</h5>
+          </div>
+          <div>
             <p>
               Before ideating, we wanted to create a set of principles that
               would help us evaluate the quality of these introductions and our
@@ -350,8 +358,16 @@ const ConversationalDesignProjectPage = () => {
                 terms.
               </li>
             </ol>
+          </div>
+        </div>
 
+        <div className="design-process__section-container no-top-margin ">
+          <div>
             <h5 className="og-text-style-heading5">Introduction Types</h5>
+          </div>
+
+          <div>
+            {" "}
             <p>
               We did a Figjam session with multiple partners to segment the
               types of introductions we accounted for in the inventory. This
@@ -396,6 +412,7 @@ const ConversationalDesignProjectPage = () => {
             </ol>
           </div>
         </div>
+
         <img
           src={figjamImg}
           className="project-displayfb-img"
@@ -421,16 +438,22 @@ const ConversationalDesignProjectPage = () => {
               the industry were solving this problem, we also wanted to get
               inspired by other more unconventional design practices.
             </p>
-
-            <h4 className="og-text-style-heading6">Game Design</h4>
-            <p>
-              In Open World game design, the player's interface, prompts, and
-              capabilities adapt based on where the player is in the game, how
-              many resources they have acquired, and the missions or journeys
-              they have chosen to take.{" "}
-            </p>
           </div>
         </div>
+
+        <div className="design-process__section-container no-top-margin ">
+          <div>
+            <h4 className="og-text-style-heading6">Game Design</h4>
+          </div>
+
+          <p>
+            In Open World game design, the player's interface, prompts, and
+            capabilities adapt based on where the player is in the game, how
+            many resources they have acquired, and the missions or journeys they
+            have chosen to take.{" "}
+          </p>
+        </div>
+
         <div className="project-img-grid">
           <img
             src={gameImg1}
@@ -454,9 +477,10 @@ const ConversationalDesignProjectPage = () => {
           />
         </div>
         <div className="design-process__section-container no-top-margin ">
-          <div />
           <div>
             <h4 className="og-text-style-heading6">Disney Personalization</h4>
+          </div>
+          <div>
             <p>
               When you plan a trip to Disney, the company may give you the
               option to tailor your experience to a specific occasion or intent
@@ -475,9 +499,10 @@ const ConversationalDesignProjectPage = () => {
           alt="girl using Disney's Magic Bracelet"
         />
         <div className="design-process__section-container no-top-margin ">
-          <div />
           <div>
             <h3 className="og-text-style-heading5">Components</h3>
+          </div>
+          <div>
             <p>
               We landed on creating three components that we were confident
               would help us deliver accessible and contextual introductions.
@@ -490,9 +515,10 @@ const ConversationalDesignProjectPage = () => {
           alt="displaying three components: Coachmark, inline callout and a new tag."
         />
         <div className="design-process__section-container no-top-margin ">
-          <div />
           <div>
             <h3 className="og-text-style-heading5">Visual and Motion Design</h3>
+          </div>
+          <div>
             <p>
               My team also saw an opportunity to create a Color & Shape system
               for these components so that they would be recognizable, visually

@@ -1,7 +1,7 @@
 $project-card-width: 1000px;
 
 .home-project-card-container {
-  border-radius: og-shape(secondary);
+  border-radius: og-shape(tertiary);
   width: $project-card-width;
   margin: $og-space-128 * 1.5 auto;
 
@@ -26,6 +26,10 @@ $project-card-width: 1000px;
   background-repeat: no-repeat;
   background-size: contain;
   background-attachment: fixed;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.45);
+  }
 
   &::before {
     border-radius: og-shape(tertiary);
@@ -97,8 +101,6 @@ $project-card-width: 1000px;
     font-size: 70px;
     text-shadow: 3px 3px var(--og-brand-color2), 6px 6px var(--og-brand-color3);
     font-family: "KemcoPixel";
-    // font-weight: bold;
-    // font-style: italic;
     letter-spacing: 8px;
     line-height: 0.9;
 

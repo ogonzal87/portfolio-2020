@@ -119,6 +119,16 @@ class StudioSection extends React.Component {
               startups, and I mentor other designers.
             </p>
 
+            <AniLink
+              paintDrip
+              to="/about"
+              duration={0.75}
+              hex="#5900FF"
+              className="show-more-link"
+            >
+              Learn more about me ➡
+            </AniLink>
+
             <h3 className="og-text-style-overline home-studio-section-paragraph">
               <strong>My Stack</strong>
             </h3>
@@ -149,16 +159,6 @@ class StudioSection extends React.Component {
             </div>
           </div>
         </section>
-
-        <AniLink
-          paintDrip
-          to="/about"
-          duration={0.75}
-          hex="#5900FF"
-          className="show-more-link"
-        >
-          Learn more about me ➡
-        </AniLink>
       </div>
     )
   }
