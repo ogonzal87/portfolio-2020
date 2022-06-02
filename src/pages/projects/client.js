@@ -33,6 +33,7 @@ import number6 from "../../assets/images/hand-brush/06.png"
 import TopNav from "../../components/top-nav"
 import robertoImg from "../../assets/images/viewn/roberto.jpg"
 import areeyaImg from "../../assets/images/viewn/areeya.jpg"
+import PaginationControl from "../../components/PaginationControl"
 
 const ClientProjectPage = () => {
   return (
@@ -594,6 +595,11 @@ const ClientProjectPage = () => {
             </p>
           </div>
         </div>
+
+        <PaginationControl
+          previous="/projects/design-system"
+          next="/projects/yolko"
+        />
 
         <PortfolioFooter />
       </div>

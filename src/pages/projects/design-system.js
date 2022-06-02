@@ -29,6 +29,7 @@ import DSImplement3Poster from "../../assets/images/DS/em-uikit-show.jpg"
 import DSImplement4MP4 from "../../assets/images/DS/theming.mp4"
 import DSImplement4WEBM from "../../assets/images/DS/theming.webm"
 import DSImplement4Poster from "../../assets/images/DS/theming.jpg"
+import PaginationControl from "../../components/PaginationControl"
 
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
@@ -826,7 +827,10 @@ const DSProjectPage = () => {
             </p>
           </div>
         </div>
-
+        <PaginationControl
+          previous="/projects/conversational-design"
+          next="/projects/client"
+        />
         <PortfolioFooter />
       </div>
     </Layout>

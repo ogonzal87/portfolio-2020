@@ -3,6 +3,9 @@ $og-button-s-padding: $og-space-16;
 $og-button-border: none;
 $og-button-shape: og-shape(secondary, default);
 $og-button-transitions: all og-duration(base) og-easing(base);
+$og-button-background-color-disabled: rgba(0, 0, 0, 0.12);
+$og-button-text-color-disabled: rgba(0, 0, 0, 0.3);
+$og-button-border-color-disabled: none;
 
 // Primary Button
 $og-button-primary-background-color: og-color(background, brand);
@@ -77,6 +80,15 @@ $og-button-ghost-background-color--focused: og-color(background, brand-hover);
   &:active {
     box-shadow: none;
   }
+
+  &:disabled,
+  &[disabled] {
+    background-color: $og-button-background-color-disabled;
+    color: $og-button-text-color-disabled;
+    border: $og-button-border-color-disabled;
+    border: $og-button-border-color-disabled;
+    cursor: not-allowed;
+  }
 }
 
 .og-button--primary {
@@ -93,6 +105,14 @@ $og-button-ghost-background-color--focused: og-color(background, brand-hover);
   &:focus,
   &:active {
     background: $og-button-primary-background-color--focused;
+  }
+
+  &:disabled,
+  &[disabled] {
+    background-color: $og-button-background-color-disabled;
+    color: $og-button-text-color-disabled;
+    border: $og-button-border-color-disabled;
+    cursor: not-allowed;
   }
 }
 
@@ -115,6 +135,14 @@ $og-button-ghost-background-color--focused: og-color(background, brand-hover);
     color: $og-button-secondary-text-color--focused;
     @include og-border(thick, brand, solid);
   }
+
+  &:disabled,
+  &[disabled] {
+    background-color: $og-button-background-color-disabled;
+    color: $og-button-text-color-disabled;
+    border: $og-button-border-color-disabled;
+    cursor: not-allowed;
+  }
 }
 
 .og-button--positive {
@@ -132,6 +160,14 @@ $og-button-ghost-background-color--focused: og-color(background, brand-hover);
 
   &:focus {
     background: $og-button-positive-background-color--focused;
+  }
+
+  &:disabled,
+  &[disabled] {
+    background-color: $og-button-background-color-disabled;
+    color: $og-button-text-color-disabled;
+    border: $og-button-border-color-disabled;
+    cursor: not-allowed;
   }
 }
 
@@ -151,6 +187,14 @@ $og-button-ghost-background-color--focused: og-color(background, brand-hover);
   &:focus {
     background: $og-button-negative-background-color--focused;
   }
+
+  &:disabled,
+  &[disabled] {
+    background-color: $og-button-background-color-disabled;
+    color: $og-button-text-color-disabled;
+    border: $og-button-border-color-disabled;
+    cursor: not-allowed;
+  }
 }
 
 .og-button--info {
@@ -169,6 +213,14 @@ $og-button-ghost-background-color--focused: og-color(background, brand-hover);
   &:focus {
     background: $og-button-info-background-color--focused;
   }
+
+  &:disabled,
+  &[disabled] {
+    background-color: $og-button-background-color-disabled;
+    color: $og-button-text-color-disabled;
+    border: $og-button-border-color-disabled;
+    cursor: not-allowed;
+  }
 }
 
 .og-button--ghost {
@@ -186,6 +238,14 @@ $og-button-ghost-background-color--focused: og-color(background, brand-hover);
 
   &:focus {
     background: $og-button-ghost-background-color--focused;
+  }
+
+  &:disabled,
+  &[disabled] {
+    background-color: $og-button-background-color-disabled;
+    color: $og-button-text-color-disabled;
+    border: $og-button-border-color-disabled;
+    cursor: not-allowed;
   }
 }
 

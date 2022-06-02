@@ -33,24 +33,13 @@ import number2 from "../../assets/images/hand-brush/02.png"
 import number3 from "../../assets/images/hand-brush/03.png"
 import number4 from "../../assets/images/hand-brush/04.png"
 import number5 from "../../assets/images/hand-brush/05.png"
-import number6 from "../../assets/images/hand-brush/06.png"
 import TopNav from "../../components/top-nav"
+import PaginationControl from "../../components/PaginationControl"
 
 const ConversationalDesignProjectPage = () => {
-  function createVideo(videoSourceMP4, videoSourceWEB, videoPoster) {
+  function createVideo(videoSourceMP4, videoSourceWEB) {
     return (
-      <video
-        // playsInline
-        muted
-        loop
-        className="card-image"
-        // poster={videoPoster}
-        // onMouseOver={event => event.target.play()}
-        // onFocus={event => event.target.play()}
-        // onMouseOut={event => event.target.pause()}
-        // onBlur={event => event.target.pause()}
-        controls
-      >
+      <video muted loop className="card-image" controls>
         <source src={videoSourceWEB} type="video/webm" />
         <source src={videoSourceMP4} type="video/mp4" />
         Your browser does not support the video tag.
@@ -684,6 +673,8 @@ const ConversationalDesignProjectPage = () => {
             <p>[Fill out] [Fill out] [Fill out] [Fill out] [Fill out]</p>
           </div>
         </div> */}
+        <PaginationControl previous="" next="/projects/design-system" />
+
         <PortfolioFooter />
       </div>
     </Layout>

@@ -39,6 +39,7 @@ import number4 from "../../assets/images/hand-brush/04.png"
 import number5 from "../../assets/images/hand-brush/05.png"
 import number6 from "../../assets/images/hand-brush/06.png"
 import TopNav from "../../components/top-nav"
+import PaginationControl from "../../components/PaginationControl"
 
 const DemoGrid = styled.div`
   display: grid;
@@ -637,6 +638,8 @@ const YolkoProjectPage = () => {
             </p>
           </div>
         </div>
+
+        <PaginationControl previous="/projects/client" next="" />
 
         <PortfolioFooter />
       </div>
