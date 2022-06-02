@@ -66,9 +66,7 @@ const ConversationalDesignProjectPage = () => {
         <div className="hero-container">
           <div className="hero-container__text-container">
             <span className="og-text-style-overline">Design Framework</span>
-            <h2 className="ds-display3-text-style hero-container__title">
-              Feature Introduction
-            </h2>
+            <h2 className="hero-container__title">Feature Introduction</h2>
             <p className="hero-container__description">
               I led the creation of a Design Framework inspired by one of my
               articles (
@@ -153,7 +151,7 @@ const ConversationalDesignProjectPage = () => {
           </div>
 
           <div className="dossier__others-grid">
-            <div className="dossier__role-container">
+            <div className="dossier__role-container dossier__others-container">
               <p className="special-text-styling">Role</p>
               <p>
                 Design Lead - I led the project from start to finish. My most
@@ -162,7 +160,7 @@ const ConversationalDesignProjectPage = () => {
                 interaction design.{" "}
               </p>
             </div>
-            <div className="dossier__constraints-container">
+            <div className="dossier__constraints-container dossier__others-container">
               <p className="special-text-styling">
                 Constraints & Considerations
               </p>
@@ -171,23 +169,23 @@ const ConversationalDesignProjectPage = () => {
                 they receive too many notifications.
               </p>
             </div>
-            <div className="dossier__users-container">
+            <div className="dossier__users-container dossier__others-container">
               <p className="special-text-styling">Users</p>
               <p>
                 New, frequent, and infrequent users of LinkedIn's consumer
                 products.{" "}
               </p>
             </div>
-            <div className="dossier__duration-container">
+            <div className="dossier__duration-container dossier__others-container">
               <p className="special-text-styling">Duration</p>
               <p>April 2022 - Present</p>
             </div>
-            <div className="dossier__tools-container">
+            <div className="dossier__tools-container dossier__others-container">
               <p className="special-text-styling">Tools</p>
               <p>Figma and Protopie</p>
             </div>
 
-            <div className="dossier__platforms-container">
+            <div className="dossier__platforms-container dossier__others-container">
               <p className="special-text-styling">Platforms</p>
               <p>Native Mobile and Responsive web</p>
             </div>
@@ -673,11 +671,10 @@ const ConversationalDesignProjectPage = () => {
         <img
           src={qaProcessImg}
           alt="testing"
-          className="project-displayfb-img  "
-          // style={{ objectFit: `fill`, maxHeight: `300px !important` }}
+          className="project-displayfb-img"
         />
 
-        <div className="design-process__section-container">
+        {/* <div className="design-process__section-container">
           <div className="project-design-process-title-container">
             <h5 className="design-process__section-title ds-headline-text-style highlighted-offset">
               lessons learned
@@ -686,7 +683,7 @@ const ConversationalDesignProjectPage = () => {
           <div>
             <p>[Fill out] [Fill out] [Fill out] [Fill out] [Fill out]</p>
           </div>
-        </div>
+        </div> */}
         <PortfolioFooter />
       </div>
     </Layout>

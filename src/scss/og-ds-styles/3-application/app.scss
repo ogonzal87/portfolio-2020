@@ -19,6 +19,7 @@ html {
 a {
   color: $og-base-link-text-color;
   text-decoration: none;
+  font-weight: bold;
 
   &:hover {
     text-decoration: line-through;

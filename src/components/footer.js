@@ -9,8 +9,8 @@ const PortfolioFooter = () => (
   <div className="portfolio-footer-container">
     <p className="text home-contact-links">
       <Link to="/about">About</Link> ·{" "}
-      <a href="mailto:oskr.fuent@gmail.com?Subject=Hola" target="_top">
-        oskr.fuent@gmail.com
+      <a href="mailto:osk.gonzo@gmail.com?Subject=Hola" target="_top">
+        osk.gonzo@gmail.com
       </a>{" "}
       ·{" "}
       <a

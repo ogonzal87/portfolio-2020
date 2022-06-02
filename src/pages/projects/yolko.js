@@ -154,30 +154,30 @@ const YolkoProjectPage = () => {
           </div>
 
           <div className="dossier__others-grid">
-            <div className="dossier__users-container">
+            <div className="dossier__users-container dossier__others-container">
               <p className="special-text-styling">Primary Users</p>
               <p>
                 Attendees and presenters at social gatherings such as classes or
                 talks.{" "}
               </p>
             </div>
-            <div className="dossier__duration-container">
+            <div className="dossier__duration-container dossier__others-container">
               <p className="special-text-styling">Duration</p>
               <p>Apr 2016 - Nov 2017</p>
             </div>
-            <div className="dossier__tools-container">
+            <div className="dossier__tools-container dossier__others-container">
               <p className="special-text-styling">Tools</p>
               <p>
                 Pen, paper, AngularJS, Firebase, Sketch App, SASS, Gulp.JS,
                 Node.js, Invision.
               </p>
             </div>
-            <div className="dossier__role-container">
+            <div className="dossier__role-container dossier__others-container">
               <p className="special-text-styling">Role</p>
               <p>Creator, Designer, Researcher and Developer.</p>
             </div>
 
-            <div className="dossier__constraints-container">
+            <div className="dossier__constraints-container dossier__others-container">
               <p className="special-text-styling">
                 Constraints & Considerations
               </p>
@@ -186,7 +186,7 @@ const YolkoProjectPage = () => {
                 them.
               </p>
             </div>
-            <div className="dossier__platforms-container">
+            <div className="dossier__platforms-container dossier__others-container">
               <p className="special-text-styling">Platforms</p>
               <p>Mobile Web and Desktop.</p>
             </div>

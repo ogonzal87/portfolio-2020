@@ -3,15 +3,10 @@
   overflow: hidden;
 
   @include respond-to(phone) {
-    max-width: 375px;
     padding: $og-space-16;
 
     p {
       @include og-text-style-body2();
-    }
-
-    h4 {
-      @include og-text-style-heading4(semibold);
     }
   }
 
@@ -26,7 +21,7 @@
     padding-left: $og-space-48;
 
     @include respond-to(phone) {
-      padding-top: og-space(space-128);
+      padding-top: og-space(space-96);
       padding-left: og-space(space-04);
       padding-right: og-space(space-04);
       height: initial;
@@ -49,6 +44,10 @@
         margin-top: og-space(space-08);
         margin-bottom: 40px;
         color: og-color(text, secondary);
+
+        @include respond-to(phone) {
+          @include og-text-style-heading4();
+        }
       }
 
       .hero-container__description {
@@ -68,6 +67,10 @@
         display: block;
         margin-top: og-space(space-32);
         width: 200px;
+
+        @include respond-to(phone) {
+          margin-top: og-space(space-16);
+        }
       }
     }
 
@@ -146,25 +149,45 @@
     }
 
     @include respond-to(phone) {
+      background-color: #f9fafc;
       max-width: 100%;
       padding: 0 og-space(space-08);
       box-sizing: border-box;
       grid-column-gap: og-space(space-32);
       grid-template-columns: 1fr;
       margin-top: og-space(space-48) * 2;
+      border: none;
     }
   }
 
   .dossier__problem-solution-grid {
     display: grid;
     padding-bottom: og-space(space-24);
+
+    @include respond-to(phone) {
+      padding-bottom: 0;
+    }
   }
 
   .dossier__others-grid {
-    display: grid;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     grid-column-gap: og-space(space-48);
-    grid-template-columns: 1fr 1fr;
+    // grid-template-columns: 1fr 1fr;
     padding-top: og-space(space-24);
+
+    @include respond-to(phone) {
+      padding-top: 0;
+    }
+  }
+
+  .dossier__others-container {
+    width: 45%;
+
+    @include respond-to(phone) {
+      width: 100%;
+    }
   }
 
   .project-displayfb-img {
@@ -237,7 +260,7 @@
     margin-top: og-space(space-64) * 7;
 
     @include respond-to(phone) {
-      grid-template-columns: 1fr;
+      display: block;
       max-width: 100%;
       margin-top: og-space(space-64) * 4;
       padding: 0 og-space(space-08);

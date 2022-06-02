@@ -6,20 +6,37 @@
 
   img {
     width: 400px;
+
+    @include respond-to(phone) {
+      width: 200px;
+    }
   }
 }
 
 .design-process__section-container {
   .videos-grid {
     display: grid;
-    display: grid;
     grid-column-gap: og-space(space-40);
     grid-row-gap: og-space(space-64);
     grid-template-columns: 1fr 1fr;
 
     video {
-      align-items: center;
       width: 300px;
+      border-radius: 30px;
+      border: 4px solid rgba(0, 0, 0, 0.08);
+      box-sizing: border-box;
+    }
+
+    @include respond-to(phone) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      grid-row-gap: og-space(space-40);
+
+      video {
+        max-width: 250px;
+      }
     }
   }
 }

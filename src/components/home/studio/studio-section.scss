@@ -58,12 +58,21 @@
       left: 0;
       margin-bottom: 32px;
       overflow: hidden;
+
+      @include respond-to(phone) {
+        max-width: 1250px;
+        bottom: -260px;
+      }
     }
   }
 
   .profile-img-wrapper {
     position: relative;
     margin-top: -50px;
+
+    @include respond-to(phone) {
+      display: none;
+    }
   }
 
   .gatsby-image-wrapper {
@@ -139,5 +148,9 @@
   font-weight: og-font-weight(bold);
   text-align: center;
   border-radius: og-shape(primary);
-  // margin-bottom: 200px;
+
+  @include respond-to(phone) {
+    padding: $og-space-12;
+    margin: $og-space-24 auto;
+  }
 }

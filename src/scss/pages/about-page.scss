@@ -6,7 +6,10 @@
   min-height: 100vh;
 
   @include respond-to(phone) {
+    margin-top: $og-space-48;
     height: 100%;
+    padding-left: $og-space-24;
+    padding-right: $og-space-24;
   }
 
   .img-container {
@@ -21,7 +24,6 @@
 
     @include respond-to(phone) {
       display: block;
-      padding: og-space(space-16);
       margin-top: og-space(space-64) * 1.5;
       width: 100%;
     }
@@ -34,11 +36,10 @@
 
     @include respond-to(phone) {
       display: block;
-      padding: og-space(space-48) og-space(space-32) og-space(space-64) * 2
-        og-space(space-32);
+      padding: og-space(space-48) 0;
 
       p {
-        @include og-text-style-body1();
+        @include og-text-style-body2();
       }
     }
   }

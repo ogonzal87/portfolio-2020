@@ -99,30 +99,30 @@ const ClientProjectPage = () => {
           </div>
 
           <div className="dossier__others-grid">
-            <div className="dossier__users-container">
+            <div className="dossier__users-container dossier__others-container">
               <p className="special-text-styling">Primary Users</p>
               <p>
                 Non-technical marketers wanting to create stronger and
                 meaningful relationships with a brand's customers.
               </p>
             </div>
-            <div className="dossier__duration-container">
+            <div className="dossier__duration-container dossier__others-container">
               <p className="special-text-styling">Duration</p>
               <p>July 2017 - Present</p>
             </div>
-            <div className="dossier__tools-container">
+            <div className="dossier__tools-container dossier__others-container">
               <p className="special-text-styling">Tools</p>
               <p>
                 Pen, paper, Invision, Maze, Sketch App, Illustrator, and lots of
                 sticky notes.
               </p>
             </div>
-            <div className="dossier__role-container">
+            <div className="dossier__role-container dossier__others-container">
               <p className="special-text-styling">Role</p>
               <p>Product Designer, Creative Director, and Researcher.</p>
             </div>
 
-            <div className="dossier__constraints-container">
+            <div className="dossier__constraints-container dossier__others-container">
               <p className="special-text-styling">
                 Constraints & Considerations
               </p>
@@ -131,7 +131,7 @@ const ClientProjectPage = () => {
                 UI to be inspired by Google's.
               </p>
             </div>
-            <div className="dossier__platforms-container">
+            <div className="dossier__platforms-container dossier__others-container">
               <p className="special-text-styling">Platforms</p>
               <p>Desktop</p>
             </div>
@@ -233,12 +233,12 @@ const ClientProjectPage = () => {
           <img
             src={MarketResearchImg1}
             alt="market research exhibit"
-            className=""
+            className="market-research-exhibit"
           />
           <img
             src={MarketResearchImg2}
             alt="market research exhibit"
-            className=""
+            className="market-research-exhibit"
           />
         </div>
 
@@ -369,7 +369,7 @@ const ClientProjectPage = () => {
         <img
           src={demo1}
           className="project-displayfb-img"
-          style={{ width: "50%" }}
+          style={{ width: "100%" }}
           alt="demo"
         />
 

@@ -59,25 +59,24 @@ const MercadoProjectPage = () => {
           </div>
         </div>
 
-        <h3 className="project-section-title">DOSSIER</h3>
         <div className="case-study-dossier-container">
-          <div className="dossier__problem-container">
+          <div className="dossier__problem-container ">
             <p className="special-text-styling">Problem</p>
             <p>[Fill out] [Fill out] [Fill out] [Fill out] [Fill out]</p>
           </div>
-          <div className="dossier__users-container">
+          <div className="dossier__users-container dossier__others-container">
             <p className="special-text-styling">Primary Users</p>
             <p>[Fill out] [Fill out] [Fill out] [Fill out] [Fill out]</p>
           </div>
-          <div className="dossier__duration-container">
+          <div className="dossier__duration-container dossier__others-container">
             <p className="special-text-styling">Duration</p>
             <p>March 2022 - Present</p>
           </div>
-          <div className="dossier__tools-container">
+          <div className="dossier__tools-container dossier__others-container">
             <p className="special-text-styling">Tools</p>
             <p>[Fill out] [Fill out] [Fill out] [Fill out] [Fill out]</p>
           </div>
-          <div className="dossier__role-container">
+          <div className="dossier__role-container dossier__others-container">
             <p className="special-text-styling">Role</p>
             <p>Design Lead</p>
           </div>
@@ -85,11 +84,11 @@ const MercadoProjectPage = () => {
             <p className="special-text-styling">Solution</p>
             <p>[Fill out] [Fill out] [Fill out] [Fill out] [Fill out]</p>
           </div>
-          <div className="dossier__constraints-container">
+          <div className="dossier__constraints-container dossier__others-container">
             <p className="special-text-styling">Constraints & Considerations</p>
             <p>[Fill out] [Fill out] [Fill out] [Fill out] [Fill out]</p>
           </div>
-          <div className="dossier__platforms-container">
+          <div className="dossier__platforms-container dossier__others-container">
             <p className="special-text-styling">Platforms</p>
             <p>Native Mobile and Responsive web</p>
           </div>

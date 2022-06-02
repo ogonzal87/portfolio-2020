@@ -189,7 +189,7 @@ const DSProjectPage = () => {
           </div>
 
           <div className="dossier__others-grid">
-            <div className="dossier__constraints-container">
+            <div className="dossier__constraints-container dossier__others-container">
               <p className="og-text-style-overline">
                 Constraints & Considerations
               </p>
@@ -199,28 +199,28 @@ const DSProjectPage = () => {
                 mobile web and desktop displays.
               </p>
             </div>
-            <div className="dossier__role-container">
+            <div className="dossier__role-container dossier__others-container">
               <p className="og-text-style-overline">Role</p>
               <p>Creative Director, Designer, Developer, and instigator.</p>
             </div>
-            <div className="dossier__tools-container">
+            <div className="dossier__tools-container dossier__others-container">
               <p className="og-text-style-overline">Tools</p>
               <p>
                 ReactJS, Figma, SASS, Storybook, Gatsby, Design Tokens, Framer
                 Motion, and Coffee.
               </p>
             </div>
-            <div className="dossier__users-container">
+            <div className="dossier__users-container dossier__others-container">
               <p className="og-text-style-overline">Primary Users</p>
               <p>Freelancers, Designers and Developers.</p>
             </div>
 
-            <div className="dossier__duration-container">
+            <div className="dossier__duration-container dossier__others-container">
               <p className="og-text-style-overline">Duration</p>
               <p>Mar 2018 - Present</p>
             </div>
 
-            <div className="dossier__platforms-container">
+            <div className="dossier__platforms-container dossier__others-container">
               <p className="og-text-style-overline">Platforms</p>
               <p>Mobile web and Desktop</p>
             </div>
@@ -729,7 +729,7 @@ const DSProjectPage = () => {
 
         <div className="design-process__section-container">
           <div className="project-design-process-title-container">
-            <h5>THEMING THE SYSTEM</h5>
+            <h5>Theming the system</h5>
           </div>
           <div>
             <p>
@@ -746,7 +746,7 @@ const DSProjectPage = () => {
 
         <div className="design-process__section-container">
           <div className="project-design-process-title-container">
-            <h5>WHAT'S NEXT?</h5>
+            <h5>What's next?</h5>
           </div>
           <div>
             <p>
@@ -800,7 +800,7 @@ const DSProjectPage = () => {
             </p>
 
             <iframe
-              width="560"
+              width="100%"
               height="315"
               src="https://www.youtube.com/embed/DCdQkgSwNoU"
               frameBorder="0"

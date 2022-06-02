@@ -3,6 +3,13 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+
+  @include respond-to(phone) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: og-space(space-32);
+  }
 }
 
 .client-container {
