@@ -17,8 +17,6 @@
     @include respond-to(phone) {
       display: none;
     }
-    // -webkit-filter: drop-shadow(4px 3px 2px rgba(0, 0, 0, 0.7));
-    // filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
   }
 
   .portfolio-logo-container {
@@ -29,7 +27,7 @@
 
   .portfolio-logo-img {
     position: absolute;
-    top: 48%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     max-width: 723px;
@@ -37,16 +35,58 @@
 
     @include respond-to(phone) {
       width: 350px;
-      margin: 0 auto;
-      top: 40%;
+      position: relative;
+      top: 250px;
     }
   }
 
-  .hero-empty-div {
-    height: 250px;
+  .hero-text-container {
+    height: 188px;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    // background-color: red;
 
     @include respond-to(phone) {
-      height: 150px;
+      height: 90px;
+      position: absolute;
+      top: 200px;
+    }
+  }
+
+  .hero-overline-text-style {
+    color: og-color(text, secondary);
+    letter-spacing: 2px;
+    width: 75ch;
+    text-align: center;
+    position: absolute;
+    top: -80px;
+
+    @include respond-to(phone) {
+      display: none;
+    }
+  }
+
+  .hero-subheading-text {
+    position: absolute;
+    width: 75ch;
+    color: og-color(text, secondary);
+    text-align: center;
+    line-height: 1.7rem;
+    font-size: og-font-size(heading6);
+    bottom: -150px;
+    z-index: 99;
+
+    @include respond-to(phone) {
+      width: 100%;
+      color: og-color(text, secondary);
+      font-size: og-font-size(body2);
+      line-height: og-line-height(body2);
+      padding: 0 og-space(space-24);
+      position: relative;
     }
   }
 
@@ -73,48 +113,6 @@
     }
   }
 
-  @include respond-to(phone) {
-    p {
-      font-size: og-font-size(body2);
-    }
-
-    grid-row-gap: 100px;
-  }
-
-  .hero-overline-text-style {
-    padding-top: og-rem(56px);
-    color: og-color(text, secondary);
-    letter-spacing: 1px;
-
-    @include respond-to(phone) {
-      margin-bottom: 0px;
-    }
-  }
-
-  .og-text-style-overline {
-    margin-top: og-rem(100px);
-  }
-
-  .hero-subheading-text {
-    max-width: 75ch;
-    color: og-color(text, secondary);
-    text-align: center;
-    line-height: 1.7rem;
-    font-size: og-font-size(heading6);
-
-    @include respond-to(phone) {
-      color: og-color(text, secondary);
-      font-size: og-font-size(body1);
-      padding: og-space(space-16);
-      line-height: og-line-height(body1);
-    }
-  }
-
-  .home-quote-statement {
-    max-width: 600px;
-    margin: 0 auto;
-  }
-
   .directional-signifier {
     position: absolute;
     bottom: og-space(space-32);
@@ -129,6 +127,16 @@
 
     i {
       color: rgba(0, 0, 0, 0.25);
+    }
+
+    @include respond-to(phone) {
+      display: none;
+    }
+  }
+
+  @include respond-to(phone) {
+    p {
+      font-size: og-font-size(body2);
     }
   }
 }

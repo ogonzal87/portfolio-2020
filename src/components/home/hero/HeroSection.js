@@ -56,22 +56,55 @@ class HeroSection extends React.Component {
           variants={ogAnimation.containerStagger}
           className="home-page-hero-section"
         >
-          <motion.h1
-            className="og-text-style-overline hero-doverline-text-style"
-            variants={ogAnimation.fadeUpItem}
-          >
-            Hola!{" "}
-            <span role="img" aria-label="emoji" alt=" ">
-              👋🏼
-            </span>{" "}
-            mi nombre es
-          </motion.h1>
+          {" "}
+          <div className="hero-text-container">
+            <motion.h1
+              className="og-text-style-overline hero-overline-text-style"
+              variants={ogAnimation.fadeUpItem}
+            >
+              Hola!{" "}
+              <span role="img" aria-label="emoji" alt=" ">
+                👋🏼
+              </span>{" "}
+              mi nombre es
+            </motion.h1>
 
-          <motion.div
-            variants={ogAnimation.fadeUpItem}
-            className="hero-empty-div"
-          ></motion.div>
-
+            <motion.h2
+              className="hero-subheading-text"
+              variants={ogAnimation.fadeUpItem}
+            >
+              I’m a self-taught{" "}
+              <a
+                href="https://uxplanet.org/ux-engineers-what-we-are-2b0c4d10b3a6"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="highlighted-offset"
+              >
+                UX Engineer
+              </a>{" "}
+              and Product Designer. By day I work on digital interfaces at{" "}
+              <a
+                href="https://www.linkedin.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="highlighted-offset"
+              >
+                LinkedIn
+              </a>{" "}
+              concentrating on accessible multi-platform{" "}
+              <a
+                href="https://codesandbox.io/embed/oskrhq-playground-app-x7mhz?fontsize=14&theme=dark&view=preview"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="highlighted-offset"
+              >
+                Design Systems
+              </a>
+              , product redesign, Dark Mode and Accessibility. By night I make
+              art with code or plants, some calligraphy, illustrations and
+              music.
+            </motion.h2>
+          </div>
           <Tilt
             className="portfolio-logo-container Tilt"
             options={{
@@ -92,41 +125,6 @@ class HeroSection extends React.Component {
               />
             </AniLink>
           </Tilt>
-
-          <motion.h2
-            className="hero-subheading-text"
-            variants={ogAnimation.fadeUpItem}
-          >
-            I’m a self-taught{" "}
-            <a
-              href="https://uxplanet.org/ux-engineers-what-we-are-2b0c4d10b3a6"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="highlighted-offset"
-            >
-              UX Engineer
-            </a>{" "}
-            and Product Designer. By day I work on digital interfaces at{" "}
-            <a
-              href="https://www.linkedin.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="highlighted-offset"
-            >
-              LinkedIn
-            </a>{" "}
-            concentrating on accessible multi-platform{" "}
-            <a
-              href="https://codesandbox.io/embed/oskrhq-playground-app-x7mhz?fontsize=14&theme=dark&view=preview"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="highlighted-offset"
-            >
-              Design Systems
-            </a>
-            , product redesign, Dark Mode and Accessibility. By night I make art
-            with code or plants, some calligraphy, illustrations and music.
-          </motion.h2>
           <motion.div
             className="directional-signifier"
             variants={ogAnimation.fadeUpItem}
