@@ -22,10 +22,15 @@
     min-width: 56px;
     margin: 0;
     backdrop-filter: blur(6px);
+    text-decoration: none;
 
     span {
-      width: 100px;
-      text-align: center;
+      width: 95px;
+      height: 32px;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
   }
 }

@@ -20,7 +20,7 @@
     max-width: 380px;
     border-radius: 10px;
     object-fit: cover;
-    clip-path: polygon(53% 0, 100% 0, 100% 49%, 58% 100%, 0 100%, 0 49%);
+    // clip-path: polygon(53% 0, 100% 0, 100% 49%, 58% 100%, 0 100%, 0 49%);
 
     @include respond-to(phone) {
       display: block;

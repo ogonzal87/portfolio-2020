@@ -4,7 +4,7 @@ import SEO from "../components/seo"
 import TopNav from "../components/top-nav"
 import PortfolioFooter from "../components/footer"
 import styled from "styled-components"
-import ProfileImg from "../assets/images/profile-pic.jpg"
+import ProfileImg from "../assets/images/profile.png"
 
 const SectionHero = styled.div`
   display: flex;
@@ -30,7 +30,7 @@ const AboutPage = () => {
             </div>
 
             <div className="text-container">
-              <p>
+              <p style={{ marginTop: 0 }}>
                 I was born and raised in Colombia. My family and I moved to the
                 States in my teens for security reasons. I began my career as a
                 high school janitor but taught myself to design and code while
