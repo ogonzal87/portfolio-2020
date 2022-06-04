@@ -254,67 +254,16 @@ html {
 }
 
 .contact-me-circle-container {
-  position: relative;
-
-  .about-me-prompt-container {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-    flex-direction: column;
-    opacity: 1;
-    position: fixed;
-    bottom: 32px;
-    right: 50px;
-    height: 106px;
-    z-index: 999;
-
-    img {
-      position: absolute;
-      bottom: 0px;
-      right: -10px;
-      height: 200px;
-    }
-
-    a {
-      width: 48px;
-      height: 48px;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      margin: 0;
-      padding: 0 24px;
-      text-decoration: none;
-      border: 0.0625rem #e0e2e4 solid;
-      border-radius: 100%;
-
-      .button-icon {
-        margin-right: $og-space-12;
-      }
-
-      .button-text {
-        opacity: 0;
-      }
-
-      &:hover {
-        opacity: 1;
-        width: auto;
-        border-radius: $og-button-shape;
-
-        .button-text {
-          opacity: 1;
-        }
-      }
-    }
-  }
+  // overflow: hidden;
+  position: fixed;
+  bottom: -90px;
+  right: -90px;
 
   .contact-me-circle {
     overflow: hidden;
     mix-blend-mode: difference;
     background-blend-mode: difference;
     font-weight: bold;
-    position: fixed;
-    bottom: -80px;
-    right: -80px;
     text-transform: uppercase;
     font-weight: 700;
     -webkit-animation-name: rotate;
@@ -344,13 +293,42 @@ html {
     }
 
     text {
-      fill: var(--og-brand-color3) !important;
-      text-shadow: 1px 1px var(--og-brand-color2);
-      font-size: 17px;
+      // fill: var(--og-brand-color3) !important;
+      fill: rgba(0, 0, 0, 0.3) !important;
+      // font-size: 16px;
     }
 
     @include respond-to(phone) {
       display: none;
+    }
+  }
+
+  .contact-me-prompt-container {
+    z-index: 999;
+    text-decoration: none; // overflow: hidden;
+
+    img {
+      position: absolute;
+      bottom: 82px;
+      right: 20px;
+      width: 278px;
+      opacity: 0;
+      transition: all ease-in-out 200ms;
+    }
+  }
+
+  &:hover {
+    .contact-me-prompt-container {
+      z-index: 999;
+      text-decoration: none;
+      overflow: hidden;
+
+      img {
+        opacity: 1;
+        bottom: 85px;
+        right: 22px;
+        width: 280px;
+      }
     }
   }
 

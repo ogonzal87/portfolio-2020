@@ -55,7 +55,7 @@ function createVideo(videoSourceMP4, videoSourceWEB, videoPoster) {
 export default () => (
   <Layout style={{ position: "relative", height: "100vh" }}>
     <SEO title="Code Projects" />
-    <TopNav work about />
+    <TopNav work about contactMe />
     <section className="home-code-section" style={{ marginBottom: "200px" }}>
       <ul className="code-cards-list">
         <CodeProjectCard

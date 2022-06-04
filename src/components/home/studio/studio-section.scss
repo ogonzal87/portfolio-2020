@@ -47,7 +47,7 @@
 
     .home-studio-section-paragraph {
       @include respond-to(phone) {
-        font-size: og-font-size(body1);
+        font-size: og-font-size(body2);
         padding: 0 $og-space-16;
       }
     }
@@ -79,7 +79,6 @@
     width: 500px;
     height: 500px;
     z-index: 9;
-    // overflow: hidden;
 
     @include respond-to(phone) {
       width: 95vw;

@@ -1,11 +1,17 @@
 .anchor-links {
   position: fixed;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 54px;
+  // bottom: 32px;
+  left: 50%;
+  top: 24px;
+  // right: 32px;
+  transform: translateX(-50%);
   z-index: 999;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 600px;
+  z-index: 999;
 
   @include respond-to(phone) {
     display: none;
@@ -13,18 +19,13 @@
 
   a {
     min-height: 32px;
-    min-width: 32px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    min-width: 56px;
     margin: 0;
-  }
+    backdrop-filter: blur(6px);
 
-  .dot {
-    height: 8px;
-    width: 8px;
-    border-radius: 50%;
-    border: 1px solid rgba(0, 0, 0, 0.45);
-    mix-blend-mode: difference;
+    span {
+      width: 100px;
+      text-align: center;
+    }
   }
 }

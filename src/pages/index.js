@@ -12,7 +12,8 @@ import { ParallaxProvider } from "react-scroll-parallax"
 import AnchorLinks from "../components/AnchorLinks"
 import { motion } from "framer-motion"
 import ogAnimation from "../assets/animations/animations-helper"
-import AboutMePrompt from "../assets/images/about-me-prompt.png"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
+import ContactMePrompt from "../assets/images/contact-me-prompt.png"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -48,18 +49,6 @@ class HomePage extends React.Component {
         </ParallaxProvider>
 
         <div className="contact-me-circle-container">
-          {/* <div className="about-me-prompt-container">
-            <a className="og-circle-button og-circle-button--ghost">
-              <i className="button-icon material-icons">face</i>
-              <div className="button-text">Human</div>
-            </a>
-
-            <a className="og-button og-button--ghost og-button--medium">
-              <i className="button-icon material-icons">work_outline</i>
-              <div className="button-text"> Professional </div>
-            </a>
-          </div> */}
-
           <motion.svg
             variants={ogAnimation.ContactMeCircle}
             initial="initial"
@@ -144,6 +133,21 @@ class HomePage extends React.Component {
               </text>
             </g>
           </motion.svg>
+
+          <AniLink
+            paintDrip
+            to="/contact-me"
+            duration={0.75}
+            hex="#5900FF"
+            className="contact-me-prompt-container"
+          >
+            <motion.img
+              className="contact-me-img-prompt"
+              src={ContactMePrompt}
+              alt="contact me"
+              variants={ogAnimation.fadeItem}
+            />
+          </AniLink>
         </div>
       </Layout>
     )

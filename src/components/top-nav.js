@@ -4,7 +4,7 @@ import logo from "../assets/logos/logo4.svg"
 import ResumePDF from "../assets/images/oscar-gonzalez-resume.pdf"
 import { motion } from "framer-motion"
 
-const TopNav = ({ work, about, resume, ...props }) => {
+const TopNav = ({ work, about, resume, contactMe, ...props }) => {
   const WorkLink = work ? (
     <Link
       to="/#work"
@@ -22,8 +22,27 @@ const TopNav = ({ work, about, resume, ...props }) => {
       to="/about"
       activeClassName="top-nav-link-isActive"
       className={`og-text-style-overline (history.getCurrentLocation().pathname === '/about' ? 'top-nav-link-isActive' : '')`}
+      paintDrip
+      duration={0.75}
+      hex="#5900FF"
     >
       About
+    </Link>
+  ) : (
+    ""
+  )
+
+  const ContactMeLink = contactMe ? (
+    <Link
+      exact
+      to="/contact-me"
+      activeClassName="top-nav-link-isActive"
+      className={`og-text-style-overline (history.getCurrentLocation().pathname === '/contact-me' ? 'top-nav-link-isActive' : '')`}
+      paintDrip
+      duration={0.75}
+      hex="#5900FF"
+    >
+      Contact
     </Link>
   ) : (
     ""
@@ -51,7 +70,7 @@ const TopNav = ({ work, about, resume, ...props }) => {
           type: "spring",
           stiffness: 260,
           damping: 20,
-          delay: .75
+          delay: 0.75,
         }}
       >
         <Link to="/" paintDrip duration={0.75} hex="#5900FF">
@@ -62,7 +81,8 @@ const TopNav = ({ work, about, resume, ...props }) => {
       <ul>
         <li>{WorkLink}</li>
         <li>{AboutLink}</li>
-        <li>{ResumeLink}</li> 
+        <li>{ContactMeLink}</li>
+        <li>{ResumeLink}</li>
       </ul>
     </nav>
   )

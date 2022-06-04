@@ -125,12 +125,6 @@ class HeroSection extends React.Component {
               />
             </AniLink>
           </Tilt>
-          <motion.div
-            className="directional-signifier"
-            variants={ogAnimation.fadeUpItem}
-          >
-            <i class="material-icons">arrow_downward</i>
-          </motion.div>
         </motion.div>
       </motion.div>
     )
