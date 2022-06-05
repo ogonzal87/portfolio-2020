@@ -291,11 +291,16 @@ html {
 
     a {
       font-weight: 700;
+      fill: var(--og-brand-color3) !important;
+
+      &:visited {
+        fill: var(--og-brand-color3) !important;
+      }
     }
 
     text {
-      // fill: var(--og-brand-color3) !important;
-      fill: rgba(0, 0, 0, 0.3) !important;
+      fill: var(--og-brand-color3) !important;
+      // fill: rgba(0, 0, 0, 0.3) !important;
       // font-size: 16px;
     }
 
@@ -313,8 +318,8 @@ html {
       bottom: 82px;
       right: 20px;
       width: 278px;
-      opacity: 0;
-      transition: all ease-in-out 200ms;
+      // opacity: 0;
+      // transition: all cubic-bezier(0.43, -0.5, 0.41, 2.34) 400ms;
     }
   }
 
@@ -325,8 +330,8 @@ html {
       overflow: hidden;
 
       img {
-        opacity: 1;
-        bottom: 85px;
+        // opacity: 1;
+        bottom: 80px;
         right: 22px;
         width: 280px;
       }

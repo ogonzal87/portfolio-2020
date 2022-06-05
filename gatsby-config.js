@@ -11,8 +11,8 @@ module.exports = {
       resolve: "gatsby-plugin-anchor-links",
       options: {
         offset: -100,
-        duration: 1500
-      }
+        duration: 1500,
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
@@ -46,17 +46,14 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-google-fonts',
+      resolve: "gatsby-plugin-google-fonts",
       options: {
-        fonts: [
-          'material icons',
-          'roboto:300,400,500,700',
-        ],
+        fonts: ["material icons", "roboto:300,400,500,700"],
       },
     },
-    {
-      resolve: `gatsby-plugin-manifest`,
-    },
+    // {
+    //   resolve: `gatsby-plugin-manifest`,
+    // },
     `gatsby-plugin-offline`,
   ],
 }

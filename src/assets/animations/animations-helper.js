@@ -28,7 +28,6 @@ const ogAnimation = {
   fadeItem: {
     initial: {
       opacity: 0,
-      
     },
     animate: {
       opacity: 1,
@@ -57,7 +56,6 @@ const ogAnimation = {
       },
     },
   },
-
 
   hover: {
     scale: 1.02,

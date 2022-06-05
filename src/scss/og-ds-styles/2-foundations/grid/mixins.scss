@@ -1,3 +1,5 @@
+@use "sass:math";
+
 @mixin og-grid($columns: 12, $gutter: 24px, $margin: 0) {
   margin: $margin;
   display: grid;
@@ -11,5 +13,5 @@
 }
 
 @mixin og-columns-stretch($column-start: 1, $column-end: 12) {
-  grid-column: $column-start / $column-end;
+  grid-column: math.div($column-start, $column-end);
 }

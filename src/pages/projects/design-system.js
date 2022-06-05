@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
-import vnHeroImg from "../../assets/images/DS/ds-hero.png"
+import vnHeroImg from "../../assets/images/DS/ds-hero1.png"
 import PortfolioFooter from "../../components/footer"
 import number1 from "../../assets/images/hand-brush/01.png"
 import number2 from "../../assets/images/hand-brush/02.png"
@@ -108,7 +108,7 @@ const DSProjectPage = () => {
               This website, and every personal project I work on, consumes the
               system in code and design. It's also an{" "}
               <a
-                href="https://x7mhz.csb.app/"
+                href="http://lovely-guide.surge.sh/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -139,7 +139,7 @@ const DSProjectPage = () => {
             </div>
 
             <a
-              href="https://x7mhz.csb.app/"
+              href="http://lovely-guide.surge.sh/"
               className="project-btn__cta"
               target="_blank"
               rel="noopener noreferrer"

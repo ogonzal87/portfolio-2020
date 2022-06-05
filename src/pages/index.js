@@ -18,6 +18,29 @@ import ContactMePrompt from "../assets/images/contact-me-prompt.png"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
+const rotateHover = {
+  initial: {
+    y: 2,
+    x: 2,
+    opacity: 0,
+    rotate: 30,
+    scale: 0.8,
+  },
+  animate: {
+    y: 0,
+    x: 0,
+    opacity: 1,
+    scale: 1,
+    rotate: 0,
+    transition: {
+      duration: 0.4,
+      type: "spring",
+      stiffness: 260,
+      damping: 20,
+    },
+  },
+}
+
 class HomePage extends React.Component {
   render() {
     return (
@@ -141,12 +164,14 @@ class HomePage extends React.Component {
             hex="#5900FF"
             className="contact-me-prompt-container"
           >
-            <motion.img
-              className="contact-me-img-prompt"
-              src={ContactMePrompt}
-              alt="contact me"
-              variants={ogAnimation.fadeItem}
-            />
+            <motion.span whileHover="animate" initial="initial">
+              <motion.img
+                className="contact-me-img-prompt"
+                src={ContactMePrompt}
+                alt="contact me"
+                variants={rotateHover}
+              />
+            </motion.span>
           </AniLink>
         </div>
       </Layout>

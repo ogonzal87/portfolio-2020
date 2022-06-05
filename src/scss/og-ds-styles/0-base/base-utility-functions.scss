@@ -1,3 +1,5 @@
+@use "sass:math";
+
 $og-default-browser-font-size: 16;
 
 /// Returns the value in rem for a given pixel value.
@@ -12,7 +14,7 @@ $og-default-browser-font-size: 16;
   } @else if $unit == "rem" {
     @return $value;
   } @else if $unit == "px" {
-    @return ($value / 16px) * 1rem;
+    @return math.div($value, 16px) * 1rem;
   } @else {
     @error 'Value must be in px, or rem.';
   }
@@ -31,10 +33,10 @@ $og-default-browser-font-size: 16;
   } @else if $unit == "em" {
     @return $value;
   } @else if $unit == "rem" {
-    @return $value / 1rem * 1em *
-      ($og-theme-base-font-size / $og-default-browser-font-size);
+    @return math.div($value, 1rem) * 1em *
+      math.div($og-theme-base-font-size, $og-default-browser-font-size);
   } @else if $unit == "px" {
-    @return $value / $og-default-browser-font-size * 1em;
+    @return math.div($value, $og-default-browser-font-size) * 1em;
   } @else {
     @error 'Value must be in px, rem, or em.';
   }
