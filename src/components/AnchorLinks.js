@@ -10,20 +10,20 @@ const AnchorLinks = () => (
     animate="animate"
     className="anchor-links"
   >
-    <AnchorLink to="/#projects" title="Work">
-      <span className="tag">Work</span>
+    <AnchorLink to="/#projects" title="Work" className="anchor-link">
+      Work
     </AnchorLink>
-    <AnchorLink to="/#studio" title="Studio">
-      <span className="tag">Studio</span>
+    <AnchorLink to="/#studio" title="Studio" className="anchor-link">
+      Studio
     </AnchorLink>
-    <AnchorLink to="/#code" title="code">
-      <span className="tag">Code</span>
+    <AnchorLink to="/#code" title="code" className="anchor-link">
+      Code
     </AnchorLink>
-    <AnchorLink to="/#thoughts" title="Thoughts">
-      <span className="tag">Thoughts</span>
+    <AnchorLink to="/#thoughts" title="Thoughts" className="anchor-link">
+      Thoughts
     </AnchorLink>
-    <AnchorLink to="/#classes" title="Classes">
-      <span className="tag">Classes</span>
+    <AnchorLink to="/#classes" title="Classes" className="anchor-link">
+      Classes
     </AnchorLink>
   </motion.div>
 )

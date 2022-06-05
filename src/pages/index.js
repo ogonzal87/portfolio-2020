@@ -23,8 +23,8 @@ const rotateHover = {
     y: 2,
     x: 2,
     opacity: 0,
-    rotate: 30,
-    scale: 0.8,
+    rotate: 10,
+    scale: 0.9,
   },
   animate: {
     y: 0,
