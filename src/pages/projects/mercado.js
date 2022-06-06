@@ -35,7 +35,7 @@ const MercadoProjectPage = () => {
     <Layout>
       <SEO title="Conversational Design" />
       <div className="project-page">
-        <TopNav work about contactMe />
+        <TopNav about contactMe />
 
         <div className="hero-container">
           <div className="hero-container__text-container">

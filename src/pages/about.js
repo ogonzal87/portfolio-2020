@@ -22,7 +22,7 @@ const AboutPage = () => {
     <Layout>
       <SEO title="About me - Oscar Gonzalez" />
       <div style={{ position: "relative" }}>
-        <TopNav work about contactMe />
+        <TopNav about contactMe />
         <div className="about-page">
           <SectionHero>
             <div className="img-container">

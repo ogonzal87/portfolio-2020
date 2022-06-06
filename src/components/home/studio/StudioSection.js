@@ -119,6 +119,18 @@ class StudioSection extends React.Component {
               startups, and I mentor other designers.
             </p>
 
+            <p className="special-text-styling home-studio-section-paragraph">
+              Current Interests
+            </p>
+            <p className="og-text-style-body1 home-studio-section-paragraph">
+              I am really into anything{" "}
+              <span className="highlighted-offset">Design Systems</span>,
+              decentralized autonomous systems,{" "}
+              <span className="highlighted-offset">crypto assets</span> (#crypto
+              Class of '14), behavioral economics, metaverses, machine learning,
+              3D design, AR, and VR.
+            </p>
+
             <AniLink
               paintDrip
               to="/about"
@@ -136,7 +148,7 @@ class StudioSection extends React.Component {
           </div>
 
           <div className="profile-img-wrapper">
-            <Parallax y={[-35, 30]} tagOuter="figure">
+            <Parallax y={[-15, 10]} tagOuter="figure">
               <ProfilePicture
                 className="studio-profile-picture"
                 style={{ width: "573px" }}

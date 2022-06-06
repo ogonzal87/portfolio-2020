@@ -142,7 +142,8 @@
   // margin: 0 auto;
   display: block;
   z-index: 999;
-  margin-top: $og-space-32;
+  margin-top: $og-space-24;
+  margin-bottom: $og-space-32;
   @include og-border(thickest, brand, solid);
   font-weight: og-font-weight(bold);
   text-align: center;

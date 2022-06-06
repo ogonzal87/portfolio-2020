@@ -13,8 +13,8 @@ const AnchorLinks = () => (
     <AnchorLink to="/#projects" title="Work" className="anchor-link">
       Work
     </AnchorLink>
-    <AnchorLink to="/#studio" title="Studio" className="anchor-link">
-      Studio
+    <AnchorLink to="/#studio" title="About" className="anchor-link">
+      About
     </AnchorLink>
     <AnchorLink to="/#code" title="code" className="anchor-link">
       Code
