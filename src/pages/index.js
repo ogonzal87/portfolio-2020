@@ -99,7 +99,7 @@ class HomePage extends React.Component {
               <text fill="">
                 <textPath xlinkHref="#circlePath">
                   <a
-                    href="mailto:oskr.fuent@gmail.com?Subject=Hola"
+                    href="mailto:osk.gonzo@gmail.com?Subject=Hola!"
                     target="_top"
                   >
                     osk.gonzo@gmail.com
