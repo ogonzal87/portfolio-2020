@@ -127,8 +127,16 @@ class StudioSection extends React.Component {
               <span className="highlighted-offset">Design Systems</span>,
               decentralized autonomous systems,{" "}
               <span className="highlighted-offset">crypto assets</span> (#crypto
-              Class of '14), behavioral economics, metaverses, machine learning,
-              3D design, AR, and VR.
+              Class of '14), Web3, metaverses,{" "}
+              <a
+                href="https://opensea.io/oskr_eth"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="highlighted-offset"
+              >
+                NFTs
+              </a>
+              , behavioral economics, machine learning, 3D design, and XR.
             </p>
 
             <AniLink

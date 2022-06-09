@@ -71,7 +71,7 @@ const ConversationalDesignProjectPage = () => {
               ), Open World Game Design, and Disney's approach to
               personalization. The framework guides designers on properly
               introducing features to LinkedIn users while carefully considering
-              contextual relevance over a user journey. The framework draws
+              contextual relevance over a user's journey. The framework draws
               parallels between ordinary spoken conversations (introductions) in
               the physical world and Digital Interaction Design.
             </p>
