@@ -75,25 +75,23 @@ const AboutPage = () => {
               </p>
               <br />
 
-              <p className="special-text-styling">
-              Current Interests
-            </p>
-            <p className="og-text-style-body1">
-              I am really into anything{" "}
-              <span className="highlighted-offset">Design Systems</span>,
-              decentralized autonomous systems,{" "}
-              <span className="highlighted-offset">crypto assets</span> (#crypto
-              Class of '14), Web3, metaverses,{" "}
-              <a
-                href="https://opensea.io/oskr_eth"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="highlighted-offset"
-              >
-                NFTs
-              </a>
-              , behavioral economics, machine learning, 3D design, and XR.
-            </p
+              <p className="special-text-styling">Current Interests</p>
+              <p className="og-text-style-body1">
+                I am really into anything{" "}
+                <span className="highlighted-offset">Design Systems</span>,
+                decentralized autonomous systems,{" "}
+                <span className="highlighted-offset">crypto assets</span>{" "}
+                (#crypto Class of '14), Web3, metaverses,{" "}
+                <a
+                  href="https://opensea.io/oskr_eth"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="highlighted-offset"
+                >
+                  NFTs
+                </a>
+                , behavioral economics, machine learning, 3D design, and XR.
+              </p>
             </div>
           </SectionHero>
         </div>
