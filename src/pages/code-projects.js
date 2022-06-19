@@ -119,7 +119,7 @@ export default () => (
             designCalVidWEB,
             designCalVidPoster
           )}
-          href="https://money-time.surge.sh/"
+          href="https://money-times.surge.sh/"
         />
         <CodeProjectCard
           title="Sound activated illustration"
