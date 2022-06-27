@@ -125,10 +125,10 @@ const DSProjectPage = () => {
               .{" "}
             </p>
             <p>
-              I built it as a POC to persuade design and dev teams at a past
-              employer to build one for the company, and I have been adjusting
-              it based on my learnings while working on LinkedIn's new Design
-              System. Below is the story.
+              I built it as a Proof of Concept to persuade design and dev teams
+              at a past employer to build one for the company, and I have been
+              adjusting it based on my learnings while working on LinkedIn's new
+              Design System. Below is the story.
             </p>
             <div className="tag-container">
               <div className="tag">Creative Direction</div>

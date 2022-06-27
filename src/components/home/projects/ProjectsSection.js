@@ -151,7 +151,7 @@ export default () => {
             <Img
               className="number"
               fluid={data.number1.childImageSharp.fluid}
-              alt="Project 2"
+              alt="Project 1"
             />
             <motion.div
               variants={containerStagger}
