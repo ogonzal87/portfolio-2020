@@ -204,12 +204,23 @@ const ConversationalDesignProjectPage = () => {
               />
             </div>
             <p>
-              These prompts represent an accessibility problem as they are
-              heavily reliant on visual proximity to be meaningful, and they
-              were self-activating. Most of the implementations we saw were
-              technically not accessible to screen reader users or did not make
-              sense, essentially excluding screen reader users, so we decided to
-              do this instead:
+              These prompts represented an accessibility problem as product
+              teams were using{" "}
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/tooltip_role"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Tooltips
+              </a>
+              . These elements can not contain interactive elements like links,
+              inputs, or buttons and must be activated by the user. In native
+              mobile, they are also usually placed in the last place in the
+              focus order, alienating keyboard and screen-reader users and often
+              obscure other important data. At the time, my team and I were
+              working on rolling out Dark Mode, so we decided to provide a
+              temporary solution that would address these issues, knowing that
+              we would have to revisit this pattern in the future.
             </p>
             <div className="project-img-phone-container">
               <img
@@ -219,14 +230,15 @@ const ConversationalDesignProjectPage = () => {
             </div>
             <p>
               Although not perfect, we believed that the linear navigation via
-              focus order would help screen users discover the features and
-              address sighted users' needs. However, after rolling out this
-              solution, we saw a severe increase in the number of prompts. Every
-              team wanted to call out their features or UI changes using this
-              pattern, and since teams work on isolated features, users were
-              complaining about the number of prompts they were being exposed
-              to. We then did a comprehensive audit of all of the instances that
-              we would identify to identify themes:
+              focus order would help keyboard and screen-reader users discover
+              the features and address sighted users' needs as well. After
+              rolling out this solution, however, we noticed that teams started
+              to overuse the pattern, often trying to compensate for a lousy
+              interface design. Every team wanted to call out their features,
+              and since teams often work on isolated features, users complained
+              about the number of prompts they saw. We then did a comprehensive
+              audit of all of the instances that we would identify to identify
+              themes:
             </p>
           </div>
         </div>
