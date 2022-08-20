@@ -76,10 +76,10 @@ const CodeSection = () => {
             video={createVideo(skullARMP4, skullARWEB, skullARPoster)}
           />
           <CodeProjectCard
-            title="Emotion recognition"
-            description="An app that recognizes face gestures and displays the corresponding emotion using Machine Learning and the browser."
+            title="Covid faces"
+            description="A little Covid inspired app using face detection and face recognition in the browser implemented on top of tensorflow.js."
             video={createVideo(emotionVidMP4, emotionVidWEB, emotionVidPoster)}
-            href="https://emotion-recognition.surge.sh/"
+            href="https://covid-faces.surge.sh/"
           />
           <CodeProjectCard
             title="Pokemon game"
