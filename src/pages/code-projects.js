@@ -31,6 +31,18 @@ import designDebatesVidWEB from "../assets/images/code/design-debates.webm"
 import skullARMP4 from "../assets/images/code/skullAR.mp4"
 import skullARPoster from "../assets/images/code/skullAR.jpg"
 import skullARWEB from "../assets/images/code/skullAR.webm"
+import babyYodaMP4 from "../assets/images/code/baby-yoda.mp4"
+import babyYodaPoster from "../assets/images/code/baby-yoda.jpg"
+import babyYodaWEB from "../assets/images/code/baby-yoda.webm"
+import ethRocketMP4 from "../assets/images/code/eth-merge-rocket.mp4"
+import ethRocketPoster from "../assets/images/code/eth-rocket.jpg"
+import ethRocketWEB from "../assets/images/code/eth-merge-rocket.webm"
+import linkedInLogoMP4 from "../assets/images/code/linkedin-logo.mp4"
+import linkedInLogoPoster from "../assets/images/code/linkedin-logo.jpg"
+import linkedInLogoWEB from "../assets/images/code/linkedin-logo.webm"
+import cloneXLogoMP4 from "../assets/images/code/clonex.mp4"
+import cloneXLogoPoster from "../assets/images/code/clonex.jpg"
+import cloneXLogoWEB from "../assets/images/code/clonex.webm"
 
 function createVideo(videoSourceMP4, videoSourceWEB, videoPoster) {
   return (
@@ -59,6 +71,31 @@ export default () => (
     <section className="home-code-section" style={{ marginBottom: "200px" }}>
       <ul className="code-cards-list">
         <CodeProjectCard
+          title="Metaverse NFT Identifier"
+          description="Using one of my NFTs as my visual identifier in digital social gatherings."
+          video={createVideo(cloneXLogoMP4, cloneXLogoWEB, cloneXLogoPoster)}
+          href=""
+        />
+
+        <CodeProjectCard
+          title="Baby Yoda"
+          description="Just playing with 3D models and user interaction to complement the experience."
+          video={createVideo(babyYodaMP4, babyYodaWEB, babyYodaPoster)}
+          href="https://d43z1t.csb.app/"
+        />
+
+        <CodeProjectCard
+          title="Cam-aleon"
+          description="An app that takes any color shown to the camera and colors a little chameleon I drew using Procreate."
+          video={createVideo(
+            chameleonVidMP4,
+            chameleonVidWEB,
+            chameleonVidPoster
+          )}
+          href="https://cam-aleon.surge.sh/"
+        />
+
+        <CodeProjectCard
           title="Instagram face filter"
           description="Made a few face filers (effects) for Instagram. You can play with them on your Insta by giving it a click ⬆."
           video={createVideo(
@@ -68,6 +105,32 @@ export default () => (
           )}
           href="https://instagram.com/a/r/?effect_id=1077625679243023"
         />
+
+        <CodeProjectCard
+          title="The ETH Rocket"
+          description="Just playing with 3D models and using the opportunity to educate people on The Merge."
+          video={createVideo(ethRocketMP4, ethRocketWEB, ethRocketPoster)}
+          href="https://tkj7e0.csb.app/"
+        />
+
+        <CodeProjectCard
+          title="Covid faces"
+          description="A little Covid inspired app using face detection and face recognition in the browser implemented on top of tensorflow.js."
+          video={createVideo(emotionVidMP4, emotionVidWEB, emotionVidPoster)}
+          href="https://covid-faces.surge.sh/"
+        />
+
+        <CodeProjectCard
+          title="3D LinkedIn Logo"
+          description="Just playing with 3D models and Design Tokens we used for Dark Mode."
+          video={createVideo(
+            linkedInLogoMP4,
+            linkedInLogoWEB,
+            linkedInLogoPoster
+          )}
+          href="https://n6g08y.csb.app/"
+        />
+
         <CodeProjectCard
           title="Skull AR"
           description="Playing around with illustration and Augmented Reality."
@@ -79,22 +142,7 @@ export default () => (
           video={createVideo(dsVidMP4, dsVidWEB, dsVidPoster)}
           href="https://codesandbox.io/embed/oskrhq-playground-app-x7mhz?fontsize=14&theme=dark&view=preview"
         />
-        <CodeProjectCard
-          title="Covid faces"
-          description="A little Covid inspired app using face detection and face recognition in the browser implemented on top of tensorflow.js."
-          video={createVideo(emotionVidMP4, emotionVidWEB, emotionVidPoster)}
-          href="https://covid-faces.surge.sh/"
-        />
-        <CodeProjectCard
-          title="Cam-aleon"
-          description="An app that takes any color shown to the camera and colors a little chameleon I drew using Procreate."
-          video={createVideo(
-            chameleonVidMP4,
-            chameleonVidWEB,
-            chameleonVidPoster
-          )}
-          href="https://cam-aleon.surge.sh/"
-        />
+
         <CodeProjectCard
           title="Pokemon game"
           description="A Pokemon cards game app I created using Vanilla Javascript and CSS Custom Properties. Wanted to build it without any UI Frameworks."
